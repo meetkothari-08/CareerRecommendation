@@ -29,3 +29,15 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Backend specific
+backend/venv/
+backend/__pycache__/
+backend/.env

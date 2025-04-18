@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Target, Award } from 'lucide-react';
+import { Users, Target, Award, User } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -41,30 +41,19 @@ const About: React.FC = () => {
         {/* Team Section */}
         <div className="bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
               {
-                name: 'Sarah Johnson',
-                role: 'Career Counselor',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80',
+                name: 'Meet Kothari',
+                role: 'Full Stack Developer',
               },
               {
-                name: 'Michael Chen',
-                role: 'AI Specialist',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80',
-              },
-              {
-                name: 'Emily Rodriguez',
-                role: 'Industry Expert',
-                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80',
+                name: 'Manav Doshi',
+                role: 'Full Stack Developer',
               },
             ].map((member) => (
-              <div key={member.name} className="text-center">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                />
+              <div key={member.name} className="text-center bg-gray-50 p-6 rounded-lg">
+                <User className="h-16 w-16 text-indigo-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
               </div>

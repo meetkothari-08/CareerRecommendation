@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Briefcase, BookOpen, Target, Brain, Loader2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getCombinedRecommendations } from '../services/modelService';
 
 interface UserInput {
@@ -31,6 +31,8 @@ const Home: React.FC = () => {
     };
     recommendations: string;
   } | null>(null);
+
+  const navigate = useNavigate();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -63,7 +65,7 @@ const Home: React.FC = () => {
               Get personalized career guidance and discover opportunities that match your skills and aspirations
             </p>
             <button
-              onClick={() => setShowModal(true)}
+              onClick={() => navigate('/career-recommendation')}
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:text-lg"
             >
               Get Started

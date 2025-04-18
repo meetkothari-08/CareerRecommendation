@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Profile from './pages/Profile';
 import UserProfile from './pages/UserProfile';
 import CareerRecommendation from './pages/CareerRecommendation';
+import CareerRecommendationForm from './pages/CareerRecommendationForm';
 import ChatbotPage from './pages/ChatbotPage';
 import MarketAnalysis from './pages/MarketAnalysis';
 
@@ -23,7 +24,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/user-profile" element={<UserProfile />} />
-            <Route path="/recommendations" element={<CareerRecommendation />} />
+            <Route path="/career-paths" element={<CareerRecommendation />} />
+            <Route path="/career-recommendation" element={<CareerRecommendationForm />} />
             <Route path="/chat" element={<ChatbotPage />} />
             <Route path="/market-analysis" element={<MarketAnalysis />} />
           </Routes>

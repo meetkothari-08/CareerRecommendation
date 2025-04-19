@@ -21,10 +21,17 @@ const MarketAnalysisDashboard: React.FC = () => {
       // Fetch job trends
       const trends = await marketAnalysisService.fetchJobTrends(jobTitle);
       if (trends?.month) {
-        const trendData = Object.entries(trends.month).map(([date, count]) => ({
-          date,
-          count
-        }));
+        const trendData = Object.entries(trends.month)
+          .map(([date, count]) => ({
+            date,
+            count
+          }))
+          .sort((a, b) => {
+            // Convert date strings (YYYY-MM) to Date objects for comparison
+            const [yearA, monthA] = a.date.split('-').map(Number);
+            const [yearB, monthB] = b.date.split('-').map(Number);
+            return new Date(yearA, monthA - 1).getTime() - new Date(yearB, monthB - 1).getTime();
+          });
         setDemandData(trendData);
       }
 

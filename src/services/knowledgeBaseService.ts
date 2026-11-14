@@ -1,4 +1,3 @@
-import { Groq } from 'groq-sdk';
 import {
   EngineeringField,
   EngineeringSubField,
@@ -12,19 +11,10 @@ import { engineeringFields } from '../data/engineeringFields';
 import { commonQuestions } from '../data/commonQuestions';
 
 export class KnowledgeBaseService {
-  private groq: Groq;
   private engineeringFields: EngineeringField[];
   private commonQuestions: CareerQuestion[];
 
   constructor() {
-    const apiKey = import.meta.env.VITE_GROQ_API_KEY;
-    if (!apiKey) {
-      throw new Error('VITE_GROQ_API_KEY is not set in environment variables');
-    }
-    this.groq = new Groq({
-      apiKey,
-      dangerouslyAllowBrowser: true
-    });
     this.engineeringFields = engineeringFields;
     this.commonQuestions = commonQuestions;
   }
@@ -149,17 +139,7 @@ export class KnowledgeBaseService {
       3. Key skills they should develop
       4. Learning resources and certifications to pursue`;
 
-    const completion = await this.groq.chat.completions.create({
-      messages: [{ role: 'user', content: prompt }],
-      model: "llama-3.3-70b-versatile",
-      temperature: 0.7,
-      max_tokens: 1024,
-      top_p: 0.95,
-    });
-
-    const response = completion.choices[0]?.message?.content || '';
-    
-    // Parse Groq response and convert to our format
+    const response = await this.requestChat(prompt);
     return this.parseGroqResponse(response);
   }
 
@@ -252,23 +232,19 @@ export class KnowledgeBaseService {
   }
 
   private async getGroqAnswer(question: string): Promise<string> {
-    const completion = await this.groq.chat.completions.create({
-      messages: [
-        {
-          role: 'system',
-          content: 'You are a career guidance expert specializing in engineering careers. Provide detailed, accurate, and helpful responses to career-related questions.'
-        },
-        {
-          role: 'user',
-          content: question
-        }
-      ],
-      model: "llama-3.3-70b-versatile",
-      temperature: 0.7,
-      max_tokens: 1024,
-      top_p: 0.95,
-    });
+    return this.requestChat(question);
 
-    return completion.choices[0]?.message?.content || 'I apologize, but I could not generate a response.';
   }
+  private async requestChat(prompt: string): Promise<string> {
+    const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+    const response = await fetch(`${base}/api/chat`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({messages: [{role: 'user', content: prompt}]})
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || 'Career guidance service unavailable');
+    return data.message;
+  }
+
 } 

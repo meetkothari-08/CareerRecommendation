@@ -29,7 +29,7 @@ const countryNames: Record<string, string> = {
 };
 
 const GlobalDemandChart: React.FC<GlobalDemandChartProps> = ({ data }) => {
-  const formattedData = data
+  const formattedData = [...data]
     .sort((a, b) => b.count - a.count)
     .slice(0, 5)
     .map(item => ({

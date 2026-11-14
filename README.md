@@ -116,7 +116,7 @@ docs/             Architecture, limitations, and portfolio notes
 
 ## Verification and limitations
 
-Run `npm run build` to type-check and build the frontend, and `npm run lint` to inspect lint issues. Python syntax can be checked with `python -m compileall backend/app.py`. Provider-backed features need valid keys and network access for end-to-end testing. Additional limitations are documented in [docs/PROJECT_NOTES.md](docs/PROJECT_NOTES.md).
+Run `npm run build` to type-check and build the frontend, and `npm run lint` to inspect lint issues. Run offline API smoke tests with `cd backend && python -m unittest discover -s tests -v`; Python syntax can be checked with `python -m compileall backend/app.py`. Provider-backed features need valid keys and network access for end-to-end testing. Additional limitations are documented in [docs/PROJECT_NOTES.md](docs/PROJECT_NOTES.md).
 
 ## Responsible use
 

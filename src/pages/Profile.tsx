@@ -62,7 +62,7 @@ const Profile: React.FC = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/profile/${profile.userId}`);
+      const response = await axios.get(`${import.meta.env.VITE_PROFILE_API_BASE_URL || 'http://localhost:5001'}/api/profile/${profile.userId}`);
       setProfile(response.data);
     } catch (error) {
       console.error('Error fetching profile:', error);
@@ -71,7 +71,7 @@ const Profile: React.FC = () => {
 
   const handleSave = async () => {
     try {
-      await axios.post('http://localhost:5000/api/profile', profile);
+      await axios.post('${import.meta.env.VITE_PROFILE_API_BASE_URL || 'http://localhost:5001'}/api/profile', profile);
       setIsEditing(false);
       fetchProfile();
     } catch (error) {

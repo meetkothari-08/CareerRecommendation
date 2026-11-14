@@ -71,7 +71,7 @@ const Profile: React.FC = () => {
 
   const handleSave = async () => {
     try {
-      await axios.post('${import.meta.env.VITE_PROFILE_API_BASE_URL || 'http://localhost:5001'}/api/profile', profile);
+      await axios.post(`${import.meta.env.VITE_PROFILE_API_BASE_URL || 'http://localhost:5001'}/api/profile`, profile);
       setIsEditing(false);
       fetchProfile();
     } catch (error) {

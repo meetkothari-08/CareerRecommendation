@@ -1,169 +1,183 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import torch
-import pickle
-import numpy as np
-from dotenv import load_dotenv
+"""Local API for career guidance and job-market exploration.
+
+External API credentials stay on the server. The archived LSTM artifact is not
+used for predictions because its original preprocessing/class labels have not
+been validated against the current questionnaire.
+"""
 import os
+import re
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+
 import requests
+from dotenv import load_dotenv
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
+load_dotenv(Path(__file__).resolve().parent / ".env")
 app = Flask(__name__)
-CORS(app)
-load_dotenv()
+app.config["MAX_CONTENT_LENGTH"] = 32 * 1024
+allowed_origins = [
+    origin.strip()
+    for origin in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
+    if origin.strip()
+]
+CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
 
-# Load the LSTM model
-try:
-    with open('lstm_model.pkl', 'rb') as f:
-        model = pickle.load(f)
-    model.eval()  # Set the model to evaluation mode
-except Exception as e:
-    print(f"Error loading model: {e}")
-    model = None
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+ADZUNA_URL = "https://api.adzuna.com/v1/api/jobs"
+COUNTRIES = ("us", "gb", "au", "de", "ca", "nl", "fr", "it", "br", "in")
+SYSTEM_PROMPT = (
+    "You are a career guidance assistant. Provide specific, realistic, "
+    "actionable career advice. Do not invent personalized statistical confidence "
+    "scores, live labor-market data, or guarantees."
+)
 
-# Groq API configuration
-GROQ_API_KEY = os.getenv('GROQ_API_KEY')
-GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
 
-def preprocess_input(user_input):
-    """
-    Preprocess user input for LSTM model.
-    Convert text data into numerical features.
-    """
-    # Add your preprocessing logic here
-    # This should match how your LSTM model was trained
+class ServiceError(Exception):
+    def __init__(self, message, status=502):
+        super().__init__(message)
+        self.status = status
+
+
+def require_json():
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        raise ServiceError("A JSON object is required.", 400)
+    return data
+
+
+def groq_completion(messages):
+    api_key = os.getenv("GROQ_API_KEY")
+    if not api_key:
+        raise ServiceError("Groq is not configured on this server.", 503)
+
     try:
-        # Example preprocessing (modify according to your model's requirements)
-        features = {
-            'skills': len(user_input['skills'].split(',')),
-            'interests': len(user_input['interests'].split(',')),
-            'experience': float(user_input['experience'].split()[0]),  # Assuming format "X years"
-            'education_level': map_education_level(user_input['education']),
-            'goals_clarity': analyze_goals_clarity(user_input['goals'])
-        }
-        return torch.tensor([list(features.values())], dtype=torch.float32)
-    except Exception as e:
-        print(f"Error in preprocessing: {e}")
-        return None
-
-def map_education_level(education):
-    """Map education level to numerical value"""
-    education_map = {
-        'high school': 1,
-        'bachelor': 2,
-        'master': 3,
-        'phd': 4
-    }
-    education = education.lower()
-    for key in education_map:
-        if key in education:
-            return education_map[key]
-    return 1  # Default to high school if no match
-
-def analyze_goals_clarity(goals):
-    """Analyze the clarity of goals statement"""
-    words = goals.split()
-    return min(len(words) / 20, 1)  # Normalize to 0-1 range
-
-def get_groq_recommendations(user_input):
-    """Get career recommendations from Groq API"""
-    try:
-        headers = {
-            'Authorization': f'Bearer {GROQ_API_KEY}',
-            'Content-Type': 'application/json'
-        }
-        
-        prompt = f"""Based on this profile, provide detailed career recommendations:
-        Skills: {user_input['skills']}
-        Interests: {user_input['interests']}
-        Experience: {user_input['experience']}
-        Education: {user_input['education']}
-        Goals: {user_input['goals']}
-
-        Please provide:
-        1. 3-5 recommended career paths
-        2. Key skills to develop for each path
-        3. Specific next steps to get started
-        4. Potential challenges and how to overcome them"""
-
-        data = {
-            'model': 'llama-3.3-70b-versatile',
-            'messages': [
-                {'role': 'system', 'content': 'You are a career guidance expert. Analyze the user\'s profile and provide detailed career recommendations.'},
-                {'role': 'user', 'content': prompt}
-            ],
-            'temperature': 0.7,
-            'max_tokens': 1000
-        }
-
-        response = requests.post(GROQ_API_URL, headers=headers, json=data)
+        response = requests.post(
+            GROQ_URL,
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+                "messages": [{"role": "system", "content": SYSTEM_PROMPT}, *messages],
+                "temperature": 0.5,
+                "max_tokens": 1200,
+            },
+            timeout=40,
+        )
         response.raise_for_status()
-        return response.json()['choices'][0]['message']['content']
-    except Exception as e:
-        print(f"Error calling Groq API: {e}")
-        return None
+        return response.json()["choices"][0]["message"]["content"]
+    except (requests.RequestException, KeyError, IndexError, TypeError, ValueError) as exc:
+        app.logger.warning("Career AI provider request failed: %s", type(exc).__name__)
+        raise ServiceError("Career guidance provider is temporarily unavailable.") from exc
 
-@app.route('/api/recommendations', methods=['POST'])
-def get_recommendations():
+
+def adzuna(path, country="us", title=""):
+    app_id = os.getenv("ADZUNA_APP_ID")
+    app_key = os.getenv("ADZUNA_APP_KEY")
+    if not app_id or not app_key:
+        raise ServiceError("Job market data is not configured on this server.", 503)
+    if country not in COUNTRIES:
+        raise ServiceError("Unsupported country.", 400)
     try:
-        user_input = request.json
+        response = requests.get(
+            f"{ADZUNA_URL}/{country}/{path}",
+            params={"app_id": app_id, "app_key": app_key, "what": title},
+            timeout=15,
+        )
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, ValueError) as exc:
+        app.logger.warning("Job market provider request failed: %s", type(exc).__name__)
+        raise ServiceError("Job market provider is temporarily unavailable.") from exc
 
-        # Get LSTM predictions
-        lstm_result = None
-        if model is not None:
-            processed_input = preprocess_input(user_input)
-            if processed_input is not None:
-                with torch.no_grad():
-                    lstm_output = model(processed_input)
-                    # Convert LSTM output to career paths and confidence scores
-                    # Modify this according to your model's output format
-                    lstm_result = {
-                        'matchScore': float(torch.max(lstm_output).item()),
-                        'confidence': float(torch.softmax(lstm_output, dim=1).max().item()),
-                        'topCareerPaths': decode_lstm_output(lstm_output)
-                    }
 
-        # Get Groq recommendations
-        groq_recommendations = get_groq_recommendations(user_input)
+def requested_title():
+    title = request.args.get("title", "").strip()
+    if not title or len(title) > 120:
+        raise ServiceError("Provide a job title (up to 120 characters).", 400)
+    return title
 
-        if lstm_result is None and groq_recommendations is None:
-            return jsonify({
-                'error': 'Both LSTM and Groq predictions failed'
-            }), 500
 
-        return jsonify({
-            'lstm': lstm_result,
-            'groq': groq_recommendations,
-            'lstmAnalysis': lstm_result,
-            'recommendations': groq_recommendations
-        })
+@app.errorhandler(ServiceError)
+def service_error(exc):
+    return jsonify({"error": str(exc)}), exc.status
 
-    except Exception as e:
-        return jsonify({
-            'error': str(e)
-        }), 500
 
-def decode_lstm_output(output):
-    """
-    Convert LSTM output tensor to career paths.
-    Modify this according to your model's output format and career path mapping.
-    """
-    # Example career paths (replace with your model's actual output classes)
-    career_paths = [
-        "Data Scientist",
-        "Software Engineer",
-        "Machine Learning Engineer",
-        "Business Analyst",
-        "Product Manager",
-        "Data Engineer",
-        "AI Researcher",
-        "DevOps Engineer",
-        "Cloud Architect",
-        "Full Stack Developer"
-    ]
-    
-    # Get top 5 predictions
-    top_indices = torch.topk(output[0], k=5).indices
-    return [career_paths[i] for i in top_indices]
+@app.route("/api/health")
+def health():
+    return jsonify({"status": "ok", "aiConfigured": bool(os.getenv("GROQ_API_KEY")),
+                    "marketConfigured": bool(os.getenv("ADZUNA_APP_ID") and os.getenv("ADZUNA_APP_KEY"))})
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5000) 
+
+@app.route("/api/recommendations", methods=["POST"])
+def recommend():
+    profile = require_json()
+    fields = ("skills", "interests", "experience", "education", "goals")
+    if any(not isinstance(profile.get(key), str) or not profile[key].strip()
+           or len(profile[key]) > 1000 for key in fields):
+        raise ServiceError("Provide all five profile fields (up to 1,000 characters each).", 400)
+
+    prompt = (
+        "Recommend 3-5 realistic career directions for this profile. For each, "
+        "explain the fit and skills to build, then offer concrete next steps. "
+        "Do not return fabricated percentages.\n\n"
+        + "\n".join(f"{field.title()}: {profile[field]}" for field in fields)
+    )
+    advice = groq_completion([{"role": "user", "content": prompt}])
+    return jsonify({"method": "generative-ai", "recommendations": advice})
+
+
+@app.route("/api/chat", methods=["POST"])
+def chat():
+    data = require_json()
+    history = data.get("messages")
+    if not isinstance(history, list) or not history or len(history) > 20:
+        raise ServiceError("Provide between 1 and 20 chat messages.", 400)
+    cleaned = []
+    for message in history:
+        if (not isinstance(message, dict)
+                or message.get("role") not in ("user", "assistant")
+                or not isinstance(message.get("content"), str)
+                or not message["content"].strip()
+                or len(message["content"]) > 3000):
+            raise ServiceError("Invalid chat message.", 400)
+        cleaned.append({"role": message["role"], "content": message["content"]})
+    if cleaned[-1]["role"] != "user":
+        raise ServiceError("The last chat message must be from the user.", 400)
+    return jsonify({"message": groq_completion(cleaned)})
+
+
+@app.route("/api/market/history")
+def market_history():
+    return jsonify(adzuna("history", title=requested_title(),
+                          country=request.args.get("country", "us").lower()))
+
+
+@app.route("/api/market/histogram")
+def market_histogram():
+    return jsonify(adzuna("histogram", title=requested_title(),
+                          country=request.args.get("country", "us").lower()))
+
+
+@app.route("/api/market/demand")
+def market_demand():
+    title = requested_title()
+
+    def country_count(country):
+        try:
+            data = adzuna("search/1", title=title, country=country)
+            return {"country": country.upper(), "count": int(data.get("count", 0))}
+        except ServiceError:
+            return None
+
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        results = list(pool.map(country_count, COUNTRIES))
+    valid = [result for result in results if result is not None]
+    if not valid:
+        raise ServiceError("No job market data is available.", 502)
+    return jsonify(valid)
+
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=int(os.getenv("FLASK_PORT", "5000")),
+            debug=os.getenv("FLASK_DEBUG", "false").lower() == "true")

@@ -6,9 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 // Helper function to format message content
+const escapeHtml = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;').replace(/'/g, '&#39;');
+
 const formatMessageContent = (content: string) => {
   if (!content) return '';
-  
+  content = escapeHtml(content);
+
   // Replace **text** with styled spans
   content = content.replace(/\*\*(.*?)\*\*/g, '<span class="font-bold text-purple-200">$1</span>');
   
@@ -222,7 +225,7 @@ const ChatbotPage: React.FC = () => {
                           dangerouslySetInnerHTML={{ 
                             __html: message.type === 'bot' 
                               ? formatMessageContent(message.content)
-                              : message.content 
+                              : escapeHtml(message.content)
                           }}
                         />
                         <p className="text-xs mt-2 text-purple-300">

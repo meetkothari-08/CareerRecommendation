@@ -68,12 +68,12 @@ const UserProfile: React.FC = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    if (name.includes('.')) {
-      const [parent, child] = name.split('.');
+    if (name.startsWith('education.')) {
+      const [, child] = name.split('.');
       setFormData(prev => ({
         ...prev,
-        [parent]: {
-          ...prev[parent as keyof FormData],
+        education: {
+          ...prev.education,
           [child]: value,
         },
       }));
@@ -87,7 +87,7 @@ const UserProfile: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    window.alert('This profile form is a local demo. Your entries have not been saved.');
   };
 
   const SectionButton: React.FC<{ section: string; icon: React.ReactNode; label: string }> = ({ section, icon, label }) => (

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Search, TrendingUp, DollarSign, Globe } from 'lucide-react';
-import { marketAnalysisService } from '../../services/marketAnalysisService';
+import { marketAnalysisService, type GlobalDemand } from '../../services/marketAnalysisService';
 import DemandTrendsChart from './DemandTrendsChart';
 import SalaryDistributionChart from './SalaryDistributionChart';
 import GlobalDemandChart from './GlobalDemandChart';
@@ -10,7 +10,7 @@ const MarketAnalysisDashboard: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [demandData, setDemandData] = useState<{ date: string; count: number }[]>([]);
   const [salaryData, setSalaryData] = useState<{ range: string; count: number }[]>([]);
-  const [globalData, setGlobalData] = useState([]);
+  const [globalData, setGlobalData] = useState<GlobalDemand[]>([]);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();

@@ -1,4 +1,3 @@
-import { Groq } from 'groq-sdk';
 import { KnowledgeBaseService } from './knowledgeBaseService';
 
 interface UserProfile {
@@ -16,7 +15,6 @@ interface ProfileQuestion {
 }
 
 export class CustomChatbotService {
-  private groq: Groq;
   private knowledgeBase: KnowledgeBaseService;
   private conversationHistory: { role: 'user' | 'assistant'; content: string; }[] = [];
   private userProfile: UserProfile = {
@@ -77,14 +75,6 @@ export class CustomChatbotService {
   ];
 
   constructor() {
-    const apiKey = import.meta.env.VITE_GROQ_API_KEY;
-    if (!apiKey) {
-      throw new Error('VITE_GROQ_API_KEY is not set in environment variables');
-    }
-    this.groq = new Groq({
-      apiKey,
-      dangerouslyAllowBrowser: true
-    });
     this.knowledgeBase = new KnowledgeBaseService();
   }
 
@@ -158,31 +148,29 @@ export class CustomChatbotService {
   }
 
   private async getGroqResponse(userInput: string): Promise<string> {
+    this.conversationHistory.push({ role: 'user', content: userInput });
     try {
-      this.conversationHistory.push({ role: 'user', content: userInput });
-
-      const completion = await this.groq.chat.completions.create({
-        messages: [
-          {
-            role: 'system',
-            content: 'You are a career guidance expert specializing in technology and engineering careers. ONLY provide advice related to careers, jobs, skills, education, and professional development in the tech industry. If a question is not related to careers or professional development, politely explain that you can only help with career-related questions.'
-          },
-          ...this.conversationHistory
-        ],
-        model: "llama-3.3-70b-versatile",
-        temperature: 0.7,
-        max_tokens: 1024,
-        top_p: 0.95,
-      });
-
-      const response = completion.choices[0]?.message?.content || 'I apologize, but I could not generate a response.';
-      this.conversationHistory.push({ role: 'assistant', content: response });
-      
-      return response;
+      const answer = await this.requestChat(this.conversationHistory);
+      this.conversationHistory.push({ role: 'assistant', content: answer });
+      this.conversationHistory = this.conversationHistory.slice(-20);
+      return answer;
     } catch (error) {
-      console.error('Error getting Groq response:', error);
-      return 'I apologize, but I encountered an error. Please try again.';
+      this.conversationHistory.pop();
+      console.error('Career chat service unavailable:', error);
+      return 'Career guidance is temporarily unavailable. Please check your server configuration.';
     }
+  }
+
+  private async requestChat(messages: {role: 'user' | 'assistant'; content: string}[]): Promise<string> {
+    const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+    const response = await fetch(`${base}/api/chat`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({messages: messages.slice(-20)})
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || 'Career chat request failed');
+    return data.message;
   }
 
   private async updateUserProfile(userInput: string): Promise<void> {
@@ -261,41 +249,15 @@ export class CustomChatbotService {
   }
 
   private async getGroqCareerRecommendations(): Promise<string> {
-    const prompt = `As a career guidance expert, provide detailed career recommendations based on this profile:
-
+    const prompt = `Provide actionable career guidance for this profile:
 Education: ${this.userProfile.education}
 Skills: ${this.userProfile.skills.join(', ')}
 Interests: ${this.userProfile.interests.join(', ')}
 Experience: ${this.userProfile.experience}
-Career Goals: ${this.userProfile.goals}
-
-Please provide:
-1. Career paths that best match their profile
-2. Emerging opportunities in their areas of interest
-3. Specific next steps for career growth
-4. Industry trends and future outlook
-5. Potential challenges and how to overcome them`;
-
-    const completion = await this.groq.chat.completions.create({
-      messages: [
-        {
-          role: 'system',
-          content: 'You are a career guidance expert specializing in technology and engineering careers. Focus on providing actionable, forward-looking advice that considers current industry trends and future opportunities.'
-        },
-        {
-          role: 'user',
-          content: prompt
-        }
-      ],
-      model: "llama-3.3-70b-versatile",
-      temperature: 0.7,
-      max_tokens: 1024,
-      top_p: 0.95,
-    });
-
-    return completion.choices[0]?.message?.content || 'Unable to generate AI recommendations.';
+Goals: ${this.userProfile.goals}
+Recommend relevant career paths, skill development priorities, next steps and limitations. Avoid invented scores.`;
+    return this.requestChat([{role: 'user', content: prompt}]);
   }
 }
 
-// Create and export an instance
 export const customChatbotService = new CustomChatbotService();

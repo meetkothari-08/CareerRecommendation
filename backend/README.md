@@ -1,77 +1,14 @@
-# Career Recommendation System Backend
+# API services
 
-This is the backend service for the Career Recommendation System, which combines LSTM model predictions with Groq API recommendations.
+The Python Flask API serves career guidance, chat, and Adzuna market-data proxy endpoints. It is separate from the optional Node/Express MongoDB profile API.
 
-## Setup
+Follow the repository-root [setup guide](../README.md) for prerequisites, local configuration, startup instructions, and endpoint descriptions.
 
-1. Create a Python virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+## Service ports
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+- Python Flask: `5000` (career guidance, chatbot, market data)
+- Node Express: `5001` (demo profile storage; MongoDB required)
 
-3. Create a `.env` file in the backend directory with your Groq API key:
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
+Keep Groq and Adzuna secrets in `backend/.env` only; use `backend/.env.example` as a template. Do not deploy the profile API publicly without authentication and authorization.
 
-4. Place your LSTM model file (`lstm_model.pkl`) in the backend directory.
-
-## Running the Server
-
-Start the Flask server:
-```bash
-python app.py
-```
-
-The server will run on `http://localhost:5000`.
-
-## API Endpoints
-
-### POST /api/recommendations
-
-Get career recommendations using both LSTM model and Groq API.
-
-Request body:
-```json
-{
-  "skills": "string",
-  "interests": "string",
-  "experience": "string",
-  "education": "string",
-  "goals": "string"
-}
-```
-
-Response:
-```json
-{
-  "lstm": {
-    "matchScore": number,
-    "confidence": number,
-    "topCareerPaths": string[]
-  },
-  "groq": string,
-  "lstmAnalysis": {
-    "matchScore": number,
-    "confidence": number,
-    "topCareerPaths": string[]
-  },
-  "recommendations": string
-}
-```
-
-## Error Handling
-
-The API includes comprehensive error handling for:
-- Missing LSTM model
-- Invalid input data
-- Groq API failures
-- Model prediction errors
-
-If either the LSTM model or Groq API fails, the service will still return results from the working component. 
+The previous Python script attempted to run a pickle LSTM artifact with placeholder preprocessing. The archive is kept for research only; the cleaned API does not claim validated LSTM inference.

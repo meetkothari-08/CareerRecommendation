@@ -1,0 +1,14 @@
+# Render Blueprint: deploys the CareerRec API (https://render.com/docs/blueprint-spec)
+services:
+  - type: web
+    name: careerrec-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false # set to your Vercel URL, e.g. https://careerrec.vercel.app
+      - key: LLM_API_KEY
+        sync: false # optional: enables LLM-written reports and the AI advisor

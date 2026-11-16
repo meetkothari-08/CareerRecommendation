@@ -233,7 +233,11 @@ curl -s localhost:8000/api/recommend -H 'Content-Type: application/json' -d '{"s
 configures the Vite build and client-side routing), and add the environment variable
 `VITE_API_URL=https://<your-backend-host>`.
 
-**Backend: any Docker host** (Render, Railway, Fly.io, Google Cloud Run). The multi-stage
+**Backend: Render (one click)** using the included `render.yaml` blueprint:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/meetkothari-08/CareerRecommendation)
+
+Or use any Docker host (Railway, Fly.io, Google Cloud Run). The multi-stage
 `backend/Dockerfile` trains the model during the build and serves it with Uvicorn on port 8000:
 
 ```bash

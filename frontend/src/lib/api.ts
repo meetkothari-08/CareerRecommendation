@@ -138,3 +138,30 @@ export const api = {
 
 export const usd = (v: number | null | undefined) => (v == null ? 'n/a' : `$${Math.round(v / 1000).toLocaleString()}k`);
 export const pct = (v: number, digits = 0) => `${(v * 100).toFixed(digits)}%`;
+
+// The last submitted profile is remembered (per browser tab) so the AI advisor can ground its answers in it.
+const PROFILE_KEY = 'careerrec.profile';
+export const savedProfile = {
+  get(): ProfileInput | null {
+    try {
+      const raw = sessionStorage.getItem(PROFILE_KEY);
+      return raw ? (JSON.parse(raw) as ProfileInput) : null;
+    } catch {
+      return null;
+    }
+  },
+  set(p: ProfileInput) {
+    try {
+      sessionStorage.setItem(PROFILE_KEY, JSON.stringify(p));
+    } catch {
+      /* storage unavailable: grounding is optional */
+    }
+  },
+  clear() {
+    try {
+      sessionStorage.removeItem(PROFILE_KEY);
+    } catch {
+      /* ignore */
+    }
+  },
+};

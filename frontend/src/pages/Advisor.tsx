@@ -1,10 +1,12 @@
 import { FormEvent, useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Bot, Loader2, Send, User } from 'lucide-react';
-import { api, ChatMessage } from '../lib/api';
+import { Bot, Loader2, Send, User, UserCheck, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { api, ChatMessage, ProfileInput, savedProfile } from '../lib/api';
 import { PageHeader } from '../components/ui';
 
 const STARTERS = [
+  'Which of my recommended careers suits me best, and why?',
   'How do I move from data analyst to data scientist?',
   'Which cloud certification should I get first?',
   'What should a junior ML engineer portfolio include?',
@@ -15,6 +17,7 @@ export default function Advisor() {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [llm, setLlm] = useState<{ enabled: boolean; model: string | null } | null>(null);
+  const [profile, setProfile] = useState<ProfileInput | null>(() => savedProfile.get());
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,7 +34,7 @@ export default function Advisor() {
     setInput('');
     setLoading(true);
     try {
-      const res = await api.chat(text, history);
+      const res = await api.chat(text, history, profile ?? undefined);
       setMessages((m) => [...m, { role: 'assistant', content: res.text }]);
     } catch (err) {
       setMessages((m) => [...m, { role: 'assistant', content: `⚠️ ${(err as Error).message}` }]);
@@ -49,6 +52,31 @@ export default function Advisor() {
           </span>
         )}
       </PageHeader>
+
+      <div className="mb-3 flex items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm">
+        {profile ? (
+          <>
+            <span className="flex min-w-0 items-center gap-2 text-slate-700">
+              <UserCheck className="h-4 w-4 shrink-0 text-emerald-600" />
+              <span className="truncate">Answers use your profile: {profile.skills}</span>
+            </span>
+            <button
+              className="flex shrink-0 items-center gap-1 text-slate-500 hover:text-slate-900"
+              onClick={() => {
+                savedProfile.clear();
+                setProfile(null);
+              }}
+            >
+              <X className="h-3.5 w-3.5" /> Don't use
+            </button>
+          </>
+        ) : (
+          <span className="text-slate-500">
+            Tip: <Link to="/recommend" className="font-medium text-indigo-600 hover:underline">get recommendations</Link> first and
+            the advisor will tailor its answers to your profile.
+          </span>
+        )}
+      </div>
 
       <div className="card flex h-[60vh] flex-col">
         <div className="flex-1 space-y-4 overflow-y-auto p-5">

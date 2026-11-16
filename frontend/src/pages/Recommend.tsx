@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Briefcase, ExternalLink, GraduationCap, Lightbulb, Loader2, Sparkles, Star, TrendingUp } from 'lucide-react';
-import { api, CareerRec, pct, ProfileInput, RecommendResponse, usd } from '../lib/api';
+import { api, CareerRec, pct, ProfileInput, RecommendResponse, savedProfile, usd } from '../lib/api';
 import { Bar, ErrorBox, PageHeader } from '../components/ui';
 
 const EMPTY: ProfileInput = { skills: '', interests: '', education: '', experience_years: 0, goals: '' };
@@ -60,6 +60,7 @@ export default function Recommend() {
     setError('');
     try {
       setResult(await api.recommend({ ...form, top_k: 5 }));
+      savedProfile.set(form);
     } catch (err) {
       setError((err as Error).message);
     } finally {

@@ -1,0 +1,6070 @@
+[
+ {
+  "id": "P7-0000",
+  "skills": "product management, jira, Looker, data analysis, Data Quality, Git, SQL, Cost Optimization, bigquery, communication, Snowflake, Stakeholder Management, data warehousing, Agile",
+  "interests": "analytics",
+  "education": "PhD in Computer Science",
+  "experience_years": 4,
+  "goals": "Switch careers into something related to business insights with good pay.",
+  "profile_type": "switcher",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "product_manager"
+  ]
+ },
+ {
+  "id": "P7-0001",
+  "skills": "Problem Solving, Deep Learning, unix, torch, mathematics, Bioinformatics, genomics, R, kanban",
+  "interests": "biology, healthcare",
+  "education": "Master's degree",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in life sciences.",
+  "profile_type": "blended",
+  "target": "bioinformatics_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0002",
+  "skills": "problem solving, Git, Selenium, automation testing, Smart Contracts",
+  "interests": "fintech, blockchain, data science",
+  "education": "Master's degree",
+  "experience_years": 3,
+  "goals": "Transition into web3 - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer",
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0003",
+  "skills": "Firewalls, Leadership, security monitoring, Docker, User Experience, Network Security, forecasting, Documentation",
+  "interests": "cybersecurity, forensics",
+  "education": "PhD in Computer Science",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in forensics.",
+  "profile_type": "blended",
+  "target": "security_analyst",
+  "relevant": [
+   "penetration_tester",
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0004",
+  "skills": "MQTT, iOS SDK, SolidWorks, kanban, react js, sensors",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "iot_engineer",
+  "relevant": [
+   "iot_engineer",
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0005",
+  "skills": "agile methodology, Documentation, Image Processing, Python, Git, Convolutional Neural Networks",
+  "interests": "",
+  "education": "MSc",
+  "experience_years": 10,
+  "goals": "Become a Computer Vision Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "computer_vision_engineer",
+  "relevant": [
+   "computer_vision_engineer"
+  ]
+ },
+ {
+  "id": "P7-0006",
+  "skills": "Communication, Convolutional Neural Networks, pyspark, documentation",
+  "interests": "databases, reliability",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in big data.",
+  "profile_type": "blended",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "computer_vision_engineer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0007",
+  "skills": "shell scripting, pandas dataframe, Azure, Monitoring, jira, data analysis, VMware",
+  "interests": "servers, mathematics",
+  "education": "Associate degree",
+  "experience_years": 2,
+  "goals": "I want to grow into a role where I work on servers.",
+  "profile_type": "focused",
+  "target": "systems_administrator",
+  "relevant": [
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0008",
+  "skills": "communication, Event-Driven Architecture, Networking, spaCy, Domain-Driven Design, Security, ec2, jira, Product Demos",
+  "interests": "distributed systems",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on system design.",
+  "profile_type": "switcher",
+  "target": "software_architect",
+  "relevant": [
+   "cloud_architect",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0009",
+  "skills": "Project Management, Linux, communication, ec2, Go, Bash, stakeholder communication, Scrum, Risk Management, service mesh, DeFi",
+  "interests": "devops",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 10,
+  "goals": "Transition into devops - I enjoy it more than my current work.",
+  "profile_type": "switcher",
+  "target": "site_reliability_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "project_manager",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0010",
+  "skills": "spreadsheets, problem solving, Windows Server, Security, Auditing",
+  "interests": "security, risk, consumer apps",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Transition into compliance - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "grc_analyst",
+  "relevant": [
+   "grc_analyst"
+  ]
+ },
+ {
+  "id": "P7-0011",
+  "skills": "excel, C, Shader Programming, rtos, firmware, Debugging, OpenGL, Blender, c++",
+  "interests": "graphics, interactive media, energy",
+  "education": "PhD",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on graphics.",
+  "profile_type": "switcher",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "embedded_software_engineer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0012",
+  "skills": "ec2, teamwork, Machine Learning, torch, Git, dl, research, statistical modeling, math",
+  "interests": "academia, mathematics, consulting",
+  "education": "PhD in Computer Science",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in academia.",
+  "profile_type": "focused",
+  "target": "ai_research_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0013",
+  "skills": "pytorch, deep neural networks, wireframes, cpp, opencv, cv, Linux, cnns, CUDA, SQL",
+  "interests": "computer vision, robotics",
+  "education": "PhD",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "computer_vision_engineer",
+  "relevant": [
+   "computer_vision_engineer",
+   "data_analyst"
+  ]
+ },
+ {
+  "id": "P7-0014",
+  "skills": "continuous deployment, Git, automation testing, Jira, API Testing, python",
+  "interests": "reliability",
+  "education": "Master's degree",
+  "experience_years": 2,
+  "goals": "I want to grow into a role where I work on automation.",
+  "profile_type": "focused",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0015",
+  "skills": "CompTIA Security+, ec2, Convolutional Neural Networks, ETL, containerization, image processing, CCNA, CUDA",
+  "interests": "",
+  "education": "Master's degree",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on autonomous vehicles.",
+  "profile_type": "blended",
+  "target": "computer_vision_engineer",
+  "relevant": [
+   "computer_vision_engineer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0016",
+  "skills": "Oracle, Python, Go, Backup and Recovery, Troubleshooting, vue.js, github, alerting, Incident Management",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to infrastructure with good pay.",
+  "profile_type": "blended",
+  "target": "site_reliability_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "database_administrator",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0017",
+  "skills": "Java, roadmapping, Jira, User Research, presentation, Python, kanban, Documentation",
+  "interests": "strategy, agents",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on startups.",
+  "profile_type": "focused",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0018",
+  "skills": "Git, FastAPI, agile methodology, LangChain, natural language processing, Prompt Engineering, retrieval-augmented generation",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on ai.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0019",
+  "skills": "Terraform, gitlab, Data Analysis, CI/CD, golang, Linux, Webpack",
+  "interests": "platforms, cybersecurity",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "I want to grow into a role where I work on automation.",
+  "profile_type": "focused",
+  "target": "platform_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0020",
+  "skills": "Circuit Design, LLMs, microsoft excel, Electronics, pcb design, Problem Solving, Power Electronics, verilog",
+  "interests": "circuits, hardware, javascript",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Switch careers into something related to power with good pay.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0021",
+  "skills": "Unity, Documentation, neural networks, Oracle, linear algebra, postgresql, Problem Solving, Performance Tuning, SQL",
+  "interests": "3d, security",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "database_administrator",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0022",
+  "skills": "Data Analysis, roadmapping, split testing, stakeholder management, Market Research, leadership",
+  "interests": "strategy, design",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0023",
+  "skills": "Problem Solving, UVM, Interaction Design, Communication, docker, Figma, Wireframing, Information Architecture, Jira, Prototyping",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "Become a UX Designer in the next two years.",
+  "profile_type": "focused",
+  "target": "ux_designer",
+  "relevant": [
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0024",
+  "skills": "Test Automation, Python, Unity, git, Leadership, blender, Unreal Engine",
+  "interests": "interactive media, chatbots",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "Transition into 3d - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer",
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0025",
+  "skills": "presentation, mongo, REST APIs, Express.js, rhel, nodejs, sql",
+  "interests": "full stack, web development, automation",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0026",
+  "skills": "documentation, Public Speaking, Microservices, Excel, Community Building, Content Creation, Scrum, agile methodology",
+  "interests": "community, teaching",
+  "education": "MSc",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to open source with good pay.",
+  "profile_type": "focused",
+  "target": "developer_advocate",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0027",
+  "skills": "defi, Smart Contracts, aws, Cryptography, javascript es6, Jira",
+  "interests": "crypto",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer"
+  ]
+ },
+ {
+  "id": "P7-0028",
+  "skills": "Communication, gitlab, technical writing, AWS, Linux, Information Architecture",
+  "interests": "writing",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Transition into writing - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "technical_writer",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0029",
+  "skills": "Leadership, documentation writing, Python, Documentation, R, containerization, javascript",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to speaking with good pay.",
+  "profile_type": "focused",
+  "target": "developer_advocate",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0030",
+  "skills": "Editing, python, MQTT, Linux, firmware, Jira",
+  "interests": "hardware, smart devices",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on hardware.",
+  "profile_type": "blended",
+  "target": "iot_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0031",
+  "skills": "Process Modeling, documentation, Excel, Business Analysis, stakeholder management, SQL, Leadership, Jira",
+  "interests": "strategy, infrastructure",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Switch careers into something related to consulting with good pay.",
+  "profile_type": "focused",
+  "target": "business_analyst",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "project_manager",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0032",
+  "skills": "autocad, pcb design, stm32, Power Electronics, Simulink, git",
+  "interests": "energy, hardware",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in energy.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0033",
+  "skills": "REST APIs, Communication, grafana, ci/cd, ts, System Design, azure, Kubernetes, Linux, Cloud Architecture, jira, docker, iac",
+  "interests": "infrastructure, devops",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "devops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0034",
+  "skills": "HTML, CSS, github, ROS, Leadership, SOC 2, Jira, React, Accessibility",
+  "interests": "design, javascript",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0035",
+  "skills": "Jenkins, Documentation, fine-tuning, Retrieval-Augmented Generation",
+  "interests": "ai, llms",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0036",
+  "skills": "Kubernetes, iac, Communication, Bash, Documentation, prometheus",
+  "interests": "reliability, infrastructure, data pipelines",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "Transition into devops - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "devops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0037",
+  "skills": "Typography, Python, ui design, CSS",
+  "interests": "design, visual, business",
+  "education": "Associate degree",
+  "experience_years": 10,
+  "goals": "Switch careers into something related to branding with good pay.",
+  "profile_type": "focused",
+  "target": "ui_designer",
+  "relevant": [
+   "ui_designer"
+  ]
+ },
+ {
+  "id": "P7-0038",
+  "skills": "Git, Kubernetes, Google Cloud, communication skills, s3, cloud architecture, Networking",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to technical leadership with good pay.",
+  "profile_type": "focused",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0039",
+  "skills": "Digital Design, Docker, iac, Problem Solving, python, ec2, google cloud platform, identity and access management",
+  "interests": "cloud",
+  "education": "Associate degree",
+  "experience_years": 7,
+  "goals": "Looking to build a long-term career in automation.",
+  "profile_type": "blended",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0040",
+  "skills": "MQTT, Communication, iot, Problem Solving, Data Analysis, siem, sensors, Python",
+  "interests": "iot, technology",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "Transition into iot - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "iot_engineer",
+  "relevant": [
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0041",
+  "skills": "spreadsheets, GraphQL, react js, Git, leadership",
+  "interests": "startups",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 7,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0042",
+  "skills": "API Testing, Git, automated testing, selenium, powerbi, jira",
+  "interests": "automation, reliability, life sciences",
+  "education": "Associate degree",
+  "experience_years": 5,
+  "goals": "Become a QA Automation Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0043",
+  "skills": "Data Analysis, Product Management, ARM, teamwork, python, AWS",
+  "interests": "",
+  "education": "PhD",
+  "experience_years": 2,
+  "goals": "Become a Data Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0044",
+  "skills": "MS Project, Project Management, Docker, Scrum, SEM, budgeting",
+  "interests": "leadership",
+  "education": "Bachelor's degree",
+  "experience_years": 2,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "project_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0045",
+  "skills": "Linux, Communication, psychology, VPN, persona development, User Research, kanban",
+  "interests": "users, human behavior",
+  "education": "Master's in Data Science",
+  "experience_years": 4,
+  "goals": "Become a UX Researcher in the next two years.",
+  "profile_type": "blended",
+  "target": "ux_researcher",
+  "relevant": [
+   "product_manager",
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0046",
+  "skills": "problem solving, Static Timing Analysis, AutoCAD, SystemVerilog, Power Electronics, asic design, Python, Electronics, Git, MATLAB, Model Monitoring, circuit design",
+  "interests": "hardware",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 3,
+  "goals": "Become a Electrical Engineer in the next two years.",
+  "profile_type": "blended",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer",
+   "vlsi_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0047",
+  "skills": "teamwork, Verilog, Linux, ASIC Design, Computer Architecture, Adobe XD, vlsi, fpga",
+  "interests": "",
+  "education": "Master's in Data Science",
+  "experience_years": 3,
+  "goals": "Become a VLSI Design Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "vlsi_design_engineer",
+  "relevant": [
+   "vlsi_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0048",
+  "skills": "Statistics, SQL, ab testing, R, scikit-learn, Data Visualization, Docker",
+  "interests": "data science, analytics",
+  "education": "Master's degree",
+  "experience_years": 5,
+  "goals": "Become a Data Scientist in the next two years.",
+  "profile_type": "focused",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0049",
+  "skills": "statistics, Python, solidity, Biopython, sql, Bioinformatics",
+  "interests": "genomics",
+  "education": "Master's degree",
+  "experience_years": 4,
+  "goals": "Switch careers into something related to research with good pay.",
+  "profile_type": "focused",
+  "target": "bioinformatics_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0050",
+  "skills": "project planning, compliance, Documentation, iso 27001, Communication",
+  "interests": "security",
+  "education": "BSc",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "grc_analyst",
+  "relevant": [
+   "grc_analyst"
+  ]
+ },
+ {
+  "id": "P7-0051",
+  "skills": "Data Analysis, Mathematics, design patterns, Linux, Process Modeling, Git, JAX",
+  "interests": "mathematics, ai",
+  "education": "PhD in Computer Science",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to mathematics with good pay.",
+  "profile_type": "focused",
+  "target": "ai_research_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0052",
+  "skills": "Leadership, Vector Databases, finance, cfa, Valuation, Documentation, s3, dcf, Python",
+  "interests": "investing, finance",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Become a Financial Analyst in the next two years.",
+  "profile_type": "focused",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0053",
+  "skills": "documentation, SEM, rhel, ms excel, SEO",
+  "interests": "social media, marketing, academia",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 7,
+  "goals": "Transition into growth - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0054",
+  "skills": "Unreal Engine, active directory, rest, C++, Unity, Agile, Android SDK, Adobe Photoshop, Linear Algebra, game physics, c sharp, opengl",
+  "interests": "interactive media, game design",
+  "education": "BSc",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in graphics.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "android_developer",
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0055",
+  "skills": "R, Feature Engineering, Python, Excel, matplotlib, pandas, Jupyter, Scikit-learn",
+  "interests": "research, analytics",
+  "education": "MBA",
+  "experience_years": 1,
+  "goals": "Become a Data Scientist in the next two years.",
+  "profile_type": "focused",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0056",
+  "skills": "Financial Modeling, writing, SQL, Data Analysis, Data Modeling, Forecasting, Excel, Snowflake, Power BI",
+  "interests": "data",
+  "education": "Associate degree",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on data.",
+  "profile_type": "switcher",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer",
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0057",
+  "skills": "aks, high availability, iac, matplotlib, machine-learning, AR/VR, Linux, s3, Data Analysis, continuous deployment, Docker, SQL",
+  "interests": "research, data science, investing",
+  "education": "Master's degree",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0058",
+  "skills": "Sensors, Redis, communication protocols, Data Analysis, C, C++, RTOS",
+  "interests": "hardware",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "I want to grow into a role where I work on embedded systems.",
+  "profile_type": "blended",
+  "target": "iot_engineer",
+  "relevant": [
+   "embedded_software_engineer",
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0059",
+  "skills": "SQL, Time Series Analysis, Probability, Data Analysis, Jira, Spring Boot",
+  "interests": "markets, trading",
+  "education": "Master's in Data Science",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "quantitative_analyst",
+  "relevant": [
+   "data_scientist",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0060",
+  "skills": "huggingface, Docker, data modeling, DAX, Data Warehousing, agile methodology",
+  "interests": "business intelligence, technical leadership",
+  "education": "Diploma in IT",
+  "experience_years": 3,
+  "goals": "Become a Business Intelligence Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0061",
+  "skills": "ISO 27001, Excel, Threat Intelligence, teamwork, security, GDPR, Risk Management, Git, Linux",
+  "interests": "risk, cloud",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "grc_analyst",
+  "relevant": [
+   "grc_analyst",
+   "security_analyst"
+  ]
+ },
+ {
+  "id": "P7-0062",
+  "skills": "containers, lambda, JAX, Reinforcement Learning, kanban, Statistics, Linear Algebra, Transformers",
+  "interests": "mathematics",
+  "education": "PhD",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to publishing with good pay.",
+  "profile_type": "focused",
+  "target": "ai_research_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0063",
+  "skills": "java, Excel, github, postgresql, SQL",
+  "interests": "software development, automation",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Transition into distributed systems - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "backend_developer",
+  "relevant": [
+   "backend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0064",
+  "skills": "etl, Data Modeling, power bi, Azure, Genomics, SQL, agile methodology, Troubleshooting",
+  "interests": "business intelligence",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "Become a Business Intelligence Developer in the next two years.",
+  "profile_type": "focused",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0065",
+  "skills": "online marketing, Social Media Marketing, looker, Google Analytics, Linux, AWS, python",
+  "interests": "social media, marketing, infrastructure",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 7,
+  "goals": "Transition into advertising - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0066",
+  "skills": "Kubernetes, Model Deployment, vulnerability assessment, Security, excel, identity and access management, Python, Selenium",
+  "interests": "security",
+  "education": "PhD",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in security.",
+  "profile_type": "focused",
+  "target": "security_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "security_analyst",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0067",
+  "skills": "docker, SIEM, AWS IoT, Cloud Security, documentation, IAM, Threat Modeling, aws, infosec, rhel",
+  "interests": "security, cloud, databases",
+  "education": "Bachelor's degree",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to cloud with good pay.",
+  "profile_type": "focused",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0068",
+  "skills": "communication, oracle, 3d printing, cad, debugging, Finite Element Analysis, esp32",
+  "interests": "automotive",
+  "education": "Bachelor's degree",
+  "experience_years": 2,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "mechanical_design_engineer",
+  "relevant": [
+   "embedded_software_engineer",
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0069",
+  "skills": "online marketing, SEM, Docker, Excel, Data Analysis, high availability",
+  "interests": "growth, immersive media",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0070",
+  "skills": "Process Modeling, stakeholder management, Agile, Web3.js, excel",
+  "interests": "analytics, business",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "business_analyst",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "project_manager",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0071",
+  "skills": "Firebase, Kotlin, git, MS Project, jetpack compose, Python",
+  "interests": "mobile apps, android",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in mobile apps.",
+  "profile_type": "focused",
+  "target": "android_developer",
+  "relevant": [
+   "android_developer",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0072",
+  "skills": "Kubernetes, infrastructure as code, Problem Solving, AWS, agile",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0073",
+  "skills": "ux, Python, Data Analysis, Adobe Photoshop, excel, figma, branding",
+  "interests": "creativity, design, nlp",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on visual.",
+  "profile_type": "focused",
+  "target": "ui_designer",
+  "relevant": [
+   "ui_designer"
+  ]
+ },
+ {
+  "id": "P7-0074",
+  "skills": "cryptography, Problem Solving, burp suite, Cloud Security, Auditing, risk management, Compliance, Network Security, Python, hacking",
+  "interests": "security",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to hacking with good pay.",
+  "profile_type": "blended",
+  "target": "penetration_tester",
+  "relevant": [
+   "grc_analyst",
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0075",
+  "skills": "SQL, Time Series Analysis, PostgreSQL, lambda, Git, CSS",
+  "interests": "web development",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0076",
+  "skills": "game physics, Unreal Engine, continuous integration, Fine-tuning, containers, linear algebra",
+  "interests": "graphics, gaming",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to interactive media with good pay.",
+  "profile_type": "focused",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0077",
+  "skills": "Tableau, data warehousing, Leadership, SQL, dax, Next.js, scrum, Data Modeling",
+  "interests": "reporting, data",
+  "education": "Associate degree",
+  "experience_years": 7,
+  "goals": "Transition into analytics - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0078",
+  "skills": "Python, siem, Docker, autocad, prototypes, Git, Typography, adobe illustrator, Design Systems, Visual Design, agile",
+  "interests": "web development, building products",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer",
+   "ui_designer"
+  ]
+ },
+ {
+  "id": "P7-0079",
+  "skills": "REST APIs, SQL, Git, next js, JavaScript, python",
+  "interests": "startups, software development",
+  "education": "PhD in Computer Science",
+  "experience_years": 4,
+  "goals": "Transition into web development - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0080",
+  "skills": "Communication, writing, NumPy, Python, version control",
+  "interests": "finance, markets",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0081",
+  "skills": "python, Smart Contracts, MySQL, Adobe XD, Backup and Recovery",
+  "interests": "infrastructure, databases",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on databases.",
+  "profile_type": "focused",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator"
+  ]
+ },
+ {
+  "id": "P7-0082",
+  "skills": "Swift, user experience, Documentation, Agile, REST APIs, AWS, gitlab, Communication, Xcode, uml, swiftui, Power BI",
+  "interests": "strategy",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "business_analyst",
+  "relevant": [
+   "business_analyst",
+   "ios_developer",
+   "product_manager",
+   "project_manager",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0083",
+  "skills": "excel, Python, github actions, gitlab",
+  "interests": "devops, cloud",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Looking to build a long-term career in automation.",
+  "profile_type": "focused",
+  "target": "devops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0084",
+  "skills": "cybersecurity, Documentation, sales, Communication, CRM, stakeholder communication, presentation skills",
+  "interests": "sales",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on sales.",
+  "profile_type": "focused",
+  "target": "sales_engineer",
+  "relevant": [
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0085",
+  "skills": "Digital Marketing, networking, SEM, seo, Problem Solving, Excel, crm, oracle, data analysis, Leadership, SQL, Python",
+  "interests": "sales, technology",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "sales_engineer",
+  "relevant": [
+   "digital_marketing_analyst",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0086",
+  "skills": "Forecasting, Python, Git, Cisco, Docker, accounting, Finance, Excel",
+  "interests": "automation",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "platform_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "financial_analyst",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0087",
+  "skills": "Unit Testing, Process Modeling, iOS SDK, rest, SwiftUI, swift, amazon web services",
+  "interests": "mobile development, ios, backend",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "Looking to build a long-term career in apple.",
+  "profile_type": "focused",
+  "target": "ios_developer",
+  "relevant": [
+   "android_developer",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0088",
+  "skills": "containerization, control systems, Problem Solving, ros2, C++, python, stakeholder management, Sensors",
+  "interests": "management, quality",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "Switch careers into something related to planning with good pay.",
+  "profile_type": "switcher",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "project_manager",
+   "robotics_engineer",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0089",
+  "skills": "presentation, Process Modeling, uml, Business Analysis, sql, Python, stakeholder management",
+  "interests": "business, consulting, security",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to consulting with good pay.",
+  "profile_type": "focused",
+  "target": "business_analyst",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "project_manager",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0090",
+  "skills": "burp suite, SQL, System Design, Design Patterns, Documentation, kafka, jira, Cloud Architecture",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Transition into system design - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "software_architect",
+  "relevant": [
+   "cloud_architect",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0091",
+  "skills": "jira, Finite Element Analysis, PostgreSQL, SQL, spreadsheets, lambda, oracle, ethereum",
+  "interests": "performance, developer tooling",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 10,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator"
+  ]
+ },
+ {
+  "id": "P7-0092",
+  "skills": "Communication, python, security auditing, Ethereum, security, Cryptography",
+  "interests": "fintech, blockchain",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "Become a Blockchain Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0093",
+  "skills": "MS Project, ms excel, Scrum, version control",
+  "interests": "coordination, leadership",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Transition into planning - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "project_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0094",
+  "skills": "rest apis, identity and access management, s3, Networking, SQL, problem solving, systems design",
+  "interests": "architecture",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to system design with good pay.",
+  "profile_type": "blended",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0095",
+  "skills": "Backup and Recovery, SQL, Airflow, AWS, Data Modeling, agile, Strategy, dwh",
+  "interests": "data infrastructure",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "I want to grow into a role where I work on data pipelines.",
+  "profile_type": "focused",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0096",
+  "skills": "sales, stakeholder management, data analysis, Agile, Product Demos",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on business.",
+  "profile_type": "focused",
+  "target": "sales_engineer",
+  "relevant": [
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0097",
+  "skills": "Python, cpp, CSS, financial modelling, Forecasting, Mathematics, Documentation",
+  "interests": "",
+  "education": "Master's degree",
+  "experience_years": 5,
+  "goals": "Transition into finance - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0098",
+  "skills": "Data Visualization, Ethical Hacking, copywriting, ec2, statistics, SQL",
+  "interests": "research, statistics",
+  "education": "M.Tech",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0099",
+  "skills": "TypeScript, Performance Tuning, Leadership, Python, Backup and Recovery, PostgreSQL, Node.js, ms project",
+  "interests": "building products",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in building products.",
+  "profile_type": "switcher",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "database_administrator",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0100",
+  "skills": "gitlab, Communication, Leadership, python, Data Structures, psychology, dbt, PostgreSQL, SQL, Data Analysis",
+  "interests": "business insights",
+  "education": "PhD",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to analytics with good pay.",
+  "profile_type": "switcher",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "backend_developer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0101",
+  "skills": "git, containerization, apache airflow, Apache Spark, documentation, Python, Hadoop",
+  "interests": "data, firmware",
+  "education": "BSc",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to big data with good pay.",
+  "profile_type": "focused",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0102",
+  "skills": "Playwright, Cloud Security, Data Analysis, compliance, Documentation, ubuntu",
+  "interests": "compliance, security, big data",
+  "education": "BSc",
+  "experience_years": 1,
+  "goals": "Switch careers into something related to security with good pay.",
+  "profile_type": "blended",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0103",
+  "skills": "Helm, wireframes, OpenCV, CI/CD, Data Analysis, containers, Python",
+  "interests": "devops, automation",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Looking to build a long-term career in devops.",
+  "profile_type": "focused",
+  "target": "platform_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0104",
+  "skills": "unreal engine, SwiftUI, python, scrum master, linux",
+  "interests": "planning",
+  "education": "Master's degree",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on planning.",
+  "profile_type": "focused",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "project_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0105",
+  "skills": "CI/CD, Data Analysis, aws, apache airflow, Agile, control systems, kubeflow, gke, Python",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in devops.",
+  "profile_type": "focused",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0106",
+  "skills": "PostgreSQL, Performance Tuning, SQL, Excel",
+  "interests": "infrastructure",
+  "education": "PhD in Computer Science",
+  "experience_years": 3,
+  "goals": "Become a Database Administrator in the next two years.",
+  "profile_type": "focused",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator"
+  ]
+ },
+ {
+  "id": "P7-0107",
+  "skills": "ml deployment, presentation skills, Problem Solving, Data Structures, Python, A/B Testing, statistical modeling, Deep Learning",
+  "interests": "",
+  "education": "MSc",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to deep learning with good pay.",
+  "profile_type": "blended",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0108",
+  "skills": "Data Analysis, sql, Microservices",
+  "interests": "architecture, technical leadership, art",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Transition into architecture - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "software_architect",
+  "relevant": [
+   "cloud_architect",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0109",
+  "skills": "Roadmapping, SQL, jira, CAD, Debugging, SolidWorks, mechanical design, Manufacturing Processes",
+  "interests": "manufacturing, hardware",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "mechanical_design_engineer",
+  "relevant": [
+   "embedded_software_engineer",
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0110",
+  "skills": "graphql, rhel, Python, Documentation, CI/CD, kubernetes, SQL, Threat Intelligence, Networking, ec2, bash, Azure",
+  "interests": "cloud, automation",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on aws.",
+  "profile_type": "blended",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0111",
+  "skills": "amazon web services, networking, Budgeting, microsoft azure, Security, Financial Modeling, systems design, CFA, Agile, docker, documentation, solidity, Data Analysis",
+  "interests": "business, economics",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on finance.",
+  "profile_type": "switcher",
+  "target": "financial_analyst",
+  "relevant": [
+   "cloud_architect",
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0112",
+  "skills": "market research, Statistics, Biopython, version control, model deployment, MLflow, spark, ml, Linux, documentation, Genomics, Python",
+  "interests": "",
+  "education": "Master's degree",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in life sciences.",
+  "profile_type": "blended",
+  "target": "bioinformatics_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0113",
+  "skills": "Git, continuous deployment, test automation, SQL, API Testing, cpp, Playwright",
+  "interests": "automation, testing",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on testing.",
+  "profile_type": "blended",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "game_developer",
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0114",
+  "skills": "Data Analysis, Unreal Engine, VMware, git, Flutter, leadership",
+  "interests": "",
+  "education": "PhD",
+  "experience_years": 3,
+  "goals": "Transition into immersive media - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "ar_vr_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0115",
+  "skills": "blender, mechanical design, Linux, Threat Intelligence, python, cybersecurity",
+  "interests": "threat hunting, testing",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "security_analyst",
+  "relevant": [
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0116",
+  "skills": "editing, content marketing, Linux, python, SEO, git",
+  "interests": "social media, marketing",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on business.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0117",
+  "skills": "Vulnerability Assessment, risk management, cybersecurity, kubernetes, microsoft excel, iam, Python, Redis, Cloud Security",
+  "interests": "",
+  "education": "Associate degree",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0118",
+  "skills": "JMeter, Compliance, docker, api testing, Python, Agile, Selenium, jira, continuous integration, SQL",
+  "interests": "software development",
+  "education": "PhD",
+  "experience_years": 3,
+  "goals": "Looking to build a long-term career in testing.",
+  "profile_type": "focused",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0119",
+  "skills": "Raspberry Pi, Networking, Docker, linux, Agile, mqtt, Documentation, microsoft azure, speaking",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "iot_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0120",
+  "skills": "Excel, Leadership, data visualization, Event-Driven Architecture, Linux, ETL, jupyter",
+  "interests": "data science, analytics, infrastructure",
+  "education": "MBA",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "data_scientist",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0121",
+  "skills": "TCP/IP, SIEM, tf, Machine Learning, Python, kanban, product ownership, Linux, deep learning, Cisco, sklearn, Documentation",
+  "interests": "defense, threat hunting, dashboards",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "security_analyst",
+  "relevant": [
+   "machine_learning_engineer",
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0122",
+  "skills": "forecasting models, finance, Persona Development, Documentation, Mathematics, Probability, Compliance",
+  "interests": "markets, finance",
+  "education": "PhD in Computer Science",
+  "experience_years": 7,
+  "goals": "I want to grow into a role where I work on trading.",
+  "profile_type": "focused",
+  "target": "quantitative_analyst",
+  "relevant": [
+   "data_scientist",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0123",
+  "skills": "agile, ml, Jira, text mining, JAX, Excel",
+  "interests": "",
+  "education": "PhD in Computer Science",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "ai_research_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0124",
+  "skills": "cpp, linux, blender, Cloud Architecture",
+  "interests": "3d, graphics",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "Transition into interactive media - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer",
+   "software_architect"
+  ]
+ },
+ {
+  "id": "P7-0125",
+  "skills": "Signal Processing, Electronics, docker, python, Agile, matlab, Embedded C, PCB Design, cuda, Circuit Design",
+  "interests": "power, automation",
+  "education": "Diploma in IT",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in energy.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0126",
+  "skills": "sql, LangChain, Problem Solving, hugging face, Retrieval-Augmented Generation, Linux",
+  "interests": "generative ai, social media",
+  "education": "PhD in Computer Science",
+  "experience_years": 5,
+  "goals": "Transition into agents - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0127",
+  "skills": "golang, Leadership, Communication, ec2",
+  "interests": "system design, architecture",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "site_reliability_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0128",
+  "skills": "linux, SSIS, computer aided design, cadence, matlab, AWS, Mechanical Design",
+  "interests": "mechanical",
+  "education": "PhD",
+  "experience_years": 4,
+  "goals": "Transition into hardware - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "mechanical_design_engineer",
+  "relevant": [
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0129",
+  "skills": "Community Building, prototypes, ms excel, figma, typography, Data Analysis, Looker",
+  "interests": "art, process improvement",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 10,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "ui_designer",
+  "relevant": [
+   "ui_designer"
+  ]
+ },
+ {
+  "id": "P7-0130",
+  "skills": "Data Analysis, Unreal Engine, game physics, version control, linear algebra, C#",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to graphics with good pay.",
+  "profile_type": "focused",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0131",
+  "skills": "SwiftUI, oscilloscope, Game Physics, distributed computing, leadership, c#, C++, SQL, Java",
+  "interests": "scalability, architecture",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "I want to grow into a role where I work on system design.",
+  "profile_type": "blended",
+  "target": "software_architect",
+  "relevant": [
+   "cloud_architect",
+   "game_developer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0132",
+  "skills": "microcontrollers, machine-learning, ec2, Communication, Jira, Arduino, Sensors",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "iot_engineer",
+  "relevant": [
+   "embedded_software_engineer",
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0133",
+  "skills": "statistical analysis, MQTT, documentation, Looker, power bi, git, Tableau",
+  "interests": "analytics, dashboards, data",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "data_analyst",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0134",
+  "skills": "Digital Marketing, Excel, SEM, data analysis, Social Media Marketing, presentation",
+  "interests": "advertising, marketing, mathematics",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in marketing.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0135",
+  "skills": "Docker, data analysis, defi, Rust, Excel",
+  "interests": "blockchain, infrastructure",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to web3 with good pay.",
+  "profile_type": "focused",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer"
+  ]
+ },
+ {
+  "id": "P7-0136",
+  "skills": "requirements gathering, Stakeholder Management, python, uml, Documentation, Communication",
+  "interests": "strategy, business, ios",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "Transition into business - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "business_analyst",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "project_manager",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0137",
+  "skills": "Market Research, ONNX, Jira, Linux, sql, Communication, Kubernetes",
+  "interests": "on-call, devops",
+  "education": "BSc",
+  "experience_years": 5,
+  "goals": "Looking to build a long-term career in on-call.",
+  "profile_type": "focused",
+  "target": "site_reliability_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0138",
+  "skills": "Jira, Budgeting, SQL, Risk Management, Python, SEM, Typography, Data Analysis, Stakeholder Management",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "technical_program_manager",
+  "relevant": [
+   "product_manager",
+   "project_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0139",
+  "skills": "problem solving, ml, eks, deploying models, Python, Communication, SOC 2, rhel, apache airflow",
+  "interests": "production ml",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in infrastructure.",
+  "profile_type": "focused",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0140",
+  "skills": "systems design, cloud solutions architecture, SQL, css, Next.js, Data Analysis, sql server, cv",
+  "interests": "startups",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer",
+   "software_architect"
+  ]
+ },
+ {
+  "id": "P7-0141",
+  "skills": "Communication, Process Modeling, Accounting, Requirements Gathering, excel, SQL, kanban",
+  "interests": "business",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "I want to grow into a role where I work on business.",
+  "profile_type": "blended",
+  "target": "financial_analyst",
+  "relevant": [
+   "business_analyst",
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0142",
+  "skills": "Data Analysis, Terraform, Penetration Testing, Security, network security, Jira, Linux, Docker, IAM, Threat Modeling, financial modeling, k8s",
+  "interests": "cybersecurity, infrastructure, quality",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "Transition into infrastructure - I enjoy it more than my current work.",
+  "profile_type": "switcher",
+  "target": "security_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "security_analyst",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0143",
+  "skills": "Web Application Security, Documentation, excel, Data Analysis, pen testing, kali linux, Objective-C, Python, hacking",
+  "interests": "hacking",
+  "education": "Bachelor's degree",
+  "experience_years": 7,
+  "goals": "Transition into ctf - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0144",
+  "skills": "jira, Airflow, Metasploit, Statistics, biopython, Python, SQL",
+  "interests": "research, psychology",
+  "education": "Master's degree",
+  "experience_years": 7,
+  "goals": "Transition into healthcare - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "bioinformatics_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0145",
+  "skills": "Cost Optimization, SQL, Cloud Architecture, Leadership, system design, Problem Solving, Networking",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on system design.",
+  "profile_type": "focused",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0146",
+  "skills": "Motion Design, ubuntu, Static Timing Analysis, apis, product ownership, ml",
+  "interests": "platforms, leadership",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0147",
+  "skills": "AWS, excel, Pandas, Communication, Python, R",
+  "interests": "business insights, data, statistics",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in business insights.",
+  "profile_type": "focused",
+  "target": "data_analyst",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0148",
+  "skills": "Data Warehousing, R, jira, Docker, stakeholder management, data analysis",
+  "interests": "platforms",
+  "education": "BSc",
+  "experience_years": 5,
+  "goals": "Transition into leadership - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0149",
+  "skills": "html5, data structures, Next.js, Node.js, es6, REST APIs, Git, ubuntu, debugging",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to startups with good pay.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0150",
+  "skills": "Communication, SIEM, network security, Threat Intelligence, SQL, Incident Response, Content Strategy, linux",
+  "interests": "security, biology",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "security_analyst",
+  "relevant": [
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0151",
+  "skills": "jenkins, Postman, teamwork, machine learning, Selenium, Docker, Git, Documentation",
+  "interests": "software development, infrastructure",
+  "education": "MBA",
+  "experience_years": 0,
+  "goals": "Become a QA Automation Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0152",
+  "skills": "transformers, LLMs, vector databases, peft, fastapi, internet of things, Signal Processing, agile",
+  "interests": "generative ai",
+  "education": "PhD in Computer Science",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on llms.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0153",
+  "skills": "SQL, Python, documentation, Git, Snowflake, Requirements Gathering",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "Become a Analytics Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0154",
+  "skills": "Leadership, Jira, network security, Python",
+  "interests": "hacking, offensive security, security",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "Transition into ctf - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0155",
+  "skills": "leadership, docker, Data Modeling, Linux, Motion Design, Python, Airflow, project planning, sql",
+  "interests": "data, data infrastructure",
+  "education": "BSc",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to data pipelines with good pay.",
+  "profile_type": "blended",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0156",
+  "skills": "linear algebra, Requirements Gathering, kanban, mechanical design, unreal engine, Process Modeling, communication skills, stakeholder management, Unity, business analysis",
+  "interests": "game design, infrastructure",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Transition into interactive media - I enjoy it more than my current work.",
+  "profile_type": "switcher",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "business_analyst",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0157",
+  "skills": "documentation writing, presentation, Leadership, Markdown, REST APIs",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "I want to grow into a role where I work on documentation.",
+  "profile_type": "focused",
+  "target": "technical_writer",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0158",
+  "skills": "solidworks, AutoCAD, leadership, Finite Element Analysis, Survey Design, CAD",
+  "interests": "hardware, mechanical",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 3,
+  "goals": "Become a Mechanical Design Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "mechanical_design_engineer",
+  "relevant": [
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0159",
+  "skills": "tcp/ip, Security, Networking, Agile, AWS, System Design",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on cloud.",
+  "profile_type": "blended",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "network_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0160",
+  "skills": "Jira, search engine optimization, data visualization, data analysis, Google Analytics, python, SEM, AWS, excel",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 1,
+  "goals": "Looking to build a long-term career in advertising.",
+  "profile_type": "blended",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "data_analyst",
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0161",
+  "skills": "Flutter, Spark, Docker, kubernetes, gitlab, microsoft azure, Python, networking, Linux, sql",
+  "interests": "production ml",
+  "education": "Diploma in IT",
+  "experience_years": 3,
+  "goals": "Transition into deep learning - I enjoy it more than my current work.",
+  "profile_type": "switcher",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0162",
+  "skills": "Active Directory, excel, agile methodology, Troubleshooting, Data Analysis, networking",
+  "interests": "",
+  "education": "Associate degree",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to servers with good pay.",
+  "profile_type": "focused",
+  "target": "systems_administrator",
+  "relevant": [
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0163",
+  "skills": "dbt, jira, sql, snowflake, elt, Data Warehousing",
+  "interests": "analytics",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0164",
+  "skills": "Cloud Architecture, Documentation, Risk Management, scalable systems, User Research, Jira, Stakeholder Management, agile, Google Analytics",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 7,
+  "goals": "I want to grow into a role where I work on delivery.",
+  "profile_type": "blended",
+  "target": "technical_program_manager",
+  "relevant": [
+   "product_manager",
+   "project_manager",
+   "technical_product_manager",
+   "technical_program_manager",
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0165",
+  "skills": "Active Directory, Problem Solving, Git, TypeScript, vue.js, communication, reactjs, GraphQL, Next.js, rest, VPN, JavaScript",
+  "interests": "web development",
+  "education": "BSc",
+  "experience_years": 1,
+  "goals": "I want to grow into a role where I work on web development.",
+  "profile_type": "blended",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0166",
+  "skills": "Git, AWS, Unity, Unreal Engine, opengl, shader programming, sass, Information Architecture",
+  "interests": "gaming, users",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on 3d.",
+  "profile_type": "focused",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0167",
+  "skills": "data modeling, Biopython, data warehousing, pentest, Snowflake, communication, Python, Linux",
+  "interests": "cybersecurity, security, business",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to ctf with good pay.",
+  "profile_type": "switcher",
+  "target": "penetration_tester",
+  "relevant": [
+   "analytics_engineer",
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0168",
+  "skills": "react js, github, html, PostgreSQL, SQL, SD-WAN, js, Documentation, Incident Response, problem solving, Communication",
+  "interests": "full stack",
+  "education": "BSc",
+  "experience_years": 2,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0169",
+  "skills": "data modeling, terraform, Power BI, DAX, Kubernetes, Scrum, Docker, security auditing, IAM",
+  "interests": "infrastructure, automation, security",
+  "education": "Diploma in IT",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "cloud_engineer",
+  "relevant": [
+   "bi_developer",
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0170",
+  "skills": "MLflow, data analysis, Git, Deep Learning, model deployment, firmware, TensorFlow, Python, Core Data",
+  "interests": "deep learning",
+  "education": "Master's degree",
+  "experience_years": 2,
+  "goals": "Become a Machine Learning Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0171",
+  "skills": "communication, electronics, MATLAB, Jira, Oscilloscope, Circuit Design",
+  "interests": "",
+  "education": "PhD",
+  "experience_years": 5,
+  "goals": "Become a Electrical Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0172",
+  "skills": "Smart Contracts, Ethereum, Git, communication",
+  "interests": "crypto, web3, android",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in blockchain.",
+  "profile_type": "focused",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer"
+  ]
+ },
+ {
+  "id": "P7-0173",
+  "skills": "stakeholder communication, Market Research, teamwork, Roadmapping, ubuntu, customer research",
+  "interests": "product",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0174",
+  "skills": "OpenXR, Marketing, SQL, Problem Solving, SEO, qualitative research, Google Analytics, Content Marketing, Data Analysis, Tableau",
+  "interests": "",
+  "education": "Associate degree",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0175",
+  "skills": "qualitative research, github, Oscilloscope, linux",
+  "interests": "users, design",
+  "education": "M.Tech",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "ux_researcher",
+  "relevant": [
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0176",
+  "skills": "System Design, version control, AWS, Agile, microservices, css, react.js, documentation",
+  "interests": "software development",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on software development.",
+  "profile_type": "blended",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer",
+   "software_architect"
+  ]
+ },
+ {
+  "id": "P7-0177",
+  "skills": "teamwork, containers, React, Tableau, javascript, git",
+  "interests": "frontend",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0178",
+  "skills": "Psychology, Network Security, Data Analysis, Bash, csharp, Leadership, Metasploit",
+  "interests": "hacking, offensive security",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on offensive security.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0179",
+  "skills": "leadership, Budgeting, Agile, risk management, stakeholder communication, data structures and algorithms, scrum master, Microservices, spreadsheets, s3, Model Deployment, solidity",
+  "interests": "deep learning",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on machine learning.",
+  "profile_type": "switcher",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "project_manager"
+  ]
+ },
+ {
+  "id": "P7-0180",
+  "skills": "Branding, Problem Solving, containers, motion design, AWS",
+  "interests": "automation, cloud",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "Switch careers into something related to aws with good pay.",
+  "profile_type": "focused",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0181",
+  "skills": "Bash, Troubleshooting, Windows Server, Linux, networking, Data Analysis, Tableau, CFA",
+  "interests": "business insights",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in data.",
+  "profile_type": "switcher",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0182",
+  "skills": "Figma, data analysis, Content Creation, Statistics, Prototyping, Probability, User Research, Git, Documentation, Survey Design",
+  "interests": "psychology",
+  "education": "Master's degree",
+  "experience_years": 1,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "ux_designer",
+  "relevant": [
+   "ux_designer",
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0183",
+  "skills": "agile methodology, nextjs, splunk, Accessibility, github, rest apis",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Looking to build a long-term career in user interfaces.",
+  "profile_type": "focused",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0184",
+  "skills": "Documentation, defi, Linear Algebra, OpenGL, C++, Compliance, Game Physics",
+  "interests": "3d",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in graphics.",
+  "profile_type": "focused",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0185",
+  "skills": "Active Directory, Agile, SLAM, Networking, amazon web services, python, Linux, dbt, Routing and Switching, Windows Server",
+  "interests": "infrastructure",
+  "education": "Associate degree",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in it.",
+  "profile_type": "blended",
+  "target": "systems_administrator",
+  "relevant": [
+   "network_engineer",
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0186",
+  "skills": "Agile, Linux, amazon web services, terraform, IAM",
+  "interests": "cybersecurity",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Looking to build a long-term career in defense.",
+  "profile_type": "blended",
+  "target": "security_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "security_analyst",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0187",
+  "skills": "grafana, Express.js, aws, data analysis, Marketing, SEM, split testing, google analytics, social media marketing",
+  "interests": "marketing, reliability",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on business.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0188",
+  "skills": "Sales, Vulnerability Assessment, git, rest apis, python, Public Speaking, documentation writing, SQL",
+  "interests": "technology, customers",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Looking to build a long-term career in presenting.",
+  "profile_type": "blended",
+  "target": "sales_engineer",
+  "relevant": [
+   "developer_advocate",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0189",
+  "skills": "data visualization, model deployment, Machine Learning, Communication, GD&T, Tableau, data analysis, MLflow",
+  "interests": "machine learning, devops",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Become a MLOps Engineer in the next two years.",
+  "profile_type": "blended",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "data_analyst",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0190",
+  "skills": "Data Analysis, Accounting, SQL, Power BI, valuation, excel, Embedded C, Forecasting, Documentation, Technical Writing, aws, finance",
+  "interests": "investing",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on finance.",
+  "profile_type": "blended",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0191",
+  "skills": "SQL, documentation, Jira, SQL Server",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "Transition into infrastructure - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator"
+  ]
+ },
+ {
+  "id": "P7-0192",
+  "skills": "Excel, Linux Kernel, ARM, C, Communication Protocols",
+  "interests": "hardware",
+  "education": "MSc",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on hardware.",
+  "profile_type": "focused",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "embedded_software_engineer"
+  ]
+ },
+ {
+  "id": "P7-0193",
+  "skills": "Jira, dbt, defi, gitlab, Problem Solving",
+  "interests": "business insights",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Transition into analytics - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0194",
+  "skills": "Tableau, looker, problem solving, statistics, Jira",
+  "interests": "business insights, analytics, mathematics",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on business insights.",
+  "profile_type": "focused",
+  "target": "data_analyst",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0195",
+  "skills": "Prometheus, Accessibility, Jira, Model Deployment, Excel, seaborn, AWS, agile",
+  "interests": "machine learning",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 7,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0196",
+  "skills": "Agile, AWS, deploying models, REST APIs, Roadmapping, API Testing",
+  "interests": "devops, automation",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to infrastructure with good pay.",
+  "profile_type": "switcher",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0197",
+  "skills": "rust, k8s, Terraform, IAM, Excel, Cloud Security, Documentation, Security",
+  "interests": "infrastructure, automation",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0198",
+  "skills": "Web3.js, spaCy, ms excel, Leadership, Prompt Engineering, Jira",
+  "interests": "generative ai",
+  "education": "M.Tech",
+  "experience_years": 5,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0199",
+  "skills": "rest api, Django, reactjs, Python, Docker, css, TypeScript, Accessibility",
+  "interests": "web development, frontend",
+  "education": "BSc",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in web development.",
+  "profile_type": "focused",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0200",
+  "skills": "Linux, Kubernetes, identity and access management, Vulnerability Assessment, Python",
+  "interests": "security",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Looking to build a long-term career in defense.",
+  "profile_type": "focused",
+  "target": "security_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "security_analyst",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0201",
+  "skills": "Unreal Engine, Distributed Systems, excel, Unity, CAD",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Become a Game Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer",
+   "software_architect"
+  ]
+ },
+ {
+  "id": "P7-0202",
+  "skills": "Linux, Kubeflow, Convolutional Neural Networks, deep learning, github, Natural Language Processing, continuous integration, Leadership, OpenCV, Kubernetes, helm, Python, ml flow",
+  "interests": "automation",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to automation with good pay.",
+  "profile_type": "blended",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "computer_vision_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0203",
+  "skills": "lambda, Linux, Network Security, git",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "security_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "security_analyst",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0204",
+  "skills": "Leadership, Excel, Reverse Engineering, Valuation, CFA, Git",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Transition into markets - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0205",
+  "skills": "react js, Agile, Docker, Stakeholder Management, Node.js, SQL, REST APIs, Communication",
+  "interests": "strategy",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on technology.",
+  "profile_type": "switcher",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "full_stack_developer",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0206",
+  "skills": "CI/CD, C++, automated testing, Cypress, Unity, Bash, agile methodology, Excel, python, Game Physics, API Testing, selenium webdriver, Jira",
+  "interests": "automation, quality, servers",
+  "education": "Associate degree",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "game_developer",
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0207",
+  "skills": "Git, security, Power Electronics, matlab, electronics, REST APIs, Stakeholder Management, circuit design, Documentation",
+  "interests": "customers, architecture",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to cloud with good pay.",
+  "profile_type": "switcher",
+  "target": "solutions_architect",
+  "relevant": [
+   "cloud_architect",
+   "electrical_engineer",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0208",
+  "skills": "probability, Docker, Git, Excel, leadership, java, Python, SQL, Go, PostgreSQL",
+  "interests": "software development, backend",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "backend_developer",
+  "relevant": [
+   "backend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0209",
+  "skills": "Jira, Data Modeling, Linux",
+  "interests": "analytics, data",
+  "education": "PhD in Computer Science",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in business intelligence.",
+  "profile_type": "focused",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0210",
+  "skills": "DAX, Looker, dwh, sql, Data Modeling",
+  "interests": "business intelligence, data",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0211",
+  "skills": "containers, Cisco, Troubleshooting, spaCy, Negotiation, Leadership, Network Security, Python",
+  "interests": "telecom, networking",
+  "education": "PhD",
+  "experience_years": 0,
+  "goals": "Transition into infrastructure - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "network_engineer",
+  "relevant": [
+   "network_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0212",
+  "skills": "Docker, problem solving, PMP, iam, perl, Python",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on cloud.",
+  "profile_type": "focused",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0213",
+  "skills": "cloud solutions architecture, Python, AWS, leadership, communication",
+  "interests": "customers",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on architecture.",
+  "profile_type": "focused",
+  "target": "solutions_architect",
+  "relevant": [
+   "cloud_architect",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0214",
+  "skills": "containers, network security, cloud security, Python, markdown, IAM, aws",
+  "interests": "cybersecurity",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Transition into cloud - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0215",
+  "skills": "active directory, Power BI, SQL, MySQL, Oracle",
+  "interests": "servers, infrastructure",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Transition into servers - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "systems_administrator",
+  "relevant": [
+   "database_administrator",
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0216",
+  "skills": "nist, Security Policies, communication, Python",
+  "interests": "risk, policy",
+  "education": "PhD",
+  "experience_years": 10,
+  "goals": "Become a GRC Analyst in the next two years.",
+  "profile_type": "focused",
+  "target": "grc_analyst",
+  "relevant": [
+   "grc_analyst"
+  ]
+ },
+ {
+  "id": "P7-0217",
+  "skills": "version control, docker, Snowflake, aws, Motion Design",
+  "interests": "forensics",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "security_analyst",
+  "relevant": [
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0218",
+  "skills": "Leadership, agile methodology, Tableau, plotly, sql, Jira, Pandas, fine-tuning, stats",
+  "interests": "analytics, data",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in dashboards.",
+  "profile_type": "blended",
+  "target": "data_analyst",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0219",
+  "skills": "Communication, Sales, presentation skills, negotiation, AWS, sql, CRM, rest apis",
+  "interests": "customers",
+  "education": "Diploma in IT",
+  "experience_years": 1,
+  "goals": "Become a Sales Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "sales_engineer",
+  "relevant": [
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0220",
+  "skills": "documentation, CI/CD, Ansible, data analysis",
+  "interests": "reliability",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "Looking to build a long-term career in cloud.",
+  "profile_type": "focused",
+  "target": "devops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0221",
+  "skills": "Statistics, maths, Probability, Risk Management, Linux, data quality",
+  "interests": "statistics, markets, graphics",
+  "education": "Master's degree",
+  "experience_years": 5,
+  "goals": "Become a Quantitative Analyst in the next two years.",
+  "profile_type": "focused",
+  "target": "quantitative_analyst",
+  "relevant": [
+   "data_scientist",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0222",
+  "skills": "fpga, Survey Design, Usability Testing, documentation, excel, Figma, jira, Linux, Research, user research",
+  "interests": "users, design, business intelligence",
+  "education": "Master's in Data Science",
+  "experience_years": 7,
+  "goals": "Transition into psychology - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "ux_researcher",
+  "relevant": [
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0223",
+  "skills": "Design Patterns, Microservices, Java, cloud architecture, docker, Distributed Systems, transformers",
+  "interests": "graphics, gaming",
+  "education": "Associate degree",
+  "experience_years": 2,
+  "goals": "Become a Game Developer in the next two years.",
+  "profile_type": "switcher",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer",
+   "software_architect"
+  ]
+ },
+ {
+  "id": "P7-0224",
+  "skills": "jira, Negotiation, git, Agile",
+  "interests": "product, technology",
+  "education": "MSc",
+  "experience_years": 3,
+  "goals": "Become a Technical Product Manager in the next two years.",
+  "profile_type": "focused",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0225",
+  "skills": "elt, github, BigQuery, agile methodology, sql, javascript, dwh",
+  "interests": "business insights, analytics",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Become a Analytics Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0226",
+  "skills": "Agile, SQL, Product Management, roadmapping, containerization, User Research, Data Analysis",
+  "interests": "business, electronics",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Become a Product Manager in the next two years.",
+  "profile_type": "blended",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0227",
+  "skills": "playwright, unity, agile, CI/CD, Presentation Skills, Python, Unreal Engine",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in interactive media.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer",
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0228",
+  "skills": "Python, Node.js, unix, es6, Cryptography, web3.js, Smart Contracts, Metasploit, ethereum",
+  "interests": "fintech",
+  "education": "Diploma in IT",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer"
+  ]
+ },
+ {
+  "id": "P7-0229",
+  "skills": "sql, MLflow, continuous integration, agile, Statistics, kubernetes, Genomics, Python, containers",
+  "interests": "production ml, automation",
+  "education": "M.Tech",
+  "experience_years": 5,
+  "goals": "Looking to build a long-term career in infrastructure.",
+  "profile_type": "blended",
+  "target": "mlops_engineer",
+  "relevant": [
+   "bioinformatics_scientist",
+   "cloud_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0230",
+  "skills": "documentation, Cloud Architecture, scalable systems, Python, Public Speaking, Communication, Mathematics, aws, stakeholder communication",
+  "interests": "consulting",
+  "education": "BSc",
+  "experience_years": 5,
+  "goals": "Transition into technology - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "solutions_architect",
+  "relevant": [
+   "cloud_architect",
+   "developer_advocate",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0231",
+  "skills": "communication skills, linux, Agile",
+  "interests": "apis, server",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to software development with good pay.",
+  "profile_type": "focused",
+  "target": "backend_developer",
+  "relevant": [
+   "backend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0232",
+  "skills": "aws, Azure, Networking, Video Production, Metasploit, Communication, infrastructure as code, SQL, google cloud, routing and switching, Cisco, microsoft excel, Linux",
+  "interests": "automation, aws",
+  "education": "BSc",
+  "experience_years": 1,
+  "goals": "I want to grow into a role where I work on cloud.",
+  "profile_type": "blended",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "network_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0233",
+  "skills": "Documentation, Problem Solving, security policies, Data Analysis, Communication, Compliance, Cryptography, Auditing",
+  "interests": "policy, ai",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "grc_analyst",
+  "relevant": [
+   "grc_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0234",
+  "skills": "Tailwind CSS, Next.js, Git, Figma",
+  "interests": "design, ai",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "Transition into frontend - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0235",
+  "skills": "Leadership, a/b testing, Python, PyTorch, Transformers",
+  "interests": "agents, ai",
+  "education": "Associate degree",
+  "experience_years": 0,
+  "goals": "Become a Generative AI Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0236",
+  "skills": "cnns, mechanical design, SolidWorks, Thermodynamics, AWS, docker, Jira, CAD, manufacturing processes, Problem Solving",
+  "interests": "mechanical",
+  "education": "Bachelor's degree",
+  "experience_years": 7,
+  "goals": "Become a Mechanical Design Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "mechanical_design_engineer",
+  "relevant": [
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0237",
+  "skills": "rest api, Content Strategy, Documentation, teamwork, agile methodology, VPN",
+  "interests": "teaching",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Become a Technical Writer in the next two years.",
+  "profile_type": "focused",
+  "target": "technical_writer",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0238",
+  "skills": "react.js, Agile, UML, html, JavaScript, scss, AWS, REST APIs, SQL",
+  "interests": "product, leadership",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Switch careers into something related to strategy with good pay.",
+  "profile_type": "switcher",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "frontend_developer",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0239",
+  "skills": "presentation, Unreal Engine, data analysis, Shader Programming, linear algebra, ar/vr",
+  "interests": "virtual reality, gaming, investing",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to gaming with good pay.",
+  "profile_type": "focused",
+  "target": "ar_vr_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0240",
+  "skills": "teamwork, Security, lambda, shader programming, Cloud Security, k8s, auditing, security monitoring, community building, ISO 27001, git",
+  "interests": "security",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "I want to grow into a role where I work on cloud.",
+  "profile_type": "blended",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "grc_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0241",
+  "skills": "Networking, TCP/IP, Data Analysis, Firewalls, UML, cisco, AWS, Domain-Driven Design, gitlab, routing and switching",
+  "interests": "infrastructure",
+  "education": "BSc",
+  "experience_years": 1,
+  "goals": "Looking to build a long-term career in telecom.",
+  "profile_type": "focused",
+  "target": "network_engineer",
+  "relevant": [
+   "network_engineer"
+  ]
+ },
+ {
+  "id": "P7-0242",
+  "skills": "Excel, rhel, Kali Linux, aws, python, express, Adobe Photoshop, infosec, Penetration Testing, Incident Response",
+  "interests": "security, business",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "security_analyst",
+  "relevant": [
+   "penetration_tester",
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0243",
+  "skills": "snowflake, linux, Tableau, Excel, sql, data modeling",
+  "interests": "business intelligence, dashboards, scalability",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0244",
+  "skills": "data analysis, Communication, user interviews, survey design, jira, systems design",
+  "interests": "technology, product",
+  "education": "PhD in Computer Science",
+  "experience_years": 0,
+  "goals": "Become a Technical Product Manager in the next two years.",
+  "profile_type": "blended",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager",
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0245",
+  "skills": "nmap, kali linux, Burp Suite, python, Agile",
+  "interests": "security, ctf, distributed systems",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in offensive security.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0246",
+  "skills": "Data Quality, Power Electronics, electronics, Linux, Communication, matlab, Leadership",
+  "interests": "energy",
+  "education": "M.Tech",
+  "experience_years": 4,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0247",
+  "skills": "excel, Linux, SEO, Digital Marketing, cpp, data analysis, Control Systems, ROS",
+  "interests": "automation, hardware",
+  "education": "M.Tech",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "robotics_engineer",
+  "relevant": [
+   "digital_marketing_analyst",
+   "robotics_engineer"
+  ]
+ },
+ {
+  "id": "P7-0248",
+  "skills": "Scikit-learn, Statistics, pandas, python, matplotlib, AWS",
+  "interests": "",
+  "education": "MSc",
+  "experience_years": 7,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0249",
+  "skills": "JavaScript, BigQuery, Scrum, gitlab, TypeScript, nextjs, Problem Solving, Agile, jira, CSS",
+  "interests": "full stack, embedded systems",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Become a Full Stack Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0250",
+  "skills": "Mathematics, docker, Statistics, Financial Modeling, pinecone, Probability",
+  "interests": "linguistics",
+  "education": "PhD in Computer Science",
+  "experience_years": 7,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "nlp_engineer",
+  "relevant": [
+   "ai_research_scientist",
+   "generative_ai_engineer",
+   "nlp_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0251",
+  "skills": "documentation, interaction design, data analysis, Excel, Accounting, Finance, Financial Modeling, Problem Solving",
+  "interests": "finance, investing",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in investing.",
+  "profile_type": "blended",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0252",
+  "skills": "rest apis, Hardhat, lambda, Problem Solving, Documentation",
+  "interests": "business, customers",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 5,
+  "goals": "I want to grow into a role where I work on business.",
+  "profile_type": "focused",
+  "target": "sales_engineer",
+  "relevant": [
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0253",
+  "skills": "Data Modeling, sql, git, Backup and Recovery, SD-WAN",
+  "interests": "databases, infrastructure",
+  "education": "Bachelor's degree",
+  "experience_years": 2,
+  "goals": "Transition into infrastructure - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator"
+  ]
+ },
+ {
+  "id": "P7-0254",
+  "skills": "Mechanical Design, Communication, microservices, jetpack compose, fea, System Design",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on mobile development.",
+  "profile_type": "blended",
+  "target": "android_developer",
+  "relevant": [
+   "android_developer",
+   "ios_developer",
+   "software_architect"
+  ]
+ },
+ {
+  "id": "P7-0255",
+  "skills": "Bioinformatics, Selenium, aws, R, Cypress, statistical analysis, Java, scrum master, test automation, jenkins, Python",
+  "interests": "automation, quality",
+  "education": "Bachelor's degree",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in testing.",
+  "profile_type": "switcher",
+  "target": "qa_automation_engineer",
+  "relevant": [
+   "bioinformatics_scientist",
+   "qa_automation_engineer"
+  ]
+ },
+ {
+  "id": "P7-0256",
+  "skills": "Data Modeling, aws, Snowflake, git, SQL, leadership, agile methodology, dbt",
+  "interests": "business insights, data modeling",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Switch careers into something related to data modeling with good pay.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0257",
+  "skills": "communication, Wireframing, REST APIs, Figma, SQL, roadmapping, Accessibility, Prototyping",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in user experience.",
+  "profile_type": "blended",
+  "target": "ux_designer",
+  "relevant": [
+   "technical_product_manager",
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0258",
+  "skills": "Kubernetes, Jira, Data Analysis, Python, Security, Problem Solving, bash, Docker, Linux, mqtt",
+  "interests": "hardware",
+  "education": "PhD in Computer Science",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to hardware with good pay.",
+  "profile_type": "switcher",
+  "target": "iot_engineer",
+  "relevant": [
+   "devops_engineer",
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0259",
+  "skills": "TCP/IP, Troubleshooting, Networking, Routing and Switching, Cisco, active directory, Firewalls, network security, Docker, Python",
+  "interests": "hardware, system design",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on hardware.",
+  "profile_type": "blended",
+  "target": "network_engineer",
+  "relevant": [
+   "network_engineer",
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0260",
+  "skills": "content creation, Git, Public Speaking, communication, compliance",
+  "interests": "community",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on open source.",
+  "profile_type": "focused",
+  "target": "developer_advocate",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0261",
+  "skills": "psql, Networking, bash, AWS, Communication",
+  "interests": "data",
+  "education": "BSc",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in databases.",
+  "profile_type": "blended",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator",
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0262",
+  "skills": "copywriting, System Design, SEO, Communication, distributed computing, AWS, rest apis, Java",
+  "interests": "customers, architecture, cybersecurity",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "solutions_architect",
+  "relevant": [
+   "cloud_architect",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0263",
+  "skills": "ubuntu, c++, C#, Kotlin, Git, game physics, REST APIs",
+  "interests": "gaming",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "Become a Game Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "android_developer",
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0264",
+  "skills": "Problem Solving, REST APIs, version control, psychology, Swift, Documentation, Stakeholder Management, SwiftUI, Xcode, teamwork",
+  "interests": "sales, business, robotics",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "I want to grow into a role where I work on customers.",
+  "profile_type": "switcher",
+  "target": "sales_engineer",
+  "relevant": [
+   "ios_developer",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0265",
+  "skills": "Stakeholder Management, Leadership, data analysis, oscilloscope, docker, cloud solutions architecture, Security Auditing",
+  "interests": "consulting, cybersecurity",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "solutions_architect",
+  "relevant": [
+   "cloud_architect",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0266",
+  "skills": "Penetration Testing, git, SolidWorks, spreadsheets, ga4, Python, Ethical Hacking, Web Application Security",
+  "interests": "cybersecurity, hacking, building products",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Transition into hacking - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0267",
+  "skills": "ga4, asic design, Python, Excel, Digital Marketing, SEM, Cadence, Data Analysis",
+  "interests": "growth",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on advertising.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0268",
+  "skills": "ETL, Verilog, data viz, sql, Documentation, Python",
+  "interests": "statistics, data science, immersive media",
+  "education": "Master's degree",
+  "experience_years": 4,
+  "goals": "Become a Data Scientist in the next two years.",
+  "profile_type": "blended",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_engineer",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0269",
+  "skills": "documentation, Machine Learning, TensorFlow, MLflow, SIEM",
+  "interests": "machine learning",
+  "education": "Master's degree",
+  "experience_years": 1,
+  "goals": "Transition into ai - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0270",
+  "skills": "leadership, Power Electronics, matlab, Debugging, Microcontrollers, excel, Circuit Design, C++, rtos",
+  "interests": "devices, consumer apps",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "electrical_engineer",
+   "embedded_software_engineer"
+  ]
+ },
+ {
+  "id": "P7-0271",
+  "skills": "Docs-as-Code, Time Series Analysis, financial modeling, Editing, mathematics, GDPR, SQL, agile methodology, Information Architecture",
+  "interests": "teaching, communication",
+  "education": "Diploma in IT",
+  "experience_years": 4,
+  "goals": "Looking to build a long-term career in teaching.",
+  "profile_type": "blended",
+  "target": "technical_writer",
+  "relevant": [
+   "developer_advocate",
+   "quantitative_analyst",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0272",
+  "skills": "data structures, aws, gitlab, Networking, Python, SystemVerilog, microsoft azure, Terraform, Documentation, containers, leadership",
+  "interests": "apis, backend",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on apis.",
+  "profile_type": "switcher",
+  "target": "backend_developer",
+  "relevant": [
+   "backend_developer",
+   "cloud_engineer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0273",
+  "skills": "data analysis, ios sdk, Security",
+  "interests": "cybersecurity, cloud, 3d",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 4,
+  "goals": "Become a Cloud Security Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0274",
+  "skills": "python, tensorflow, Cloud Security, SQL, Data Analysis, Splunk",
+  "interests": "analytics, machine learning, customers",
+  "education": "Master's in Data Science",
+  "experience_years": 0,
+  "goals": "Become a Data Scientist in the next two years.",
+  "profile_type": "focused",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0275",
+  "skills": "MATLAB, rtos, leadership, ms excel, assembly, Debugging, Oscilloscope, Circuit Design, microcontrollers, Electronics, C, python",
+  "interests": "embedded systems",
+  "education": "Bachelor's degree",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to hardware with good pay.",
+  "profile_type": "blended",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "electrical_engineer",
+   "embedded_software_engineer"
+  ]
+ },
+ {
+  "id": "P7-0276",
+  "skills": "Python, Redis, aws, excel, SSIS, power bi, Statistics, Data Visualization, linux",
+  "interests": "reporting",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 7,
+  "goals": "Looking to build a long-term career in business insights.",
+  "profile_type": "focused",
+  "target": "data_analyst",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0277",
+  "skills": "Leadership, Docker, python, Model Deployment, Linux, mlflow, mysql",
+  "interests": "life sciences, research, business",
+  "education": "PhD in Computer Science",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on healthcare.",
+  "profile_type": "blended",
+  "target": "bioinformatics_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0278",
+  "skills": "Troubleshooting, ONNX, Problem Solving, Routing and Switching, tcp/ip, agile, cisco, Leadership",
+  "interests": "hardware, ai",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "network_engineer",
+  "relevant": [
+   "network_engineer"
+  ]
+ },
+ {
+  "id": "P7-0279",
+  "skills": "Scala, Communication, REST APIs, Docker, problem solving, data pipelines, dbt, Sales, Kafka, sql",
+  "interests": "databases",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Switch careers into something related to data with good pay.",
+  "profile_type": "switcher",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "sales_engineer"
+  ]
+ },
+ {
+  "id": "P7-0280",
+  "skills": "TypeScript, nmap, REST APIs, HTML, css3, Git, vuejs, markdown, Linux, Jest",
+  "interests": "javascript, networking",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Transition into frontend - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0281",
+  "skills": "Python, spreadsheets, Git, apache airflow, Data Warehousing",
+  "interests": "data modeling, data",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "I want to grow into a role where I work on data.",
+  "profile_type": "blended",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "generative_ai_engineer"
+  ]
+ },
+ {
+  "id": "P7-0282",
+  "skills": "s3, Troubleshooting, linux, Embedded C, Sensors, Edge Computing, Compliance, iot",
+  "interests": "smart devices, electronics",
+  "education": "Diploma in IT",
+  "experience_years": 3,
+  "goals": "Switch careers into something related to embedded systems with good pay.",
+  "profile_type": "focused",
+  "target": "iot_engineer",
+  "relevant": [
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0283",
+  "skills": "Persona Development, dbt, jira, Snowflake",
+  "interests": "analytics, business insights, infrastructure",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 10,
+  "goals": "Become a Analytics Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0284",
+  "skills": "Docker, Python, Jira, fastapi, Risk Management, Project Management, Stakeholder Management, budgeting, LangChain",
+  "interests": "chatbots, generative ai",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to chatbots with good pay.",
+  "profile_type": "switcher",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer",
+   "project_manager"
+  ]
+ },
+ {
+  "id": "P7-0285",
+  "skills": "Postman, Jira, Leadership, Documentation, Product Management, Communication",
+  "interests": "users",
+  "education": "MBA",
+  "experience_years": 4,
+  "goals": "Transition into psychology - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "ux_designer",
+  "relevant": [
+   "technical_product_manager",
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0286",
+  "skills": "Risk Management, Program Management, Project Management, agile methodology, Data Analysis, Information Retrieval, Jira, System Design, Documentation",
+  "interests": "management, business, cybersecurity",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "I want to grow into a role where I work on leadership.",
+  "profile_type": "switcher",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "project_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0287",
+  "skills": "sql, java, postgres, ec2, FastAPI, gitlab, python",
+  "interests": "distributed systems",
+  "education": "Bachelor's degree",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in apis.",
+  "profile_type": "focused",
+  "target": "backend_developer",
+  "relevant": [
+   "backend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0288",
+  "skills": "Security, Firebase, Objective-C, SQL, ec2, Cloud Architecture",
+  "interests": "mobile apps, mathematics",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "ios_developer",
+  "relevant": [
+   "android_developer",
+   "cloud_architect",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0289",
+  "skills": "agile, Python, Documentation, CI/CD, Kali Linux, shell",
+  "interests": "devops",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Transition into automation - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "devops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0290",
+  "skills": "GraphQL, arm, Transformers, Oscilloscope, Leadership, Git, rtos, rhel",
+  "interests": "devices, hardware",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on embedded systems.",
+  "profile_type": "focused",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "embedded_software_engineer"
+  ]
+ },
+ {
+  "id": "P7-0291",
+  "skills": "requirement gathering, microsoft excel, python, Blender, Jira, Documentation, AWS",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "I want to grow into a role where I work on strategy.",
+  "profile_type": "focused",
+  "target": "business_analyst",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "project_manager",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0292",
+  "skills": "Python, deep learning, TensorFlow, Feature Engineering, communication, model deployment",
+  "interests": "ai, production ml",
+  "education": "PhD in Computer Science",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0293",
+  "skills": "opengl, Problem Solving, market research, Game Physics, unity, C#, Linear Algebra, Jira",
+  "interests": "game design",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Looking to build a long-term career in graphics.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0294",
+  "skills": "Airflow, data pipelines, containerization, dbt, Python, Linux, Snowflake",
+  "interests": "big data",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "I want to grow into a role where I work on data pipelines.",
+  "profile_type": "focused",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0295",
+  "skills": "continuous deployment, CCNA, Bash, Performance Tuning, Communication, problem solving, Helm, SQL, k8s, golang",
+  "interests": "automation, devops, business intelligence",
+  "education": "Master's in Data Science",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to devops with good pay.",
+  "profile_type": "blended",
+  "target": "platform_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "database_administrator",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0296",
+  "skills": "documentation, Social Media Marketing, Public Speaking",
+  "interests": "speaking",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Switch careers into something related to writing with good pay.",
+  "profile_type": "focused",
+  "target": "developer_advocate",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0297",
+  "skills": "leadership, Kali Linux, Cloud Architecture, tracing, data analysis, burp suite, Communication, web application security, Risk Management",
+  "interests": "ctf",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "penetration_tester",
+  "relevant": [
+   "grc_analyst",
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0298",
+  "skills": "Linux, Distributed Systems, problem solving, Networking, iso 27001, Leadership, Bash, Communication, Docker, amazon web services",
+  "interests": "aws, cloud",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0299",
+  "skills": "python, sklearn, math, Model Deployment, machine-learning, Deep Learning, feature selection, AWS",
+  "interests": "deep learning, data science",
+  "education": "MBA",
+  "experience_years": 1,
+  "goals": "Switch careers into something related to ai with good pay.",
+  "profile_type": "blended",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "ai_research_scientist",
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0300",
+  "skills": "Threat Intelligence, Unity, Go, cryptography, Python, C#, Web3.js, Git, Linear Algebra, Smart Contracts, security auditing",
+  "interests": "",
+  "education": "Diploma in IT",
+  "experience_years": 3,
+  "goals": "Looking to build a long-term career in decentralization.",
+  "profile_type": "blended",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0301",
+  "skills": "shell, active directory, Troubleshooting, problem solving, Incident Response, python, docker",
+  "interests": "operations, servers",
+  "education": "Diploma in IT",
+  "experience_years": 10,
+  "goals": "Become a Systems Administrator in the next two years.",
+  "profile_type": "focused",
+  "target": "systems_administrator",
+  "relevant": [
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0302",
+  "skills": "SQL, Incident Management, Go, Python, ubuntu",
+  "interests": "devops, reliability",
+  "education": "M.Tech",
+  "experience_years": 10,
+  "goals": "Become a Site Reliability Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "site_reliability_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0303",
+  "skills": "autocad, Stakeholder Management, scalable systems, presentation, Cryptography, Program Management, AWS",
+  "interests": "electronics, hardware, it",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "I want to grow into a role where I work on hardware.",
+  "profile_type": "switcher",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0304",
+  "skills": "Presentation Skills, Problem Solving, security, s3",
+  "interests": "cloud",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Transition into technical leadership - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0305",
+  "skills": "distributed systems, kanban, Documentation, Cisco, Sensors, Java",
+  "interests": "system design, distributed systems, governance",
+  "education": "Diploma in IT",
+  "experience_years": 10,
+  "goals": "Transition into technical leadership - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "software_architect",
+  "relevant": [
+   "cloud_architect",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0306",
+  "skills": "azure, Oracle, kubernetes, system design, documentation",
+  "interests": "cloud",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Become a Cloud Architect in the next two years.",
+  "profile_type": "blended",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0307",
+  "skills": "aws, RTOS, 3D Modeling, Python, Unity, REST APIs, Communication, CI/CD, ios sdk, Linear Algebra, unit tests, Git, Swift",
+  "interests": "mobile development, risk",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Transition into apple - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "ios_developer",
+  "relevant": [
+   "android_developer",
+   "ar_vr_developer",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0308",
+  "skills": "Design Systems, microcontrollers, debugging, customer research, C, interaction design, wireframes, problem solving, leadership, RTOS",
+  "interests": "user experience",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on users.",
+  "profile_type": "switcher",
+  "target": "ux_designer",
+  "relevant": [
+   "embedded_software_engineer",
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0309",
+  "skills": "AWS, Security, System Design, microsoft azure, Cloud Architecture, Python, Linux, containers",
+  "interests": "web development",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 7,
+  "goals": "I want to grow into a role where I work on web development.",
+  "profile_type": "switcher",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "cloud_architect",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0310",
+  "skills": "dl, Python, Convolutional Neural Networks, data analysis, GitHub Actions, onnx, image recognition, Scala, tensorflow, leadership, Documentation",
+  "interests": "computer vision, ai, research",
+  "education": "Master's degree",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to computer vision with good pay.",
+  "profile_type": "focused",
+  "target": "computer_vision_engineer",
+  "relevant": [
+   "computer_vision_engineer"
+  ]
+ },
+ {
+  "id": "P7-0311",
+  "skills": "Data Visualization, Python, Docker, Linux, ms excel, tableau, Looker, Problem Solving",
+  "interests": "data, business insights, semiconductors",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "data_analyst",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0312",
+  "skills": "Python, communication skills, sql, Cypress, html5, technical writing, Problem Solving, containerization, javascript es6",
+  "interests": "teaching, aws",
+  "education": "Bachelor's degree",
+  "experience_years": 5,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "developer_advocate",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0313",
+  "skills": "DAX, looker, Data Modeling, ETL, dl, containers, c sharp, SQL, Power BI, Tableau",
+  "interests": "analytics, risk",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Become a Business Intelligence Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "computer_vision_engineer",
+   "data_analyst",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0314",
+  "skills": "Data Modeling, R, statistical analysis, Data Warehousing, linux, Web3.js, power bi",
+  "interests": "",
+  "education": "M.Tech",
+  "experience_years": 1,
+  "goals": "Switch careers into something related to healthcare with good pay.",
+  "profile_type": "blended",
+  "target": "bioinformatics_scientist",
+  "relevant": [
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0315",
+  "skills": "dbt, SQL, Agile, Snowflake",
+  "interests": "cloud, customers",
+  "education": "PhD in Computer Science",
+  "experience_years": 10,
+  "goals": "I want to grow into a role where I work on architecture.",
+  "profile_type": "switcher",
+  "target": "solutions_architect",
+  "relevant": [
+   "analytics_engineer",
+   "cloud_architect",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0316",
+  "skills": "docker, Copywriting, Leadership, swift, iOS SDK",
+  "interests": "mobile apps, semiconductors",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "Switch careers into something related to apple with good pay.",
+  "profile_type": "focused",
+  "target": "ios_developer",
+  "relevant": [
+   "android_developer",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0317",
+  "skills": "Microcontrollers, Documentation, linux, mqtt",
+  "interests": "hardware, iot",
+  "education": "Diploma in IT",
+  "experience_years": 3,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "iot_engineer",
+  "relevant": [
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0318",
+  "skills": "Data Warehousing, stats, Data Analysis, Editing, git, snowflake",
+  "interests": "business insights, data",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "blended",
+  "target": "data_analyst",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0319",
+  "skills": "Agile, Probability, Communication, Prototyping, Wireframing, stakeholder management",
+  "interests": "user experience, creativity",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to psychology with good pay.",
+  "profile_type": "blended",
+  "target": "ux_designer",
+  "relevant": [
+   "technical_program_manager",
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0320",
+  "skills": "Linux, Threat Intelligence, Network Security, Incident Response, Scala, Terraform, cybersecurity, Kubernetes, python, Markdown, documentation, containers",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "security_analyst",
+  "relevant": [
+   "cloud_security_engineer",
+   "security_analyst",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0321",
+  "skills": "pytorch, Vulnerability Assessment, Agile, leadership",
+  "interests": "autonomous vehicles, ai",
+  "education": "M.Tech",
+  "experience_years": 4,
+  "goals": "Become a Computer Vision Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "computer_vision_engineer",
+  "relevant": [
+   "computer_vision_engineer"
+  ]
+ },
+ {
+  "id": "P7-0322",
+  "skills": "Excel, statistical modeling, Problem Solving",
+  "interests": "",
+  "education": "Master's in Data Science",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "quantitative_analyst",
+  "relevant": [
+   "data_scientist",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0323",
+  "skills": "gitlab, PCB Design, vlsi, Problem Solving, vhdl, persona development, uvm, fpga, Static Timing Analysis, Circuit Design",
+  "interests": "circuits",
+  "education": "Master's in Data Science",
+  "experience_years": 0,
+  "goals": "Become a VLSI Design Engineer in the next two years.",
+  "profile_type": "blended",
+  "target": "vlsi_design_engineer",
+  "relevant": [
+   "electrical_engineer",
+   "vlsi_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0324",
+  "skills": "Embedded C, Scala, SQL, internet of things, lambda, mqtt, Python, version control, dbt",
+  "interests": "data pipelines, big data",
+  "education": "PhD in Computer Science",
+  "experience_years": 5,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0325",
+  "skills": "stakeholder management, Roadmapping, Excel, data analysis, IoT, product management, Spark, leadership, SQL, Communication",
+  "interests": "",
+  "education": "MBA",
+  "experience_years": 5,
+  "goals": "Become a Product Manager in the next two years.",
+  "profile_type": "focused",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0326",
+  "skills": "weaviate, Data Analysis, PyTorch, hugging face, CI/CD",
+  "interests": "text, ai",
+  "education": "PhD",
+  "experience_years": 7,
+  "goals": "I want to grow into a role where I work on language.",
+  "profile_type": "blended",
+  "target": "nlp_engineer",
+  "relevant": [
+   "ai_research_scientist",
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0327",
+  "skills": "linux, search engine optimization, Data Analysis, Google Analytics, matlab, Social Media Marketing, Excel, SEM, Leadership",
+  "interests": "advertising, business insights",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Become a Digital Marketing Analyst in the next two years.",
+  "profile_type": "focused",
+  "target": "digital_marketing_analyst",
+  "relevant": [
+   "digital_marketing_analyst"
+  ]
+ },
+ {
+  "id": "P7-0328",
+  "skills": "sql, Excel, Valuation, gitlab, Forecasting, financial modelling, AWS",
+  "interests": "full stack",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "Transition into software development - I enjoy it more than my current work.",
+  "profile_type": "switcher",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "financial_analyst",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0329",
+  "skills": "lambda, windows server, junit, Interaction Design, figma, ux design, Prototyping, Documentation, unix",
+  "interests": "user experience, psychology",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Looking to build a long-term career in creativity.",
+  "profile_type": "focused",
+  "target": "ux_designer",
+  "relevant": [
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0330",
+  "skills": "css, SD-WAN, webpack, Linear Algebra, Linux, sql, c sharp, git",
+  "interests": "frontend",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Become a Frontend Developer in the next two years.",
+  "profile_type": "blended",
+  "target": "frontend_developer",
+  "relevant": [
+   "frontend_developer",
+   "full_stack_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0331",
+  "skills": "python, Static Timing Analysis, Documentation, ASIC Design, jira, vlsi design, api development, Verilog",
+  "interests": "sales",
+  "education": "Diploma in IT",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to business with good pay.",
+  "profile_type": "switcher",
+  "target": "sales_engineer",
+  "relevant": [
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "vlsi_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0332",
+  "skills": "kubernetes, bash, aws, azure, Leadership, Go, IAM, python, infrastructure as code, Linux",
+  "interests": "aws",
+  "education": "PhD",
+  "experience_years": 10,
+  "goals": "Switch careers into something related to infrastructure with good pay.",
+  "profile_type": "blended",
+  "target": "cloud_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0333",
+  "skills": "torch, scrum master, neural networks, Problem Solving, TensorFlow, Scikit-learn",
+  "interests": "machine learning",
+  "education": "M.Tech",
+  "experience_years": 0,
+  "goals": "Transition into data science - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "machine_learning_engineer",
+  "relevant": [
+   "data_scientist",
+   "machine_learning_engineer",
+   "mlops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0334",
+  "skills": "probability, kanban, Problem Solving, s3, sem, linear algebra and calculus",
+  "interests": "trading, markets",
+  "education": "MSc",
+  "experience_years": 10,
+  "goals": "Become a Quantitative Analyst in the next two years.",
+  "profile_type": "blended",
+  "target": "quantitative_analyst",
+  "relevant": [
+   "data_scientist",
+   "digital_marketing_analyst",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0335",
+  "skills": "Kinematics, rhel, leadership, sql",
+  "interests": "devices, electronics, analytics",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Transition into electronics - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "embedded_software_engineer",
+   "robotics_engineer"
+  ]
+ },
+ {
+  "id": "P7-0336",
+  "skills": "Git, Transformers, spreadsheets, torch, python, nlp",
+  "interests": "nlp",
+  "education": "Diploma in IT",
+  "experience_years": 10,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "nlp_engineer",
+  "relevant": [
+   "ai_research_scientist",
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0337",
+  "skills": "Market Research, Usability Testing, Docker, qualitative research, data warehousing, Git",
+  "interests": "users",
+  "education": "Master's degree",
+  "experience_years": 0,
+  "goals": "Transition into design - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "ux_researcher",
+  "relevant": [
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0338",
+  "skills": "lambda, Git, mysql, Networking, Docker, Azure",
+  "interests": "system design, mechanical",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0339",
+  "skills": "Python, embedded c, Sensors, iot, C, containerization, gitlab, stm32, Jira",
+  "interests": "embedded systems, iot, servers",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Become a IoT Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "iot_engineer",
+  "relevant": [
+   "iot_engineer"
+  ]
+ },
+ {
+  "id": "P7-0340",
+  "skills": "sql, communication, pmp, System Design, Incident Response, microsoft azure",
+  "interests": "",
+  "education": "BSc",
+  "experience_years": 10,
+  "goals": "Switch careers into something related to architecture with good pay.",
+  "profile_type": "focused",
+  "target": "solutions_architect",
+  "relevant": [
+   "cloud_architect",
+   "sales_engineer",
+   "software_architect",
+   "solutions_architect",
+   "technical_product_manager"
+  ]
+ },
+ {
+  "id": "P7-0341",
+  "skills": "Circuit Design, C++, Ansible, Bash, PCB Design, Python, Electronics",
+  "interests": "",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in hardware.",
+  "profile_type": "blended",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "electrical_engineer",
+   "embedded_software_engineer"
+  ]
+ },
+ {
+  "id": "P7-0342",
+  "skills": "data analysis, accounting, AWS, Budgeting, valuation",
+  "interests": "business, finance",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "I want to grow into a role where I work on economics.",
+  "profile_type": "focused",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0343",
+  "skills": "s3, Solidity, Content Creation, JavaScript",
+  "interests": "fintech, strategy",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer"
+  ]
+ },
+ {
+  "id": "P7-0344",
+  "skills": "React, Terraform, cryptography, Problem Solving, vmware, Network Security, aws, Vulnerability Assessment, linux, Python, containers, Security",
+  "interests": "defense, cybersecurity",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Looking to build a long-term career in infrastructure.",
+  "profile_type": "blended",
+  "target": "security_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "platform_engineer",
+   "security_analyst",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0345",
+  "skills": "Python, Cryptography, vulnerability assessment, Excel, identity and access management, SQL, Reverse Engineering",
+  "interests": "psychology",
+  "education": "Master's degree",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to human behavior with good pay.",
+  "profile_type": "switcher",
+  "target": "ux_researcher",
+  "relevant": [
+   "security_engineer",
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0346",
+  "skills": "Assembly, embedded c, C, Jira, Microcontrollers, RTOS, C++",
+  "interests": "embedded systems",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 3,
+  "goals": "Become a Embedded Software Engineer in the next two years.",
+  "profile_type": "focused",
+  "target": "embedded_software_engineer",
+  "relevant": [
+   "embedded_software_engineer"
+  ]
+ },
+ {
+  "id": "P7-0347",
+  "skills": "Objective-C, linux, continuous integration, Perl, Git, docker, Model Deployment",
+  "interests": "automation",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "mlops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "machine_learning_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0348",
+  "skills": "DAX, langchain, containerization, product ownership, presentation, prompting, SQL, Retrieval-Augmented Generation",
+  "interests": "dashboards",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer",
+   "generative_ai_engineer"
+  ]
+ },
+ {
+  "id": "P7-0349",
+  "skills": "gd&t, microsoft excel, Embedded C, Sensors, model monitoring, Serverless, internet of things, agile, Finite Element Analysis, SQL",
+  "interests": "smart devices, iot, economics",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Become a IoT Engineer in the next two years.",
+  "profile_type": "blended",
+  "target": "iot_engineer",
+  "relevant": [
+   "iot_engineer",
+   "mechanical_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0350",
+  "skills": "problem solving, containerization, Data Analysis, PCB Design",
+  "interests": "hardware, circuits",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in power.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0351",
+  "skills": "aws, sql, Communication, C++, ROS, CAD, Sensors",
+  "interests": "autonomous vehicles, ai",
+  "education": "PhD",
+  "experience_years": 1,
+  "goals": "Looking to build a long-term career in hardware.",
+  "profile_type": "focused",
+  "target": "robotics_engineer",
+  "relevant": [
+   "robotics_engineer"
+  ]
+ },
+ {
+  "id": "P7-0352",
+  "skills": "Problem Solving, SD-WAN, ci/cd, Objective-C, Jira, Helm, Git",
+  "interests": "ios",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to mobile development with good pay.",
+  "profile_type": "focused",
+  "target": "ios_developer",
+  "relevant": [
+   "android_developer",
+   "ios_developer"
+  ]
+ },
+ {
+  "id": "P7-0353",
+  "skills": "Python, ubuntu, Security, Communication, iac, Spark, agile methodology, math",
+  "interests": "cybersecurity, security",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on cybersecurity.",
+  "profile_type": "focused",
+  "target": "cloud_security_engineer",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "devops_engineer",
+   "security_engineer"
+  ]
+ },
+ {
+  "id": "P7-0354",
+  "skills": "Network Security, Problem Solving, Ethical Hacking, Bash, Leadership, Penetration Testing",
+  "interests": "offensive security",
+  "education": "Diploma in IT",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to ctf with good pay.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0355",
+  "skills": "Natural Language Processing, LangChain, Prompt Engineering, hf transformers, gpt, Agile, Retrieval-Augmented Generation, SQL",
+  "interests": "generative ai",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0356",
+  "skills": "VHDL, Static Timing Analysis, kotlin, asic design, Jetpack Compose, Java, fpga, persona development, Git, rest, ml",
+  "interests": "chips, circuits, coordination",
+  "education": "M.Tech",
+  "experience_years": 2,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "switcher",
+  "target": "vlsi_design_engineer",
+  "relevant": [
+   "android_developer",
+   "vlsi_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0357",
+  "skills": "Agile, Flutter, FPGA",
+  "interests": "circuits",
+  "education": "M.Tech",
+  "experience_years": 3,
+  "goals": "Looking to build a long-term career in electronics.",
+  "profile_type": "focused",
+  "target": "vlsi_design_engineer",
+  "relevant": [
+   "vlsi_design_engineer"
+  ]
+ },
+ {
+  "id": "P7-0358",
+  "skills": "Excel, Hadoop, git, next-generation sequencing, Python, Apache Spark, Scala, Airflow, SQL, Linux",
+  "interests": "big data, data infrastructure, devops",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in data infrastructure.",
+  "profile_type": "blended",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0359",
+  "skills": "rest, SQL, Documentation, product management, stakeholder management, Python, agile methodology",
+  "interests": "platforms, cybersecurity",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to product with good pay.",
+  "profile_type": "focused",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0360",
+  "skills": "valuation, Jira, SQL, Forecasting, Finance",
+  "interests": "leadership, strategy, hardware",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "financial_analyst",
+   "product_manager",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0361",
+  "skills": "Communication, documentation writing, Problem Solving, Incident Response, Documentation",
+  "interests": "teaching, big data",
+  "education": "Associate degree",
+  "experience_years": 5,
+  "goals": "Become a Technical Writer in the next two years.",
+  "profile_type": "focused",
+  "target": "technical_writer",
+  "relevant": [
+   "developer_advocate",
+   "technical_writer"
+  ]
+ },
+ {
+  "id": "P7-0362",
+  "skills": "Jira, CI/CD, Kubernetes, Linux, computer aided design, Oracle, Vue.js, AWS",
+  "interests": "automation",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Switch careers into something related to devops with good pay.",
+  "profile_type": "blended",
+  "target": "devops_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "database_administrator",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0363",
+  "skills": "nltk, Solidity, java, Communication, Jetpack Compose, git, unity",
+  "interests": "gaming",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "Transition into interactive media - I enjoy it more than my current work.",
+  "profile_type": "blended",
+  "target": "game_developer",
+  "relevant": [
+   "android_developer",
+   "ar_vr_developer",
+   "game_developer"
+  ]
+ },
+ {
+  "id": "P7-0364",
+  "skills": "Problem Solving, jira, accounting, Documentation, python, Financial Modeling",
+  "interests": "markets, finance, data science",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Become a Financial Analyst in the next two years.",
+  "profile_type": "focused",
+  "target": "financial_analyst",
+  "relevant": [
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0365",
+  "skills": "containers, spreadsheets, Linux, golang, Python",
+  "interests": "reliability, scalability",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 3,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "site_reliability_engineer",
+  "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
+   "mlops_engineer",
+   "platform_engineer",
+   "security_engineer",
+   "site_reliability_engineer"
+  ]
+ },
+ {
+  "id": "P7-0366",
+  "skills": "vector databases, prompt engineering, fine-tuning, Data Analysis, persona development, python, LangChain",
+  "interests": "chatbots, generative ai, research",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Transition into llms - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0367",
+  "skills": "containerization, Feature Engineering, AWS",
+  "interests": "machine learning, game design",
+  "education": "MSc",
+  "experience_years": 0,
+  "goals": "Transition into analytics - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0368",
+  "skills": "jax, Problem Solving, Research, deep neural networks, Python, Machine Learning, Event-Driven Architecture, rhel, Ethical Hacking, mathematics, Documentation",
+  "interests": "mathematics, design",
+  "education": "Associate degree",
+  "experience_years": 3,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "ai_research_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0369",
+  "skills": "Thermodynamics, AutoCAD, Typography, jira, solidworks, Linux, Adobe Illustrator, prototypes, Kotlin, Mechanical Design, CAD, figma",
+  "interests": "product design",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to mechanical with good pay.",
+  "profile_type": "switcher",
+  "target": "mechanical_design_engineer",
+  "relevant": [
+   "mechanical_design_engineer",
+   "ui_designer"
+  ]
+ },
+ {
+  "id": "P7-0370",
+  "skills": "system design, Agile, Python",
+  "interests": "leadership, design",
+  "education": "Bachelor's degree",
+  "experience_years": 3,
+  "goals": "Switch careers into something related to product with good pay.",
+  "profile_type": "focused",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0371",
+  "skills": "Routing and Switching, cisco, Troubleshooting, TCP/IP, Agile, Firewalls, windows server, data warehouse, spreadsheets, AWS",
+  "interests": "dashboards, cybersecurity",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in reporting.",
+  "profile_type": "switcher",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer",
+   "network_engineer"
+  ]
+ },
+ {
+  "id": "P7-0372",
+  "skills": "AWS, negotiation, Data Analysis, Web Application Security, Ethical Hacking, Penetration Testing, Security Policies, Jira, burp suite",
+  "interests": "ctf, infrastructure",
+  "education": "Bachelor's degree",
+  "experience_years": 10,
+  "goals": "Transition into security - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "penetration_tester",
+  "relevant": [
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0373",
+  "skills": "Bash, active directory, linux, Data Analysis, Django, SQL",
+  "interests": "operations, users",
+  "education": "Associate degree",
+  "experience_years": 0,
+  "goals": "Become a Systems Administrator in the next two years.",
+  "profile_type": "focused",
+  "target": "systems_administrator",
+  "relevant": [
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0374",
+  "skills": "Documentation, usability testing, figma, budgeting, a/b testing, Wireframing, jira, mvvm, prototyping, User Experience, agile methodology",
+  "interests": "coordination",
+  "education": "Bachelor's degree",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "project_manager",
+   "technical_program_manager",
+   "ux_designer"
+  ]
+ },
+ {
+  "id": "P7-0375",
+  "skills": "REST APIs, gitlab, s3, GraphQL, PostgreSQL, javascript es6",
+  "interests": "software development, startups",
+  "education": "BSc",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on building products.",
+  "profile_type": "focused",
+  "target": "full_stack_developer",
+  "relevant": [
+   "backend_developer",
+   "frontend_developer",
+   "full_stack_developer"
+  ]
+ },
+ {
+  "id": "P7-0376",
+  "skills": "Survey Design, excel, Python, Prometheus",
+  "interests": "users, electronics",
+  "education": "MSc",
+  "experience_years": 10,
+  "goals": "Looking to build a long-term career in design.",
+  "profile_type": "focused",
+  "target": "ux_researcher",
+  "relevant": [
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0377",
+  "skills": "Data Analysis, Circuit Design, Microcontrollers, SQL, Power Electronics, Embedded C, agile methodology, Control Systems",
+  "interests": "",
+  "education": "Bachelor's degree",
+  "experience_years": 4,
+  "goals": "Transition into energy - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "electrical_engineer",
+  "relevant": [
+   "electrical_engineer"
+  ]
+ },
+ {
+  "id": "P7-0378",
+  "skills": "kubernetes, Jira, C, SOC 2, Docker, agile, AWS",
+  "interests": "reporting, analytics, autonomous vehicles",
+  "education": "PhD in Computer Science",
+  "experience_years": 0,
+  "goals": "Become a Business Intelligence Developer in the next two years.",
+  "profile_type": "switcher",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer",
+   "devops_engineer"
+  ]
+ },
+ {
+  "id": "P7-0379",
+  "skills": "SQL, Docker, Financial Modeling, forecasting models, Statistics, Documentation",
+  "interests": "",
+  "education": "Master's in Data Science",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "quantitative_analyst",
+  "relevant": [
+   "data_scientist",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0380",
+  "skills": "Communication, Docker, SEO, ga4, Jira, stakeholder communication, spreadsheets",
+  "interests": "coordination",
+  "education": "Master's in Data Science",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to leadership with good pay.",
+  "profile_type": "blended",
+  "target": "project_manager",
+  "relevant": [
+   "business_analyst",
+   "digital_marketing_analyst",
+   "project_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0381",
+  "skills": "Fine-tuning, data modeling, PyTorch, SQL, data analysis, python, prompting, Retrieval-Augmented Generation, AWS, perl",
+  "interests": "generative ai",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "I want to grow into a role where I work on generative ai.",
+  "profile_type": "blended",
+  "target": "generative_ai_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "generative_ai_engineer",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0382",
+  "skills": "Data Analysis, Model Monitoring, xcode, Swift, systems design, ios sdk",
+  "interests": "strategy, leadership",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Become a Technical Product Manager in the next two years.",
+  "profile_type": "switcher",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "ios_developer",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0383",
+  "skills": "Python, agile, Git, dbt, data quality, Data Warehousing",
+  "interests": "data",
+  "education": "BSc",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to business insights with good pay.",
+  "profile_type": "focused",
+  "target": "analytics_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ },
+ {
+  "id": "P7-0384",
+  "skills": "Valuation, dcf, DeFi, aws, Excel, Video Production",
+  "interests": "web3",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 5,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "switcher",
+  "target": "blockchain_developer",
+  "relevant": [
+   "blockchain_developer",
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0385",
+  "skills": "CCNA, Communication, routing and switching, SD-WAN, firewalls",
+  "interests": "hardware, networking, users",
+  "education": "BSc",
+  "experience_years": 7,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "network_engineer",
+  "relevant": [
+   "network_engineer"
+  ]
+ },
+ {
+  "id": "P7-0386",
+  "skills": "AutoCAD, MySQL, networking, Performance Tuning, Oracle, Communication, problem solving",
+  "interests": "infrastructure, data",
+  "education": "BSc",
+  "experience_years": 2,
+  "goals": "Switch careers into something related to data with good pay.",
+  "profile_type": "focused",
+  "target": "database_administrator",
+  "relevant": [
+   "database_administrator"
+  ]
+ },
+ {
+  "id": "P7-0387",
+  "skills": "statistical analysis, CUDA, AWS, Mathematics",
+  "interests": "ai",
+  "education": "PhD in Computer Science",
+  "experience_years": 5,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "ai_research_scientist",
+  "relevant": [
+   "ai_research_scientist",
+   "nlp_engineer"
+  ]
+ },
+ {
+  "id": "P7-0388",
+  "skills": "Nmap, oscp, LLMs, kanban, Vector Databases, prompting, python, langchain, Retrieval-Augmented Generation",
+  "interests": "security",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Become a Penetration Tester in the next two years.",
+  "profile_type": "switcher",
+  "target": "penetration_tester",
+  "relevant": [
+   "generative_ai_engineer",
+   "penetration_tester"
+  ]
+ },
+ {
+  "id": "P7-0389",
+  "skills": "communication skills, System Design, REST APIs",
+  "interests": "platforms, product",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "technical_product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "sales_engineer",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0390",
+  "skills": "Leadership, communication, Budgeting, AWS, excel",
+  "interests": "system design, distributed systems, building products",
+  "education": "PhD",
+  "experience_years": 7,
+  "goals": "Switch careers into something related to scalability with good pay.",
+  "profile_type": "focused",
+  "target": "software_architect",
+  "relevant": [
+   "cloud_architect",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0391",
+  "skills": "Tableau, kanban, Jira, Pandas, data warehouse, powerbi, Web Application Security, Problem Solving",
+  "interests": "reporting",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 2,
+  "goals": "Looking to build a long-term career in reporting.",
+  "profile_type": "blended",
+  "target": "bi_developer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_analyst",
+   "data_engineer",
+   "data_scientist"
+  ]
+ },
+ {
+  "id": "P7-0392",
+  "skills": "Git, Agile, Active Directory, rhel, Linux Kernel, Windows Server, AWS",
+  "interests": "infrastructure, business",
+  "education": "Associate degree",
+  "experience_years": 3,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "focused",
+  "target": "systems_administrator",
+  "relevant": [
+   "systems_administrator"
+  ]
+ },
+ {
+  "id": "P7-0393",
+  "skills": "split testing, R, machine learning, Python, Deep Learning, Jira, Git",
+  "interests": "research",
+  "education": "M.Tech",
+  "experience_years": 0,
+  "goals": "Switch careers into something related to machine learning with good pay.",
+  "profile_type": "blended",
+  "target": "data_scientist",
+  "relevant": [
+   "bioinformatics_scientist",
+   "data_analyst",
+   "data_scientist",
+   "machine_learning_engineer",
+   "quantitative_analyst"
+  ]
+ },
+ {
+  "id": "P7-0394",
+  "skills": "Linux, Statistics, Troubleshooting, figma, A/B Testing, Survey Design",
+  "interests": "users, mobile development",
+  "education": "Associate degree",
+  "experience_years": 10,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "ux_researcher",
+  "relevant": [
+   "ux_researcher"
+  ]
+ },
+ {
+  "id": "P7-0395",
+  "skills": "Docker, editing, rest apis, Cloud Architecture, ec2, node.js, documentation, SQL, Agile",
+  "interests": "leadership, virtual reality",
+  "education": "B.Tech in Computer Science",
+  "experience_years": 0,
+  "goals": "Transition into leadership - I enjoy it more than my current work.",
+  "profile_type": "switcher",
+  "target": "product_manager",
+  "relevant": [
+   "business_analyst",
+   "product_manager",
+   "solutions_architect",
+   "technical_product_manager",
+   "technical_program_manager"
+  ]
+ },
+ {
+  "id": "P7-0396",
+  "skills": "Forecasting, SEO, aws, microsoft excel, SQL, performance marketing, Data Analysis, Manufacturing Processes",
+  "interests": "investing",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 1,
+  "goals": "Work at a fast-growing company and take on more responsibility.",
+  "profile_type": "blended",
+  "target": "financial_analyst",
+  "relevant": [
+   "digital_marketing_analyst",
+   "financial_analyst"
+  ]
+ },
+ {
+  "id": "P7-0397",
+  "skills": "Video Production, Jira, Node.js, presentation",
+  "interests": "",
+  "education": "Bachelor's in Engineering",
+  "experience_years": 4,
+  "goals": "Transition into cloud - I enjoy it more than my current work.",
+  "profile_type": "focused",
+  "target": "cloud_architect",
+  "relevant": [
+   "cloud_architect",
+   "cloud_engineer",
+   "cloud_security_engineer",
+   "software_architect",
+   "solutions_architect"
+  ]
+ },
+ {
+  "id": "P7-0398",
+  "skills": "CRM, Airflow, etl, Data Modeling, rag, seo, containerization, Problem Solving, LangChain, SQL, agile methodology, Jira",
+  "interests": "data",
+  "education": "Diploma in IT",
+  "experience_years": 3,
+  "goals": "I want to grow into a role where I work on data pipelines.",
+  "profile_type": "blended",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer",
+   "generative_ai_engineer"
+  ]
+ },
+ {
+  "id": "P7-0399",
+  "skills": "Jenkins, data pipelines, Problem Solving, computer architecture, Apache Spark, Communication, snowflake",
+  "interests": "data, data infrastructure",
+  "education": "Associate degree",
+  "experience_years": 3,
+  "goals": "Get my first job in tech and keep learning.",
+  "profile_type": "focused",
+  "target": "data_engineer",
+  "relevant": [
+   "analytics_engineer",
+   "bi_developer",
+   "data_engineer"
+  ]
+ }
+]

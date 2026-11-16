@@ -1,0 +1,133 @@
+{
+  "dataset": {
+    "job_postings": 1200,
+    "careers": 56,
+    "skills_in_taxonomy": 337,
+    "companies": 533,
+    "ranker_training_profiles": 400,
+    "test_profiles": 100
+  },
+  "headline": {
+    "metric": "relevance@3",
+    "value": 0.8833,
+    "description": "Relevant careers in the top 3 divided by the best achievable, averaged over the 100 held-out test profiles. A career is relevant if it is the profile's primary career, its blended/previous career, or closely related (skill Jaccard >= 0.25)."
+  },
+  "test": {
+    "relevance@3": 0.8833,
+    "precision@3": 0.6867,
+    "precision@5": 0.512,
+    "top1_accuracy": 0.91,
+    "hit@3": 0.99,
+    "hit@5": 0.99,
+    "mrr": 0.9473,
+    "ndcg@5": 0.9171
+  },
+  "test_by_profile_type": {
+    "blended": {
+      "profiles": 28,
+      "relevance@3": 0.8452,
+      "precision@3": 0.7262,
+      "precision@5": 0.5357,
+      "top1_accuracy": 0.8929,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr": 0.9464,
+      "ndcg@5": 0.9119
+    },
+    "focused": {
+      "profiles": 59,
+      "relevance@3": 0.9096,
+      "precision@3": 0.6497,
+      "precision@5": 0.4881,
+      "top1_accuracy": 0.9322,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr": 0.9605,
+      "ndcg@5": 0.9354
+    },
+    "switcher": {
+      "profiles": 13,
+      "relevance@3": 0.8462,
+      "precision@3": 0.7692,
+      "precision@5": 0.5692,
+      "top1_accuracy": 0.8462,
+      "hit@3": 0.9231,
+      "hit@5": 0.9231,
+      "mrr": 0.8897,
+      "ndcg@5": 0.8454
+    }
+  },
+  "ablation": {
+    "Rule-based skill overlap (baseline)": {
+      "relevance@3": 0.7883,
+      "precision@3": 0.61,
+      "precision@5": 0.458,
+      "top1_accuracy": 0.71,
+      "hit@3": 0.86,
+      "hit@5": 0.91,
+      "mrr": 0.7971,
+      "ndcg@5": 0.8116
+    },
+    "Interest similarity only": {
+      "relevance@3": 0.6933,
+      "precision@3": 0.5233,
+      "precision@5": 0.38,
+      "top1_accuracy": 0.81,
+      "hit@3": 0.95,
+      "hit@5": 0.96,
+      "mrr": 0.8773,
+      "ndcg@5": 0.7705
+    },
+    "Market skill similarity only": {
+      "relevance@3": 0.855,
+      "precision@3": 0.6567,
+      "precision@5": 0.48,
+      "top1_accuracy": 0.73,
+      "hit@3": 0.9,
+      "hit@5": 0.95,
+      "mrr": 0.8248,
+      "ndcg@5": 0.8571
+    },
+    "Skill classifier only": {
+      "relevance@3": 0.8317,
+      "precision@3": 0.6367,
+      "precision@5": 0.474,
+      "top1_accuracy": 0.71,
+      "hit@3": 0.9,
+      "hit@5": 0.95,
+      "mrr": 0.8147,
+      "ndcg@5": 0.8451
+    },
+    "Linear blend (grid-tuned)": {
+      "relevance@3": 0.88,
+      "precision@3": 0.68,
+      "precision@5": 0.504,
+      "top1_accuracy": 0.91,
+      "hit@3": 0.97,
+      "hit@5": 0.99,
+      "mrr": 0.946,
+      "ndcg@5": 0.9138
+    },
+    "Two-stage hybrid (learned ranker)": {
+      "relevance@3": 0.8833,
+      "precision@3": 0.6867,
+      "precision@5": 0.512,
+      "top1_accuracy": 0.91,
+      "hit@3": 0.99,
+      "hit@5": 0.99,
+      "mrr": 0.9473,
+      "ndcg@5": 0.9171
+    }
+  },
+  "stage1_classifier": {
+    "accuracy": 0.9625,
+    "macro_f1": 0.9562,
+    "holdout_postings": 240
+  },
+  "linear_blend_weights": {
+    "classifier": 0.05,
+    "skill_similarity": 0.65,
+    "interest_similarity": 0.25,
+    "education_fit": 0.05
+  }
+}

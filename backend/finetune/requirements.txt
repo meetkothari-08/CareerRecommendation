@@ -1,0 +1,8 @@
+# GPU-only dependencies for LoRA fine-tuning (not needed to run the API)
+torch>=2.3
+transformers>=4.46
+datasets>=2.20
+peft>=0.13
+trl>=0.12
+bitsandbytes>=0.44
+accelerate>=1.0

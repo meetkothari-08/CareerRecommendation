@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card { @apply rounded-2xl border border-slate-200 bg-white shadow-sm; }
+  .input { @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100; }
+  .label { @apply mb-1.5 block text-sm font-medium text-slate-700; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-ghost { @apply inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50; }
+  .chip { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium; }
+}
+
+.prose-advice h3 { @apply mb-2 mt-5 text-base font-semibold text-slate-900 first:mt-0; }
+.prose-advice ul { @apply list-disc space-y-1 pl-5; }
+.prose-advice ol { @apply list-decimal space-y-1 pl-5; }
+.prose-advice p { @apply my-2; }
+.prose-advice strong { @apply font-semibold text-slate-900; }

@@ -1,98 +1,412 @@
 {
-  "JavaScript": ["js", "javascript es6", "es6", "ecmascript"],
-  "TypeScript": ["ts"],
-  "React": ["react.js", "reactjs", "react js"],
-  "Node.js": ["node", "nodejs", "node js"],
-  "Express.js": ["express", "expressjs"],
-  "Next.js": ["nextjs", "next js"],
-  "Vue.js": ["vue", "vuejs"],
-  "HTML": ["html5"],
-  "CSS": ["css3", "scss", "sass"],
-  "REST APIs": ["rest", "rest api", "restful", "restful apis", "api development", "apis"],
-  "PostgreSQL": ["postgres", "psql"],
-  "MongoDB": ["mongo"],
-  "Go": ["golang"],
-  "C++": ["cpp"],
-  "C#": ["c sharp", "csharp"],
-  "Machine Learning": ["ml", "machine-learning"],
-  "Deep Learning": ["dl", "neural networks", "deep neural networks"],
-  "Natural Language Processing": ["nlp", "text mining"],
-  "Computer Vision": ["cv", "image recognition"],
-  "Convolutional Neural Networks": ["cnn", "cnns"],
-  "LLMs": ["llm", "large language models", "large language model", "gpt"],
-  "Retrieval-Augmented Generation": ["rag"],
-  "Fine-tuning": ["fine tuning", "finetuning", "lora", "qlora", "peft"],
-  "Hugging Face": ["huggingface", "hf transformers"],
-  "Scikit-learn": ["sklearn", "scikit learn", "scikit"],
-  "TensorFlow": ["tf", "keras", "tensorflow 2"],
-  "PyTorch": ["torch"],
-  "Pandas": ["pandas dataframe"],
-  "Apache Spark": ["spark", "pyspark"],
-  "Airflow": ["apache airflow"],
-  "Kafka": ["apache kafka"],
-  "Statistics": ["statistical analysis", "stats", "statistical modeling"],
-  "Data Visualization": ["data viz", "dataviz", "matplotlib", "seaborn", "plotly"],
-  "Power BI": ["powerbi"],
-  "Excel": ["ms excel", "microsoft excel", "spreadsheets"],
-  "AWS": ["amazon web services", "ec2", "s3", "lambda"],
-  "Google Cloud": ["gcp", "google cloud platform"],
-  "Azure": ["microsoft azure"],
-  "Kubernetes": ["k8s", "eks", "gke", "aks"],
-  "Docker": ["containers", "containerization"],
-  "CI/CD": ["ci cd", "continuous integration", "continuous deployment", "cicd"],
-  "Terraform": ["iac", "infrastructure as code"],
-  "Linux": ["unix", "ubuntu", "rhel"],
-  "Bash": ["shell scripting", "shell"],
-  "Git": ["github", "gitlab", "version control"],
-  "System Design": ["systems design", "scalable systems"],
-  "Distributed Systems": ["distributed computing"],
-  "Data Structures": ["dsa", "algorithms", "data structures and algorithms"],
-  "Cloud Architecture": ["cloud design", "cloud solutions architecture"],
-  "Security": ["cybersecurity", "information security", "infosec"],
-  "Penetration Testing": ["pentesting", "pen testing", "pentest"],
-  "Ethical Hacking": ["hacking", "ceh"],
-  "IAM": ["identity and access management"],
-  "SIEM": ["security monitoring"],
-  "Product Management": ["product strategy", "product ownership"],
-  "User Research": ["user interviews", "customer research"],
-  "User Experience": ["ux", "ux design"],
-  "Visual Design": ["ui", "ui design", "graphic design"],
-  "Agile": ["agile methodology", "kanban"],
-  "Scrum": ["scrum master"],
-  "Stakeholder Management": ["stakeholder communication"],
-  "Communication": ["communication skills", "presentation", "teamwork"],
-  "Project Management": ["project planning"],
-  "Financial Modeling": ["financial modelling", "dcf"],
-  "Time Series Analysis": ["time series", "forecasting models"],
-  "Mathematics": ["math", "maths", "linear algebra and calculus"],
-  "Digital Marketing": ["online marketing", "performance marketing"],
-  "SEO": ["search engine optimization"],
-  "SEM": ["google ads", "ppc", "search engine marketing"],
-  "Google Analytics": ["ga4"],
-  "Technical Writing": ["documentation writing"],
-  "Public Speaking": ["speaking", "conference talks"],
-  "ROS": ["robot operating system", "ros2"],
-  "IoT": ["internet of things"],
-  "Embedded C": ["firmware"],
-  "Microcontrollers": ["mcu", "stm32", "esp32"],
-  "AR/VR": ["ar", "vr", "augmented reality", "virtual reality", "xr"],
-  "CAD": ["computer aided design"],
-  "Finite Element Analysis": ["fea"],
-  "VLSI": ["vlsi design"],
-  "Model Deployment": ["model serving", "ml deployment", "deploying models"],
-  "MLflow": ["ml flow"],
-  "Vector Databases": ["pinecone", "faiss", "chromadb", "weaviate", "vector db"],
-  "Prompt Engineering": ["prompting"],
-  "Feature Engineering": ["feature selection"],
-  "A/B Testing": ["ab testing", "experimentation", "split testing"],
-  "Monitoring": ["alerting"],
-  "Observability": ["opentelemetry", "tracing"],
-  "Requirements Gathering": ["requirements analysis", "requirement gathering"],
-  "Wireframing": ["wireframes"],
-  "Prototyping": ["prototypes"],
-  "Selenium": ["selenium webdriver"],
-  "Test Automation": ["automation testing", "automated testing"],
-  "Unit Testing": ["unit tests", "pytest", "junit"],
-  "Data Warehousing": ["data warehouse", "dwh"],
-  "ETL": ["elt", "data pipelines"]
+  "JavaScript": [
+    "js",
+    "javascript es6",
+    "es6",
+    "ecmascript"
+  ],
+  "TypeScript": [
+    "ts"
+  ],
+  "React": [
+    "react.js",
+    "reactjs",
+    "react js"
+  ],
+  "Node.js": [
+    "node",
+    "nodejs",
+    "node js"
+  ],
+  "Express.js": [
+    "express",
+    "expressjs"
+  ],
+  "Next.js": [
+    "nextjs",
+    "next js"
+  ],
+  "Vue.js": [
+    "vue",
+    "vuejs"
+  ],
+  "HTML": [
+    "html5"
+  ],
+  "CSS": [
+    "css3",
+    "scss",
+    "sass"
+  ],
+  "REST APIs": [
+    "rest",
+    "rest api",
+    "restful",
+    "restful apis",
+    "api development",
+    "apis"
+  ],
+  "PostgreSQL": [
+    "postgres",
+    "psql"
+  ],
+  "MongoDB": [
+    "mongo"
+  ],
+  "Go": [
+    "golang"
+  ],
+  "C++": [
+    "cpp"
+  ],
+  "C#": [
+    "c sharp",
+    "csharp"
+  ],
+  "Machine Learning": [
+    "ml",
+    "machine-learning"
+  ],
+  "Deep Learning": [
+    "dl",
+    "neural networks",
+    "deep neural networks"
+  ],
+  "Natural Language Processing": [
+    "nlp",
+    "text mining"
+  ],
+  "Computer Vision": [
+    "cv",
+    "image recognition"
+  ],
+  "Convolutional Neural Networks": [
+    "cnn",
+    "cnns"
+  ],
+  "LLMs": [
+    "llm",
+    "large language models",
+    "large language model",
+    "gpt"
+  ],
+  "Retrieval-Augmented Generation": [
+    "rag"
+  ],
+  "Fine-tuning": [
+    "fine tuning",
+    "finetuning",
+    "lora",
+    "qlora",
+    "peft"
+  ],
+  "Hugging Face": [
+    "huggingface",
+    "hf transformers"
+  ],
+  "Scikit-learn": [
+    "sklearn",
+    "scikit learn",
+    "scikit"
+  ],
+  "TensorFlow": [
+    "tf",
+    "keras",
+    "tensorflow 2"
+  ],
+  "PyTorch": [
+    "torch"
+  ],
+  "Pandas": [
+    "pandas dataframe"
+  ],
+  "Apache Spark": [
+    "spark",
+    "pyspark"
+  ],
+  "Airflow": [
+    "apache airflow"
+  ],
+  "Kafka": [
+    "apache kafka"
+  ],
+  "Statistics": [
+    "statistical analysis",
+    "stats",
+    "statistical modeling"
+  ],
+  "Data Visualization": [
+    "data viz",
+    "dataviz",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "dashboards",
+    "dashboarding",
+    "dashboard"
+  ],
+  "Power BI": [
+    "powerbi"
+  ],
+  "Excel": [
+    "ms excel",
+    "microsoft excel",
+    "spreadsheets"
+  ],
+  "AWS": [
+    "amazon web services",
+    "ec2",
+    "s3",
+    "lambda"
+  ],
+  "Google Cloud": [
+    "gcp",
+    "google cloud platform"
+  ],
+  "Azure": [
+    "microsoft azure"
+  ],
+  "Kubernetes": [
+    "k8s",
+    "eks",
+    "gke",
+    "aks"
+  ],
+  "Docker": [
+    "containers",
+    "containerization"
+  ],
+  "CI/CD": [
+    "ci cd",
+    "continuous integration",
+    "continuous deployment",
+    "cicd"
+  ],
+  "Terraform": [
+    "iac",
+    "infrastructure as code"
+  ],
+  "Linux": [
+    "unix",
+    "ubuntu",
+    "rhel"
+  ],
+  "Bash": [
+    "shell scripting",
+    "shell"
+  ],
+  "Git": [
+    "github",
+    "gitlab",
+    "version control"
+  ],
+  "System Design": [
+    "systems design",
+    "scalable systems"
+  ],
+  "Distributed Systems": [
+    "distributed computing"
+  ],
+  "Data Structures": [
+    "dsa",
+    "algorithms",
+    "data structures and algorithms"
+  ],
+  "Cloud Architecture": [
+    "cloud design",
+    "cloud solutions architecture"
+  ],
+  "Security": [
+    "cybersecurity",
+    "information security",
+    "infosec"
+  ],
+  "Penetration Testing": [
+    "pentesting",
+    "pen testing",
+    "pentest"
+  ],
+  "Ethical Hacking": [
+    "hacking",
+    "ceh"
+  ],
+  "IAM": [
+    "identity and access management"
+  ],
+  "SIEM": [
+    "security monitoring"
+  ],
+  "Product Management": [
+    "product strategy",
+    "product ownership"
+  ],
+  "User Research": [
+    "user interviews",
+    "customer research"
+  ],
+  "User Experience": [
+    "ux",
+    "ux design"
+  ],
+  "Visual Design": [
+    "ui",
+    "ui design",
+    "graphic design"
+  ],
+  "Agile": [
+    "agile methodology",
+    "kanban"
+  ],
+  "Scrum": [
+    "scrum master"
+  ],
+  "Stakeholder Management": [
+    "stakeholder communication"
+  ],
+  "Communication": [
+    "communication skills",
+    "presentation",
+    "teamwork"
+  ],
+  "Project Management": [
+    "project planning"
+  ],
+  "Financial Modeling": [
+    "financial modelling",
+    "dcf"
+  ],
+  "Time Series Analysis": [
+    "time series",
+    "forecasting models"
+  ],
+  "Mathematics": [
+    "math",
+    "maths",
+    "linear algebra and calculus"
+  ],
+  "Digital Marketing": [
+    "online marketing",
+    "performance marketing"
+  ],
+  "SEO": [
+    "search engine optimization"
+  ],
+  "SEM": [
+    "google ads",
+    "ppc",
+    "search engine marketing"
+  ],
+  "Google Analytics": [
+    "ga4"
+  ],
+  "Technical Writing": [
+    "documentation writing"
+  ],
+  "Public Speaking": [
+    "speaking",
+    "conference talks"
+  ],
+  "ROS": [
+    "robot operating system",
+    "ros2"
+  ],
+  "IoT": [
+    "internet of things"
+  ],
+  "Embedded C": [
+    "firmware"
+  ],
+  "Microcontrollers": [
+    "mcu",
+    "stm32",
+    "esp32"
+  ],
+  "AR/VR": [
+    "ar",
+    "vr",
+    "augmented reality",
+    "virtual reality",
+    "xr"
+  ],
+  "CAD": [
+    "computer aided design"
+  ],
+  "Finite Element Analysis": [
+    "fea"
+  ],
+  "VLSI": [
+    "vlsi design"
+  ],
+  "Model Deployment": [
+    "model serving",
+    "ml deployment",
+    "deploying models"
+  ],
+  "MLflow": [
+    "ml flow"
+  ],
+  "Vector Databases": [
+    "pinecone",
+    "faiss",
+    "chromadb",
+    "weaviate",
+    "vector db"
+  ],
+  "Prompt Engineering": [
+    "prompting"
+  ],
+  "Feature Engineering": [
+    "feature selection"
+  ],
+  "A/B Testing": [
+    "ab testing",
+    "experimentation",
+    "split testing"
+  ],
+  "Monitoring": [
+    "alerting"
+  ],
+  "Observability": [
+    "opentelemetry",
+    "tracing"
+  ],
+  "Requirements Gathering": [
+    "requirements analysis",
+    "requirement gathering"
+  ],
+  "Wireframing": [
+    "wireframes"
+  ],
+  "Prototyping": [
+    "prototypes"
+  ],
+  "Selenium": [
+    "selenium webdriver"
+  ],
+  "Test Automation": [
+    "automation testing",
+    "automated testing"
+  ],
+  "Unit Testing": [
+    "unit tests",
+    "pytest",
+    "junit"
+  ],
+  "Data Warehousing": [
+    "data warehouse",
+    "dwh"
+  ],
+  "ETL": [
+    "elt",
+    "data pipelines"
+  ],
+  "Data Analysis": [
+    "eda",
+    "exploratory data analysis",
+    "data analytics",
+    "analytics"
+  ],
+  "Tableau": [
+    "tableau desktop"
+  ]
 }

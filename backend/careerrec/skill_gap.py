@@ -40,12 +40,16 @@ def analyze_skill_gap(
     required = required.sort_values(ascending=False)
 
     have = set(user_skills)
-    matched = [s for s in required.index if s in have]
+    core_matched = [s for s in required.index if s in have]
+    # Also credit other relevant skills the user has (in the career's taxonomy or asked for by employers).
+    relevant = set(career.all_skills) | set(row[row > 0.05].index)
+    extra = [s for s in user_skills if s in relevant and s not in core_matched]
+    matched = core_matched + extra
     missing = [
         SkillGap(s, round(float(required[s]), 3), _priority(float(required[s])))
         for s in required.index
         if s not in have
     ]
     total = float(required.sum()) or 1.0
-    coverage = float(required[matched].sum()) / total if matched else 0.0
+    coverage = float(required[core_matched].sum()) / total if core_matched else 0.0
     return {"matched": matched, "missing": missing, "coverage": round(coverage, 3)}

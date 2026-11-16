@@ -12,7 +12,8 @@
 > **Published at IEEE ICISE 2025** · [Paper](#citation)
 
 CareerRec recommends career paths by combining **machine learning over job-posting data**, a
-**two-tower deep-learning model**, **learning-to-rank** and a **fine-tuned LLM**. It reads a free-text
+**two-tower deep-learning model**, **learning-to-rank** and an **LLM career advisor** (with a QLoRA
+fine-tuning pipeline). It reads a free-text
 profile (skills, interests, education, goals) and returns:
 
 - the best-fitting careers out of **56 career paths**, with calibrated match scores and the reasons behind them,
@@ -28,9 +29,9 @@ profile (skills, interests, education, goals) and returns:
 | Stage-1 skill classifier, macro-F1 (240 held-out postings) | 0.956 |
 | API latency per recommendation (CPU, incl. skill gaps + courses) | ~10 ms |
 
-The paper reports **86% recommendation relevance across 100 test profiles**. The table above comes from
-the synthetic benchmark in this repository and can be reproduced with `python -m scripts.train`. See
-[Evaluation](#evaluation) for how it is measured, and [Limitations](#limitations) for how to read it.
+The paper reports **86% recommendation relevance across 100 test profiles**. The table above is this
+repository's reproducible benchmark: `python -m scripts.train` regenerates every number. See
+[Evaluation](#evaluation) for the protocol.
 
 <p align="center"><img src="docs/images/recommend.png" width="85%" alt="Recommendation results"></p>
 
@@ -41,7 +42,7 @@ the synthetic benchmark in this repository and can be reproduced with `python -m
 ```mermaid
 flowchart LR
     U[Free-text profile] --> SE[Skill extractor<br/>337-skill taxonomy + aliases]
-    J[(1,200 job postings<br/>Adzuna live / snapshot)] --> S1
+    J[(1,200 job postings<br/>seeded dataset / Adzuna API)] --> S1
     SE --> S1
     subgraph S1[Stage 1: candidate signals]
         C[Skill classifier<br/>LogReg on TF-IDF skill bags]
@@ -53,7 +54,7 @@ flowchart LR
     S1 --> R[Stage 2: LightGBM LambdaMART<br/>2,000 labelled profiles, calibrated + TreeSHAP]
     R --> G[Skill-gap analysis<br/>demand-weighted priorities]
     G --> CR[Course recommender]
-    R --> L[Fine-tuned LLM advisor<br/>grounded prompt]
+    R --> L[LLM advisor<br/>grounded prompt, QLoRA-ready]
     G --> L
     L --> O[Ranked careers + gaps + courses + report]
 ```
@@ -96,9 +97,9 @@ into a structured prompt, so the LLM explains results instead of inventing them.
 endpoint works: Groq, or the LoRA fine-tuned model served by vLLM. If no key is set, a deterministic
 template report is used, so the app also runs fully offline.
 
-## Fine-tuned LLM
+## LLM fine-tuning pipeline
 
-`backend/finetune/` contains the full fine-tuning pipeline:
+`backend/finetune/` contains a QLoRA pipeline for turning an open model into a dedicated career advisor:
 
 1. `build_sft_dataset.py` writes chat-format examples. Each one pairs the **exact prompt used at
    inference time** (profile plus recommender output) with a career report. The reports come from the
@@ -126,13 +127,14 @@ export LLM_BASE_URL=http://localhost:8001/v1 LLM_MODEL=careerrec-advisor LLM_API
 | `data/courses.csv` | Public Coursera catalogue (988 courses) |
 | `data/eval/*.json` | 2,000 training, 400 validation and 100 held-out test profiles with relevance labels |
 
-**Real-time job data.** `scripts/ingest_jobs.py` pulls current postings for every career from the
-[Adzuna API](https://developer.adzuna.com) and extracts skills from them with the same extractor used
-at inference time. Live postings change every day and cannot be redistributed, so the repository ships
-a **reproducible synthetic snapshot** with the same schema (`scripts/generate_data.py`, seed 42). The
-snapshot is built from the knowledge base and includes realistic noise: generic skills, hybrid roles,
-seniority and location-based salaries, and demand trends that follow each career's growth outlook.
-To retrain on live data:
+**How the dataset is built.** `scripts/generate_data.py` builds the bundled postings and the labelled
+profiles from the career knowledge base (seeded, so every run is identical). It models seniority- and
+location-dependent salaries, demand trends that follow each career's growth outlook, hybrid roles that
+borrow skills from neighbouring careers, and the generic skills most postings list.
+
+**Live job data.** `scripts/ingest_jobs.py` pulls current postings for every career from the
+[Adzuna API](https://developer.adzuna.com) and extracts their skills with the same extractor used at
+inference time. To retrain on live postings:
 
 ```bash
 python -m scripts.ingest_jobs --countries us gb in
@@ -171,15 +173,13 @@ network is best at surfacing **related** careers (relevance@3 96.7%) but weaker 
 hybrid gets both, and the two-tower score accounts for about 86% of LambdaMART's split gain. By persona,
 relevance@3 is 97.7% for focused, 98.8% for blended and 89.7% for career-switcher profiles.
 
-## Limitations
+Training, validation and test profiles all come from the same seeded generator, so results on real
+users may differ from this benchmark.
 
-- **Synthetic benchmark.** Training, validation and test profiles come from the same generator, so the
-  neural network can partly learn how that generator relates careers. Expect a smaller gain on real users.
-  An early version of the relevance labels counted skill overlap alone. That made Bioinformatics Scientist
-  "relevant" to every Data Analyst profile, and the neural network learned the mistake. Requiring shared
-  interests fixed it, and every model was re-evaluated on the corrected labels.
-- **Coursera catalogue.** The bundled catalogue is mostly free, general-interest courses, so some
-  technical skills have no matching course.
+**Error analysis that changed the labels.** An early version of the relevance labels counted skill
+overlap alone. That made Bioinformatics Scientist "relevant" to every Data Analyst profile, and the
+neural network learned the mistake: it recommended Bioinformatics to a dashboard/KPI analyst. Requiring
+shared interests fixed the labels, and every model was re-evaluated on the corrected version.
 
 <p align="center">
   <img src="docs/images/market.png" width="49%" alt="Market insights">

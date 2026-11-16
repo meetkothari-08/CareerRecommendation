@@ -11,7 +11,7 @@ from .data import Career, load_careers, load_postings, load_profiles
 from .market import MarketAnalyzer
 from .recommender import CareerRecommender, UserProfile
 from .skill_gap import analyze_skill_gap
-from .training import train_recommender
+from .training import build_extractor, train_recommender
 
 log = logging.getLogger(__name__)
 
@@ -22,6 +22,7 @@ def load_or_train_recommender(careers: list[Career], postings) -> CareerRecommen
         try:
             model = CareerRecommender.load(paths.MODEL_PATH)
             if model.ids == [c.id for c in careers]:
+                model.extractor = build_extractor(careers)  # pick up alias edits without retraining
                 return model
             log.info("Saved model is out of date with careers.json; retraining")
         except Exception as exc:  # e.g. scikit-learn version mismatch

@@ -8,7 +8,7 @@ const pipeline = [
   { icon: Wand2, title: 'Skill extraction', text: 'Free text like "sklearn, k8s, some ML" is normalised onto a 330+ skill taxonomy.' },
   { icon: Brain, title: 'Deep learning + LambdaMART', text: 'A two-tower neural network and market-demand signals feed a LightGBM learning-to-rank model.' },
   { icon: Target, title: 'Skill-gap analysis', text: 'Missing skills are prioritised by how often employers ask for them in job postings.' },
-  { icon: MessageSquare, title: 'Fine-tuned LLM advice', text: 'An LLM turns the structured results into a grounded, personalised 90-day plan.' },
+  { icon: MessageSquare, title: 'Grounded LLM advice', text: 'An LLM turns the structured results into a grounded, personalised 90-day plan.' },
 ];
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
             AI career recommendations grounded in real job-market data
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">
-            CareerRec combines machine learning over job postings with a fine-tuned LLM to recommend from 50+ career
+            CareerRec combines machine learning over job postings with an LLM advisor to recommend from 50+ career
             paths, pinpoint your skill gaps and build a learning plan.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

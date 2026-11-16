@@ -113,8 +113,11 @@ export interface ChatMessage {
   content: string;
 }
 
+// Empty in development (Vite proxies /api to localhost:8000); set VITE_API_URL to the deployed backend in production.
+const API_BASE = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '');
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`/api${path}`, { headers: { 'Content-Type': 'application/json' }, ...init });
+  const res = await fetch(`${API_BASE}/api${path}`, { headers: { 'Content-Type': 'application/json' }, ...init });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
     throw new Error(typeof body.detail === 'string' ? body.detail : `Request failed (${res.status})`);

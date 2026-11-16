@@ -50,7 +50,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm text-slate-500 sm:flex-row">
-          <p>CareerRec — hybrid ML + LLM career recommendation. Published at IEEE ICISE 2025.</p>
+          <p>CareerRec — hybrid ML + LLM career recommendation.</p>
           <a
             href="https://github.com/meetkothari-08/CareerRecommendation"
             className="inline-flex items-center gap-1.5 hover:text-slate-900"

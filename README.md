@@ -9,8 +9,6 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)
 
-> **Published at IEEE ICISE 2025** · [Paper](#citation)
-
 CareerRec recommends career paths by combining **machine learning over job-posting data**, a
 **two-tower deep-learning model**, **learning-to-rank** and an **LLM career advisor** (with a QLoRA
 fine-tuning pipeline). It reads a free-text
@@ -229,6 +227,22 @@ comes from the offline template.
 curl -s localhost:8000/api/recommend -H 'Content-Type: application/json' -d '{"skills": "python, sklearn, SQL, pytorch", "interests": "AI products", "education": "B.Tech", "experience_years": 1, "include_advice": false}'
 ```
 
+## Deployment
+
+**Frontend: Vercel.** Import the repo in Vercel, set **Root Directory** to `frontend` (`frontend/vercel.json`
+configures the Vite build and client-side routing), and add the environment variable
+`VITE_API_URL=https://<your-backend-host>`.
+
+**Backend: any Docker host** (Render, Railway, Fly.io, Google Cloud Run). The multi-stage
+`backend/Dockerfile` trains the model during the build and serves it with Uvicorn on port 8000:
+
+```bash
+docker build -f backend/Dockerfile -t careerrec-api .
+```
+
+Set `CORS_ORIGINS=https://<your-app>.vercel.app` on the backend, plus `LLM_API_KEY` if you want
+LLM-written reports.
+
 ## Project structure
 
 ```
@@ -249,14 +263,6 @@ curl -s localhost:8000/api/recommend -H 'Content-Type: application/json' -d '{"s
 
 **ML / AI:** PyTorch (two-tower retrieval), LightGBM (LambdaMART learning-to-rank), scikit-learn (logistic regression, TF-IDF), Optuna, MLflow, NumPy, pandas, Hugging Face Transformers, PEFT/QLoRA, TRL, vLLM, Groq (Llama 3) ·
 **Backend:** FastAPI, Pydantic, httpx, pytest, Ruff · **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Recharts · **Ops:** Docker, GitHub Actions
-
-## Citation
-
-If you use this work, please cite the paper (IEEE ICISE 2025):
-
-```
-<!-- TODO: add the IEEE Xplore link and BibTeX entry -->
-```
 
 ## License
 

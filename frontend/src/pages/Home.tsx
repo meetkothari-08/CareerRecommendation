@@ -21,8 +21,7 @@ export default function Home() {
     <>
       <section className="bg-gradient-to-b from-indigo-50 to-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center">
-          <span className="chip bg-indigo-100 text-indigo-700">Published at IEEE ICISE 2025</span>
-          <h1 className="mx-auto mt-5 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
             AI career recommendations grounded in real job-market data
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">

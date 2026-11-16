@@ -4,119 +4,269 @@
     "careers": 56,
     "skills_in_taxonomy": 337,
     "companies": 533,
-    "ranker_training_profiles": 400,
+    "train_profiles": 2000,
+    "validation_profiles": 400,
     "test_profiles": 100
   },
+  "selected_model": "LambdaMART + two-tower (hybrid)",
   "headline": {
     "metric": "relevance@3",
-    "value": 0.8833,
-    "description": "Relevant careers in the top 3 divided by the best achievable, averaged over the 100 held-out test profiles. A career is relevant if it is the profile's primary career, its blended/previous career, or closely related (skill Jaccard >= 0.25)."
+    "value": 0.97,
+    "description": "Relevant careers in the top 3 divided by the best achievable, averaged over the 100 held-out test profiles. A career is relevant if it is the profile's primary career, its blended/previous career, a natural next role, or a related career (skill Jaccard >= 0.25 and overlapping interests). The production model is selected on the validation profiles."
   },
   "test": {
-    "relevance@3": 0.8833,
-    "precision@3": 0.6867,
-    "precision@5": 0.512,
-    "top1_accuracy": 0.91,
+    "relevance@3": 0.97,
+    "precision@3": 0.97,
+    "precision@5": 0.75,
+    "top1_accuracy": 0.95,
     "hit@3": 0.99,
     "hit@5": 0.99,
-    "mrr": 0.9473,
-    "ndcg@5": 0.9171
+    "mrr": 0.9705,
+    "ndcg@5": 0.9657
   },
   "test_by_profile_type": {
     "blended": {
       "profiles": 28,
-      "relevance@3": 0.8452,
-      "precision@3": 0.7262,
-      "precision@5": 0.5357,
-      "top1_accuracy": 0.8929,
+      "relevance@3": 0.9881,
+      "precision@3": 0.9881,
+      "precision@5": 0.7571,
+      "top1_accuracy": 0.9286,
       "hit@3": 1.0,
       "hit@5": 1.0,
-      "mrr": 0.9464,
-      "ndcg@5": 0.9119
+      "mrr": 0.9643,
+      "ndcg@5": 0.9593
     },
     "focused": {
       "profiles": 59,
-      "relevance@3": 0.9096,
-      "precision@3": 0.6497,
-      "precision@5": 0.4881,
-      "top1_accuracy": 0.9322,
+      "relevance@3": 0.9774,
+      "precision@3": 0.9774,
+      "precision@5": 0.7356,
+      "top1_accuracy": 0.9661,
       "hit@3": 1.0,
       "hit@5": 1.0,
-      "mrr": 0.9605,
-      "ndcg@5": 0.9354
+      "mrr": 0.9831,
+      "ndcg@5": 0.9848
     },
     "switcher": {
       "profiles": 13,
-      "relevance@3": 0.8462,
-      "precision@3": 0.7692,
-      "precision@5": 0.5692,
-      "top1_accuracy": 0.8462,
+      "relevance@3": 0.8974,
+      "precision@3": 0.8974,
+      "precision@5": 0.8,
+      "top1_accuracy": 0.9231,
       "hit@3": 0.9231,
       "hit@5": 0.9231,
-      "mrr": 0.8897,
-      "ndcg@5": 0.8454
+      "mrr": 0.9267,
+      "ndcg@5": 0.893
     }
   },
   "ablation": {
     "Rule-based skill overlap (baseline)": {
-      "relevance@3": 0.7883,
-      "precision@3": 0.61,
-      "precision@5": 0.458,
+      "relevance@3": 0.6567,
+      "precision@3": 0.6567,
+      "precision@5": 0.492,
       "top1_accuracy": 0.71,
       "hit@3": 0.86,
       "hit@5": 0.91,
       "mrr": 0.7971,
-      "ndcg@5": 0.8116
+      "ndcg@5": 0.7192
     },
     "Interest similarity only": {
-      "relevance@3": 0.6933,
-      "precision@3": 0.5233,
-      "precision@5": 0.38,
+      "relevance@3": 0.6,
+      "precision@3": 0.6,
+      "precision@5": 0.452,
       "top1_accuracy": 0.81,
       "hit@3": 0.95,
       "hit@5": 0.96,
       "mrr": 0.8773,
-      "ndcg@5": 0.7705
+      "ndcg@5": 0.7139
     },
     "Market skill similarity only": {
-      "relevance@3": 0.855,
-      "precision@3": 0.6567,
-      "precision@5": 0.48,
+      "relevance@3": 0.72,
+      "precision@3": 0.72,
+      "precision@5": 0.542,
       "top1_accuracy": 0.73,
       "hit@3": 0.9,
       "hit@5": 0.95,
       "mrr": 0.8248,
-      "ndcg@5": 0.8571
+      "ndcg@5": 0.7752
     },
     "Skill classifier only": {
-      "relevance@3": 0.8317,
-      "precision@3": 0.6367,
-      "precision@5": 0.474,
+      "relevance@3": 0.6967,
+      "precision@3": 0.6967,
+      "precision@5": 0.532,
       "top1_accuracy": 0.71,
       "hit@3": 0.9,
       "hit@5": 0.95,
       "mrr": 0.8147,
-      "ndcg@5": 0.8451
+      "ndcg@5": 0.7642
     },
     "Linear blend (grid-tuned)": {
-      "relevance@3": 0.88,
-      "precision@3": 0.68,
-      "precision@5": 0.504,
-      "top1_accuracy": 0.91,
-      "hit@3": 0.97,
+      "relevance@3": 0.7533,
+      "precision@3": 0.7533,
+      "precision@5": 0.588,
+      "top1_accuracy": 0.95,
+      "hit@3": 0.98,
       "hit@5": 0.99,
-      "mrr": 0.946,
-      "ndcg@5": 0.9138
+      "mrr": 0.9679,
+      "ndcg@5": 0.8438
     },
-    "Two-stage hybrid (learned ranker)": {
-      "relevance@3": 0.8833,
-      "precision@3": 0.6867,
-      "precision@5": 0.512,
-      "top1_accuracy": 0.91,
+    "Two-tower neural network (PyTorch)": {
+      "relevance@3": 0.9667,
+      "precision@3": 0.9667,
+      "precision@5": 0.744,
+      "top1_accuracy": 0.84,
+      "hit@3": 0.94,
+      "hit@5": 0.99,
+      "mrr": 0.8983,
+      "ndcg@5": 0.9444
+    },
+    "Logistic-regression ranker": {
+      "relevance@3": 0.7733,
+      "precision@3": 0.7733,
+      "precision@5": 0.6,
+      "top1_accuracy": 0.92,
       "hit@3": 0.99,
       "hit@5": 0.99,
+      "mrr": 0.9524,
+      "ndcg@5": 0.8509
+    },
+    "LightGBM LambdaMART ranker": {
+      "relevance@3": 0.77,
+      "precision@3": 0.77,
+      "precision@5": 0.592,
+      "top1_accuracy": 0.95,
+      "hit@3": 0.99,
+      "hit@5": 0.99,
+      "mrr": 0.969,
+      "ndcg@5": 0.8507
+    },
+    "LambdaMART + two-tower (hybrid)": {
+      "relevance@3": 0.97,
+      "precision@3": 0.97,
+      "precision@5": 0.75,
+      "top1_accuracy": 0.95,
+      "hit@3": 0.99,
+      "hit@5": 0.99,
+      "mrr": 0.9705,
+      "ndcg@5": 0.9657
+    }
+  },
+  "validation": {
+    "Rule-based skill overlap (baseline)": {
+      "relevance@3": 0.61,
+      "precision@3": 0.61,
+      "precision@5": 0.459,
+      "top1_accuracy": 0.6425,
+      "hit@3": 0.83,
+      "hit@5": 0.87,
+      "mrr": 0.7477,
+      "ndcg@5": 0.6728
+    },
+    "Interest similarity only": {
+      "relevance@3": 0.6117,
+      "precision@3": 0.6117,
+      "precision@5": 0.474,
+      "top1_accuracy": 0.7475,
+      "hit@3": 0.9,
+      "hit@5": 0.935,
+      "mrr": 0.8318,
+      "ndcg@5": 0.7064
+    },
+    "Market skill similarity only": {
+      "relevance@3": 0.6642,
+      "precision@3": 0.6642,
+      "precision@5": 0.505,
+      "top1_accuracy": 0.68,
+      "hit@3": 0.8525,
+      "hit@5": 0.9275,
+      "mrr": 0.7819,
+      "ndcg@5": 0.7271
+    },
+    "Skill classifier only": {
+      "relevance@3": 0.63,
+      "precision@3": 0.63,
+      "precision@5": 0.485,
+      "top1_accuracy": 0.6675,
+      "hit@3": 0.84,
+      "hit@5": 0.915,
+      "mrr": 0.7701,
+      "ndcg@5": 0.7074
+    },
+    "Linear blend (grid-tuned)": {
+      "relevance@3": 0.7425,
+      "precision@3": 0.7425,
+      "precision@5": 0.5665,
+      "top1_accuracy": 0.8775,
+      "hit@3": 0.985,
+      "hit@5": 0.9925,
+      "mrr": 0.9313,
+      "ndcg@5": 0.8167
+    },
+    "Two-tower neural network (PyTorch)": {
+      "relevance@3": 0.9592,
+      "precision@3": 0.9592,
+      "precision@5": 0.742,
+      "top1_accuracy": 0.8025,
+      "hit@3": 0.9475,
+      "hit@5": 0.975,
+      "mrr": 0.8797,
+      "ndcg@5": 0.9329
+    },
+    "Logistic-regression ranker": {
+      "relevance@3": 0.755,
+      "precision@3": 0.755,
+      "precision@5": 0.575,
+      "top1_accuracy": 0.91,
+      "hit@3": 0.9825,
+      "hit@5": 0.995,
       "mrr": 0.9473,
-      "ndcg@5": 0.9171
+      "ndcg@5": 0.8262
+    },
+    "LightGBM LambdaMART ranker": {
+      "relevance@3": 0.7583,
+      "precision@3": 0.7583,
+      "precision@5": 0.5885,
+      "top1_accuracy": 0.9175,
+      "hit@3": 0.985,
+      "hit@5": 0.995,
+      "mrr": 0.9517,
+      "ndcg@5": 0.8364
+    },
+    "LambdaMART + two-tower (hybrid)": {
+      "relevance@3": 0.9608,
+      "precision@3": 0.9608,
+      "precision@5": 0.753,
+      "top1_accuracy": 0.905,
+      "hit@3": 0.98,
+      "hit@5": 0.99,
+      "mrr": 0.9426,
+      "ndcg@5": 0.9538
+    }
+  },
+  "feature_importance": {
+    "LightGBM LambdaMART ranker": {
+      "interest_similarity": 0.4587,
+      "skill_similarity": 0.2206,
+      "clf_proba": 0.1587,
+      "interest_similarity_scaled": 0.0621,
+      "clf_reciprocal_rank": 0.0596,
+      "taxonomy_jaccard": 0.0285,
+      "clf_log_proba": 0.0053,
+      "core_skill_coverage": 0.0052,
+      "education_fit": 0.0015
+    },
+    "LambdaMART + two-tower (hybrid)": {
+      "two_tower_score": 0.7326,
+      "two_tower_reciprocal_rank": 0.132,
+      "skill_similarity": 0.0521,
+      "interest_similarity_scaled": 0.0483,
+      "interest_similarity": 0.0185,
+      "clf_proba": 0.0062,
+      "core_skill_coverage": 0.0034,
+      "clf_reciprocal_rank": 0.0033,
+      "clf_log_proba": 0.0023,
+      "taxonomy_jaccard": 0.0011,
+      "education_fit": 0.0002
     }
   },
   "stage1_classifier": {
@@ -124,10 +274,29 @@
     "macro_f1": 0.9562,
     "holdout_postings": 240
   },
+  "two_tower": {
+    "config": {
+      "embedding_dim": 64,
+      "hidden_dim": 256,
+      "dropout": 0.4847923138822793,
+      "temperature": 0.13054491604548749,
+      "lr": 0.004217420082579903,
+      "weight_decay": 0.0001,
+      "epochs": 40,
+      "batch_size": 128,
+      "skill_dropout": 0.35793094017105953,
+      "posting_weight": 0.6381099809299766,
+      "patience": 6,
+      "seed": 42
+    },
+    "epochs_trained": 12,
+    "parameters": 425536
+  },
   "linear_blend_weights": {
     "classifier": 0.05,
-    "skill_similarity": 0.65,
-    "interest_similarity": 0.25,
+    "skill_similarity": 0.6,
+    "interest_similarity": 0.3,
     "education_fit": 0.05
-  }
+  },
+  "training_seconds": 154.8
 }

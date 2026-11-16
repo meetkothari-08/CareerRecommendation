@@ -30,7 +30,8 @@ export interface CareerRec {
   description: string;
   match_score: number;
   confidence: number;
-  signals: { classifier: number; skill_similarity: number; interest_similarity: number };
+  signals: { classifier: number; skill_similarity: number; interest_similarity: number; two_tower?: number };
+  explanation: { reason: string; contribution: number }[];
   skill_coverage: number;
   matched_skills: string[];
   missing_skills: SkillGap[];
@@ -90,10 +91,15 @@ export type MetricSet = Record<string, number>;
 
 export interface Metrics {
   dataset: Record<string, number>;
+  selected_model: string;
   headline: { metric: string; value: number; description: string };
   test: MetricSet;
   ablation: Record<string, MetricSet>;
+  validation: Record<string, MetricSet>;
+  feature_importance: Record<string, Record<string, number>>;
   stage1_classifier: { accuracy: number; macro_f1: number; holdout_postings: number };
+  two_tower: { config: Record<string, number>; epochs_trained: number; parameters: number } | null;
+  training_seconds: number;
 }
 
 export interface CareerSummary {
@@ -117,7 +123,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  health: () => request<{ status: string; llm_enabled: boolean; llm_model: string | null }>('/health'),
+  health: () => request<{ status: string; model: string; llm_enabled: boolean; llm_model: string | null }>('/health'),
   recommend: (p: ProfileInput) => request<RecommendResponse>('/recommend', { method: 'POST', body: JSON.stringify(p) }),
   careers: () => request<CareerSummary[]>('/careers'),
   marketOverview: () => request<MarketOverview>('/market/overview'),

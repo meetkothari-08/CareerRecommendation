@@ -26,7 +26,12 @@ def load_or_train_recommender(careers: list[Career], postings) -> CareerRecommen
             log.info("Saved model is out of date with careers.json; retraining")
         except Exception as exc:  # e.g. scikit-learn version mismatch
             log.warning("Could not load %s (%s); retraining", paths.MODEL_PATH, exc)
-    profiles = load_profiles(paths.VAL_PROFILES_PATH) if paths.VAL_PROFILES_PATH.exists() else None
+    # Cold start: fit the fast logistic pipeline. `python -m scripts.train` builds the full
+    # neural + LambdaMART model and saves it to models/.
+    log.warning(
+        "No trained model found at %s; fitting a quick baseline (run `python -m scripts.train`)", paths.MODEL_PATH
+    )
+    profiles = load_profiles(paths.TRAIN_PROFILES_PATH) if paths.TRAIN_PROFILES_PATH.exists() else None
     return train_recommender(careers, postings, profiles)
 
 
@@ -71,7 +76,9 @@ class CareerEngine:
                         "classifier": round(rec.classifier_probability, 3),
                         "skill_similarity": round(rec.skill_similarity, 3),
                         "interest_similarity": round(rec.interest_similarity, 3),
+                        **({"two_tower": round(rec.two_tower_score, 3)} if rec.two_tower_score is not None else {}),
                     },
+                    "explanation": rec.explanation,
                     "skill_coverage": gap["coverage"],
                     "matched_skills": gap["matched"],
                     "missing_skills": missing,

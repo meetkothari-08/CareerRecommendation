@@ -12,6 +12,7 @@
    "analytics_engineer",
    "bi_developer",
    "data_engineer",
+   "data_scientist",
    "product_manager"
   ]
  },
@@ -27,7 +28,6 @@
   "relevant": [
    "ai_research_scientist",
    "bioinformatics_scientist",
-   "data_analyst",
    "data_scientist"
   ]
  },
@@ -42,7 +42,9 @@
   "target": "blockchain_developer",
   "relevant": [
    "blockchain_developer",
-   "qa_automation_engineer"
+   "qa_automation_engineer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -70,6 +72,8 @@
   "profile_type": "blended",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer",
    "mechanical_design_engineer"
   ]
@@ -84,7 +88,9 @@
   "profile_type": "focused",
   "target": "computer_vision_engineer",
   "relevant": [
-   "computer_vision_engineer"
+   "ai_research_scientist",
+   "computer_vision_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -99,8 +105,10 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
+   "cloud_architect",
    "computer_vision_engineer",
-   "data_engineer"
+   "data_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -113,6 +121,8 @@
   "profile_type": "focused",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
    "systems_administrator"
   ]
  },
@@ -128,7 +138,8 @@
   "relevant": [
    "cloud_architect",
    "software_architect",
-   "solutions_architect"
+   "solutions_architect",
+   "technical_program_manager"
   ]
  },
  {
@@ -141,6 +152,7 @@
   "profile_type": "switcher",
   "target": "site_reliability_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "mlops_engineer",
@@ -160,7 +172,9 @@
   "profile_type": "focused",
   "target": "grc_analyst",
   "relevant": [
-   "grc_analyst"
+   "grc_analyst",
+   "project_manager",
+   "security_analyst"
   ]
  },
  {
@@ -175,7 +189,8 @@
   "relevant": [
    "ar_vr_developer",
    "embedded_software_engineer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -189,6 +204,8 @@
   "target": "ai_research_scientist",
   "relevant": [
    "ai_research_scientist",
+   "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -202,8 +219,10 @@
   "profile_type": "blended",
   "target": "computer_vision_engineer",
   "relevant": [
+   "ai_research_scientist",
    "computer_vision_engineer",
-   "data_analyst"
+   "data_analyst",
+   "robotics_engineer"
   ]
  },
  {
@@ -216,7 +235,9 @@
   "profile_type": "focused",
   "target": "qa_automation_engineer",
   "relevant": [
-   "qa_automation_engineer"
+   "devops_engineer",
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -229,8 +250,10 @@
   "profile_type": "blended",
   "target": "computer_vision_engineer",
   "relevant": [
+   "ai_research_scientist",
    "computer_vision_engineer",
-   "data_engineer"
+   "data_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -243,6 +266,7 @@
   "profile_type": "blended",
   "target": "site_reliability_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "database_administrator",
    "devops_engineer",
@@ -278,7 +302,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -292,12 +318,14 @@
   "profile_type": "focused",
   "target": "platform_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "mlops_engineer",
    "platform_engineer",
    "security_engineer",
-   "site_reliability_engineer"
+   "site_reliability_engineer",
+   "software_architect"
   ]
  },
  {
@@ -310,7 +338,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -325,7 +355,8 @@
   "relevant": [
    "ar_vr_developer",
    "database_administrator",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -354,7 +385,9 @@
   "profile_type": "focused",
   "target": "ux_designer",
   "relevant": [
-   "ux_designer"
+   "product_manager",
+   "ux_designer",
+   "ux_researcher"
   ]
  },
  {
@@ -369,7 +402,8 @@
   "relevant": [
    "ar_vr_developer",
    "game_developer",
-   "qa_automation_engineer"
+   "qa_automation_engineer",
+   "software_architect"
   ]
  },
  {
@@ -384,7 +418,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -398,6 +434,8 @@
   "target": "developer_advocate",
   "relevant": [
    "developer_advocate",
+   "product_manager",
+   "technical_product_manager",
    "technical_writer"
   ]
  },
@@ -411,7 +449,9 @@
   "profile_type": "focused",
   "target": "blockchain_developer",
   "relevant": [
-   "blockchain_developer"
+   "blockchain_developer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -425,6 +465,7 @@
   "target": "technical_writer",
   "relevant": [
    "developer_advocate",
+   "product_manager",
    "technical_writer"
   ]
  },
@@ -439,6 +480,8 @@
   "target": "developer_advocate",
   "relevant": [
    "developer_advocate",
+   "product_manager",
+   "technical_product_manager",
    "technical_writer"
   ]
  },
@@ -453,6 +496,7 @@
   "target": "iot_engineer",
   "relevant": [
    "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -467,6 +511,7 @@
   "target": "business_analyst",
   "relevant": [
    "business_analyst",
+   "data_analyst",
    "product_manager",
    "project_manager",
    "technical_product_manager"
@@ -482,7 +527,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -515,7 +562,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -528,7 +576,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -560,7 +610,9 @@
   "profile_type": "focused",
   "target": "ui_designer",
   "relevant": [
-   "ui_designer"
+   "frontend_developer",
+   "ui_designer",
+   "ux_designer"
   ]
  },
  {
@@ -610,6 +662,8 @@
   "profile_type": "focused",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -625,7 +679,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -638,7 +694,9 @@
   "profile_type": "focused",
   "target": "qa_automation_engineer",
   "relevant": [
-   "qa_automation_engineer"
+   "devops_engineer",
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -653,7 +711,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "cloud_architect",
+   "data_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -667,6 +727,7 @@
   "target": "project_manager",
   "relevant": [
    "business_analyst",
+   "product_manager",
    "project_manager",
    "technical_program_manager"
   ]
@@ -682,6 +743,7 @@
   "target": "ux_researcher",
   "relevant": [
    "product_manager",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -696,6 +758,7 @@
   "target": "electrical_engineer",
   "relevant": [
    "electrical_engineer",
+   "embedded_software_engineer",
    "vlsi_design_engineer"
   ]
  },
@@ -709,6 +772,8 @@
   "profile_type": "focused",
   "target": "vlsi_design_engineer",
   "relevant": [
+   "electrical_engineer",
+   "embedded_software_engineer",
    "vlsi_design_engineer"
   ]
  },
@@ -722,6 +787,7 @@
   "profile_type": "focused",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -739,8 +805,8 @@
   "profile_type": "focused",
   "target": "bioinformatics_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
-   "data_analyst",
    "data_scientist"
   ]
  },
@@ -754,7 +820,9 @@
   "profile_type": "focused",
   "target": "grc_analyst",
   "relevant": [
-   "grc_analyst"
+   "grc_analyst",
+   "project_manager",
+   "security_analyst"
   ]
  },
  {
@@ -768,6 +836,8 @@
   "target": "ai_research_scientist",
   "relevant": [
    "ai_research_scientist",
+   "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -781,7 +851,9 @@
   "profile_type": "focused",
   "target": "financial_analyst",
   "relevant": [
-   "financial_analyst"
+   "business_analyst",
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -794,7 +866,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -809,7 +883,8 @@
   "relevant": [
    "android_developer",
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -822,6 +897,7 @@
   "profile_type": "focused",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -856,6 +932,7 @@
   "profile_type": "switcher",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -874,6 +951,7 @@
   "profile_type": "blended",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
    "embedded_software_engineer",
    "iot_engineer"
   ]
@@ -889,6 +967,7 @@
   "target": "quantitative_analyst",
   "relevant": [
    "data_scientist",
+   "machine_learning_engineer",
    "quantitative_analyst"
   ]
  },
@@ -919,6 +998,7 @@
   "target": "grc_analyst",
   "relevant": [
    "grc_analyst",
+   "project_manager",
    "security_analyst"
   ]
  },
@@ -933,6 +1013,8 @@
   "target": "ai_research_scientist",
   "relevant": [
    "ai_research_scientist",
+   "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -947,7 +1029,9 @@
   "target": "backend_developer",
   "relevant": [
    "backend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "platform_engineer",
+   "software_architect"
   ]
  },
  {
@@ -976,7 +1060,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -989,6 +1075,7 @@
   "profile_type": "focused",
   "target": "security_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "cloud_security_engineer",
    "platform_engineer",
@@ -1025,7 +1112,9 @@
   "target": "mechanical_design_engineer",
   "relevant": [
    "embedded_software_engineer",
-   "mechanical_design_engineer"
+   "mechanical_design_engineer",
+   "project_manager",
+   "robotics_engineer"
   ]
  },
  {
@@ -1038,7 +1127,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -1052,6 +1143,7 @@
   "target": "business_analyst",
   "relevant": [
    "business_analyst",
+   "data_analyst",
    "product_manager",
    "project_manager",
    "technical_product_manager"
@@ -1068,7 +1160,9 @@
   "target": "android_developer",
   "relevant": [
    "android_developer",
-   "ios_developer"
+   "full_stack_developer",
+   "ios_developer",
+   "software_architect"
   ]
  },
  {
@@ -1098,7 +1192,9 @@
   "profile_type": "focused",
   "target": "ui_designer",
   "relevant": [
-   "ui_designer"
+   "frontend_developer",
+   "ui_designer",
+   "ux_designer"
   ]
  },
  {
@@ -1111,8 +1207,10 @@
   "profile_type": "blended",
   "target": "penetration_tester",
   "relevant": [
+   "cloud_security_engineer",
    "grc_analyst",
-   "penetration_tester"
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -1127,7 +1225,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -1141,7 +1241,8 @@
   "target": "game_developer",
   "relevant": [
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -1173,6 +1274,8 @@
    "backend_developer",
    "frontend_developer",
    "full_stack_developer",
+   "software_architect",
+   "technical_product_manager",
    "ui_designer"
   ]
  },
@@ -1188,7 +1291,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -1201,7 +1306,9 @@
   "profile_type": "focused",
   "target": "financial_analyst",
   "relevant": [
-   "financial_analyst"
+   "business_analyst",
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -1214,6 +1321,8 @@
   "profile_type": "focused",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator"
   ]
  },
@@ -1228,6 +1337,7 @@
   "target": "business_analyst",
   "relevant": [
    "business_analyst",
+   "data_analyst",
    "ios_developer",
    "product_manager",
    "project_manager",
@@ -1293,13 +1403,15 @@
   "profile_type": "switcher",
   "target": "platform_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "financial_analyst",
    "mlops_engineer",
    "platform_engineer",
    "security_engineer",
-   "site_reliability_engineer"
+   "site_reliability_engineer",
+   "software_architect"
   ]
  },
  {
@@ -1313,7 +1425,9 @@
   "target": "ios_developer",
   "relevant": [
    "android_developer",
-   "ios_developer"
+   "full_stack_developer",
+   "ios_developer",
+   "software_architect"
   ]
  },
  {
@@ -1327,6 +1441,7 @@
   "target": "project_manager",
   "relevant": [
    "business_analyst",
+   "product_manager",
    "project_manager",
    "robotics_engineer",
    "technical_program_manager"
@@ -1343,6 +1458,7 @@
   "target": "business_analyst",
   "relevant": [
    "business_analyst",
+   "data_analyst",
    "product_manager",
    "project_manager",
    "technical_product_manager"
@@ -1360,7 +1476,8 @@
   "relevant": [
    "cloud_architect",
    "software_architect",
-   "solutions_architect"
+   "solutions_architect",
+   "technical_program_manager"
   ]
  },
  {
@@ -1373,6 +1490,8 @@
   "profile_type": "focused",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator"
   ]
  },
@@ -1387,7 +1506,8 @@
   "target": "blockchain_developer",
   "relevant": [
    "blockchain_developer",
-   "security_engineer"
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -1401,6 +1521,7 @@
   "target": "project_manager",
   "relevant": [
    "business_analyst",
+   "product_manager",
    "project_manager",
    "technical_program_manager"
   ]
@@ -1434,7 +1555,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "cloud_architect",
+   "data_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -1462,6 +1585,7 @@
   "profile_type": "blended",
   "target": "financial_analyst",
   "relevant": [
+   "business_analyst",
    "financial_analyst",
    "quantitative_analyst"
   ]
@@ -1476,6 +1600,7 @@
   "profile_type": "focused",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -1496,7 +1621,9 @@
    "backend_developer",
    "database_administrator",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -1512,7 +1639,8 @@
    "analytics_engineer",
    "backend_developer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -1527,7 +1655,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "cloud_architect",
+   "data_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -1557,12 +1687,14 @@
   "profile_type": "focused",
   "target": "platform_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "mlops_engineer",
    "platform_engineer",
    "security_engineer",
-   "site_reliability_engineer"
+   "site_reliability_engineer",
+   "software_architect"
   ]
  },
  {
@@ -1576,6 +1708,7 @@
   "target": "project_manager",
   "relevant": [
    "business_analyst",
+   "product_manager",
    "project_manager",
    "technical_program_manager"
   ]
@@ -1608,6 +1741,8 @@
   "profile_type": "focused",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator"
   ]
  },
@@ -1621,6 +1756,7 @@
   "profile_type": "blended",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_scientist",
    "machine_learning_engineer",
@@ -1639,7 +1775,8 @@
   "relevant": [
    "cloud_architect",
    "software_architect",
-   "solutions_architect"
+   "solutions_architect",
+   "technical_program_manager"
   ]
  },
  {
@@ -1653,7 +1790,9 @@
   "target": "mechanical_design_engineer",
   "relevant": [
    "embedded_software_engineer",
-   "mechanical_design_engineer"
+   "mechanical_design_engineer",
+   "project_manager",
+   "robotics_engineer"
   ]
  },
  {
@@ -1686,8 +1825,10 @@
   "profile_type": "switcher",
   "target": "financial_analyst",
   "relevant": [
+   "business_analyst",
    "cloud_architect",
-   "financial_analyst"
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -1700,8 +1841,8 @@
   "profile_type": "blended",
   "target": "bioinformatics_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
-   "data_analyst",
    "data_scientist",
    "mlops_engineer"
   ]
@@ -1716,8 +1857,10 @@
   "profile_type": "blended",
   "target": "qa_automation_engineer",
   "relevant": [
+   "devops_engineer",
    "game_developer",
-   "qa_automation_engineer"
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -1731,6 +1874,7 @@
   "target": "ar_vr_developer",
   "relevant": [
    "ar_vr_developer",
+   "computer_vision_engineer",
    "game_developer"
   ]
  },
@@ -1744,6 +1888,7 @@
   "profile_type": "focused",
   "target": "security_analyst",
   "relevant": [
+   "penetration_tester",
    "security_analyst",
    "security_engineer"
   ]
@@ -1758,7 +1903,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -1788,7 +1935,9 @@
   "profile_type": "focused",
   "target": "qa_automation_engineer",
   "relevant": [
-   "qa_automation_engineer"
+   "devops_engineer",
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -1802,6 +1951,7 @@
   "target": "iot_engineer",
   "relevant": [
    "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -1815,6 +1965,7 @@
   "profile_type": "blended",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bi_developer",
    "bioinformatics_scientist",
    "data_analyst",
@@ -1834,6 +1985,7 @@
   "target": "security_analyst",
   "relevant": [
    "machine_learning_engineer",
+   "penetration_tester",
    "security_analyst",
    "security_engineer"
   ]
@@ -1849,6 +2001,7 @@
   "target": "quantitative_analyst",
   "relevant": [
    "data_scientist",
+   "machine_learning_engineer",
    "quantitative_analyst"
   ]
  },
@@ -1863,6 +2016,8 @@
   "target": "ai_research_scientist",
   "relevant": [
    "ai_research_scientist",
+   "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -1891,7 +2046,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -1904,7 +2061,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -1936,7 +2095,9 @@
   "profile_type": "focused",
   "target": "mechanical_design_engineer",
   "relevant": [
-   "mechanical_design_engineer"
+   "mechanical_design_engineer",
+   "project_manager",
+   "robotics_engineer"
   ]
  },
  {
@@ -1949,7 +2110,9 @@
   "profile_type": "focused",
   "target": "ui_designer",
   "relevant": [
-   "ui_designer"
+   "frontend_developer",
+   "ui_designer",
+   "ux_designer"
   ]
  },
  {
@@ -1963,7 +2126,8 @@
   "target": "game_developer",
   "relevant": [
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -1979,7 +2143,8 @@
    "cloud_architect",
    "game_developer",
    "software_architect",
-   "solutions_architect"
+   "solutions_architect",
+   "technical_program_manager"
   ]
  },
  {
@@ -1992,6 +2157,7 @@
   "profile_type": "blended",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
    "embedded_software_engineer",
    "iot_engineer"
   ]
@@ -2006,8 +2172,8 @@
   "profile_type": "focused",
   "target": "data_analyst",
   "relevant": [
+   "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -2022,7 +2188,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -2035,7 +2203,9 @@
   "profile_type": "focused",
   "target": "blockchain_developer",
   "relevant": [
-   "blockchain_developer"
+   "blockchain_developer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -2049,6 +2219,7 @@
   "target": "business_analyst",
   "relevant": [
    "business_analyst",
+   "data_analyst",
    "product_manager",
    "project_manager",
    "technical_product_manager"
@@ -2064,6 +2235,7 @@
   "profile_type": "focused",
   "target": "site_reliability_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "mlops_engineer",
@@ -2084,6 +2256,7 @@
   "relevant": [
    "product_manager",
    "project_manager",
+   "software_architect",
    "technical_product_manager",
    "technical_program_manager"
   ]
@@ -2119,7 +2292,8 @@
    "backend_developer",
    "frontend_developer",
    "full_stack_developer",
-   "software_architect"
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -2133,7 +2307,8 @@
   "target": "financial_analyst",
   "relevant": [
    "business_analyst",
-   "financial_analyst"
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -2146,6 +2321,7 @@
   "profile_type": "switcher",
   "target": "security_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "cloud_security_engineer",
    "platform_engineer",
@@ -2164,7 +2340,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -2177,8 +2355,8 @@
   "profile_type": "focused",
   "target": "bioinformatics_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
-   "data_analyst",
    "data_scientist"
   ]
  },
@@ -2227,8 +2405,8 @@
   "profile_type": "focused",
   "target": "data_analyst",
   "relevant": [
+   "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -2263,7 +2441,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -2276,6 +2456,7 @@
   "profile_type": "focused",
   "target": "security_analyst",
   "relevant": [
+   "penetration_tester",
    "security_analyst",
    "security_engineer"
   ]
@@ -2290,7 +2471,9 @@
   "profile_type": "focused",
   "target": "qa_automation_engineer",
   "relevant": [
-   "qa_automation_engineer"
+   "devops_engineer",
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -2303,7 +2486,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -2319,7 +2504,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -2332,7 +2518,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -2347,6 +2535,7 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
+   "cloud_architect",
    "data_engineer",
    "mlops_engineer"
   ]
@@ -2363,7 +2552,8 @@
   "relevant": [
    "ar_vr_developer",
    "business_analyst",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -2377,6 +2567,7 @@
   "target": "technical_writer",
   "relevant": [
    "developer_advocate",
+   "product_manager",
    "technical_writer"
   ]
  },
@@ -2390,7 +2581,9 @@
   "profile_type": "focused",
   "target": "mechanical_design_engineer",
   "relevant": [
-   "mechanical_design_engineer"
+   "mechanical_design_engineer",
+   "project_manager",
+   "robotics_engineer"
   ]
  },
  {
@@ -2422,7 +2615,8 @@
   "target": "digital_marketing_analyst",
   "relevant": [
    "data_analyst",
-   "digital_marketing_analyst"
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -2435,6 +2629,7 @@
   "profile_type": "switcher",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "cloud_engineer",
    "data_scientist",
    "machine_learning_engineer",
@@ -2451,6 +2646,8 @@
   "profile_type": "focused",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
    "systems_administrator"
   ]
  },
@@ -2466,7 +2663,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -2481,6 +2679,7 @@
   "relevant": [
    "product_manager",
    "project_manager",
+   "software_architect",
    "technical_product_manager",
    "technical_program_manager",
    "ux_researcher"
@@ -2497,7 +2696,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -2511,7 +2711,8 @@
   "target": "game_developer",
   "relevant": [
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -2525,7 +2726,9 @@
   "target": "penetration_tester",
   "relevant": [
    "analytics_engineer",
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -2540,7 +2743,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -2574,6 +2779,7 @@
   "profile_type": "focused",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "data_scientist",
    "machine_learning_engineer",
    "mlops_engineer"
@@ -2589,7 +2795,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -2602,7 +2810,9 @@
   "profile_type": "focused",
   "target": "blockchain_developer",
   "relevant": [
-   "blockchain_developer"
+   "blockchain_developer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -2631,7 +2841,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -2644,6 +2856,8 @@
   "profile_type": "focused",
   "target": "ux_researcher",
   "relevant": [
+   "product_manager",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -2660,7 +2874,8 @@
    "backend_developer",
    "frontend_developer",
    "full_stack_developer",
-   "software_architect"
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -2674,7 +2889,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -2687,7 +2903,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -2700,6 +2918,7 @@
   "profile_type": "switcher",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "data_scientist",
    "machine_learning_engineer",
    "mlops_engineer",
@@ -2739,6 +2958,7 @@
    "analytics_engineer",
    "bi_developer",
    "data_engineer",
+   "data_scientist",
    "systems_administrator"
   ]
  },
@@ -2752,6 +2972,7 @@
   "profile_type": "blended",
   "target": "ux_designer",
   "relevant": [
+   "product_manager",
    "ux_designer",
    "ux_researcher"
   ]
@@ -2767,7 +2988,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -2781,7 +3003,8 @@
   "target": "game_developer",
   "relevant": [
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -2794,6 +3017,8 @@
   "profile_type": "blended",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
    "network_engineer",
    "systems_administrator"
   ]
@@ -2808,6 +3033,7 @@
   "profile_type": "blended",
   "target": "security_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "cloud_security_engineer",
    "platform_engineer",
@@ -2826,7 +3052,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -2874,7 +3102,9 @@
   "profile_type": "blended",
   "target": "financial_analyst",
   "relevant": [
+   "business_analyst",
    "financial_analyst",
+   "quantitative_analyst",
    "technical_writer"
   ]
  },
@@ -2888,6 +3118,8 @@
   "profile_type": "focused",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator"
   ]
  },
@@ -2901,7 +3133,9 @@
   "profile_type": "focused",
   "target": "embedded_software_engineer",
   "relevant": [
-   "embedded_software_engineer"
+   "embedded_software_engineer",
+   "iot_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -2916,7 +3150,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -2929,8 +3164,8 @@
   "profile_type": "focused",
   "target": "data_analyst",
   "relevant": [
+   "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -3002,7 +3237,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -3017,7 +3254,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -3030,6 +3268,7 @@
   "profile_type": "focused",
   "target": "security_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "cloud_security_engineer",
    "platform_engineer",
@@ -3082,6 +3321,7 @@
   "profile_type": "focused",
   "target": "security_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "cloud_security_engineer",
    "platform_engineer",
@@ -3100,7 +3340,9 @@
   "profile_type": "focused",
   "target": "financial_analyst",
   "relevant": [
-   "financial_analyst"
+   "business_analyst",
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -3132,8 +3374,10 @@
   "profile_type": "blended",
   "target": "qa_automation_engineer",
   "relevant": [
+   "devops_engineer",
    "game_developer",
-   "qa_automation_engineer"
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -3165,7 +3409,9 @@
   "target": "backend_developer",
   "relevant": [
    "backend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "platform_engineer",
+   "software_architect"
   ]
  },
  {
@@ -3210,6 +3456,7 @@
   "profile_type": "blended",
   "target": "network_engineer",
   "relevant": [
+   "cloud_engineer",
    "network_engineer",
    "security_engineer"
   ]
@@ -3278,7 +3525,9 @@
   "profile_type": "blended",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
    "database_administrator",
+   "devops_engineer",
    "systems_administrator"
   ]
  },
@@ -3292,7 +3541,9 @@
   "profile_type": "focused",
   "target": "grc_analyst",
   "relevant": [
-   "grc_analyst"
+   "grc_analyst",
+   "project_manager",
+   "security_analyst"
   ]
  },
  {
@@ -3305,6 +3556,7 @@
   "profile_type": "focused",
   "target": "security_analyst",
   "relevant": [
+   "penetration_tester",
    "security_analyst",
    "security_engineer"
   ]
@@ -3319,8 +3571,8 @@
   "profile_type": "blended",
   "target": "data_analyst",
   "relevant": [
+   "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -3369,6 +3621,7 @@
   "target": "quantitative_analyst",
   "relevant": [
    "data_scientist",
+   "machine_learning_engineer",
    "quantitative_analyst"
   ]
  },
@@ -3382,6 +3635,8 @@
   "profile_type": "focused",
   "target": "ux_researcher",
   "relevant": [
+   "product_manager",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -3430,7 +3685,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -3461,7 +3717,8 @@
   "relevant": [
    "ar_vr_developer",
    "game_developer",
-   "qa_automation_engineer"
+   "qa_automation_engineer",
+   "software_architect"
   ]
  },
  {
@@ -3474,7 +3731,9 @@
   "profile_type": "focused",
   "target": "blockchain_developer",
   "relevant": [
-   "blockchain_developer"
+   "blockchain_developer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -3525,7 +3784,9 @@
   "target": "backend_developer",
   "relevant": [
    "backend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "platform_engineer",
+   "software_architect"
   ]
  },
  {
@@ -3560,6 +3821,8 @@
   "target": "grc_analyst",
   "relevant": [
    "grc_analyst",
+   "project_manager",
+   "security_analyst",
    "security_engineer"
   ]
  },
@@ -3574,7 +3837,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -3587,7 +3851,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -3601,7 +3867,9 @@
   "profile_type": "focused",
   "target": "mechanical_design_engineer",
   "relevant": [
-   "mechanical_design_engineer"
+   "mechanical_design_engineer",
+   "project_manager",
+   "robotics_engineer"
   ]
  },
  {
@@ -3615,6 +3883,7 @@
   "target": "technical_writer",
   "relevant": [
    "developer_advocate",
+   "product_manager",
    "technical_writer"
   ]
  },
@@ -3648,6 +3917,7 @@
   "target": "ar_vr_developer",
   "relevant": [
    "ar_vr_developer",
+   "computer_vision_engineer",
    "game_developer"
   ]
  },
@@ -3679,7 +3949,9 @@
   "profile_type": "focused",
   "target": "network_engineer",
   "relevant": [
-   "network_engineer"
+   "cloud_engineer",
+   "network_engineer",
+   "security_engineer"
   ]
  },
  {
@@ -3742,7 +4014,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -3755,7 +4029,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -3768,7 +4044,9 @@
   "profile_type": "switcher",
   "target": "robotics_engineer",
   "relevant": [
+   "computer_vision_engineer",
    "digital_marketing_analyst",
+   "embedded_software_engineer",
    "robotics_engineer"
   ]
  },
@@ -3782,6 +4060,7 @@
   "profile_type": "focused",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -3802,7 +4081,9 @@
    "backend_developer",
    "frontend_developer",
    "full_stack_developer",
-   "ios_developer"
+   "ios_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -3831,7 +4112,9 @@
   "profile_type": "blended",
   "target": "financial_analyst",
   "relevant": [
+   "business_analyst",
    "financial_analyst",
+   "quantitative_analyst",
    "technical_writer"
   ]
  },
@@ -3860,6 +4143,8 @@
   "profile_type": "focused",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator"
   ]
  },
@@ -3874,6 +4159,7 @@
   "target": "android_developer",
   "relevant": [
    "android_developer",
+   "full_stack_developer",
    "ios_developer",
    "software_architect"
   ]
@@ -3889,7 +4175,9 @@
   "target": "qa_automation_engineer",
   "relevant": [
    "bioinformatics_scientist",
-   "qa_automation_engineer"
+   "devops_engineer",
+   "qa_automation_engineer",
+   "site_reliability_engineer"
   ]
  },
  {
@@ -3904,7 +4192,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -3917,8 +4206,10 @@
   "profile_type": "blended",
   "target": "ux_designer",
   "relevant": [
+   "product_manager",
    "technical_product_manager",
-   "ux_designer"
+   "ux_designer",
+   "ux_researcher"
   ]
  },
  {
@@ -3931,7 +4222,9 @@
   "profile_type": "switcher",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
    "devops_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -3945,7 +4238,9 @@
   "profile_type": "blended",
   "target": "network_engineer",
   "relevant": [
+   "cloud_engineer",
    "network_engineer",
+   "security_engineer",
    "systems_administrator"
   ]
  },
@@ -3960,6 +4255,8 @@
   "target": "developer_advocate",
   "relevant": [
    "developer_advocate",
+   "product_manager",
+   "technical_product_manager",
    "technical_writer"
   ]
  },
@@ -3973,6 +4270,8 @@
   "profile_type": "blended",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator",
    "systems_administrator"
   ]
@@ -4006,7 +4305,8 @@
   "relevant": [
    "android_developer",
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -4052,7 +4352,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -4065,7 +4367,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -4078,6 +4382,7 @@
   "profile_type": "blended",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_engineer",
@@ -4096,6 +4401,7 @@
   "profile_type": "focused",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "data_scientist",
    "machine_learning_engineer",
    "mlops_engineer"
@@ -4112,7 +4418,9 @@
   "target": "embedded_software_engineer",
   "relevant": [
    "electrical_engineer",
-   "embedded_software_engineer"
+   "embedded_software_engineer",
+   "iot_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -4126,6 +4434,7 @@
   "target": "technical_writer",
   "relevant": [
    "developer_advocate",
+   "product_manager",
    "quantitative_analyst",
    "technical_writer"
   ]
@@ -4142,7 +4451,9 @@
   "relevant": [
    "backend_developer",
    "cloud_engineer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "platform_engineer",
+   "software_architect"
   ]
  },
  {
@@ -4172,6 +4483,7 @@
   "profile_type": "focused",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -4190,7 +4502,9 @@
   "target": "embedded_software_engineer",
   "relevant": [
    "electrical_engineer",
-   "embedded_software_engineer"
+   "embedded_software_engineer",
+   "iot_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -4203,8 +4517,8 @@
   "profile_type": "focused",
   "target": "data_analyst",
   "relevant": [
+   "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -4219,8 +4533,8 @@
   "profile_type": "blended",
   "target": "bioinformatics_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
-   "data_analyst",
    "data_scientist",
    "mlops_engineer"
   ]
@@ -4235,7 +4549,9 @@
   "profile_type": "focused",
   "target": "network_engineer",
   "relevant": [
-   "network_engineer"
+   "cloud_engineer",
+   "network_engineer",
+   "security_engineer"
   ]
  },
  {
@@ -4250,7 +4566,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
+   "cloud_architect",
    "data_engineer",
+   "mlops_engineer",
    "sales_engineer"
   ]
  },
@@ -4265,7 +4583,8 @@
   "target": "frontend_developer",
   "relevant": [
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect"
   ]
  },
  {
@@ -4281,6 +4600,7 @@
    "analytics_engineer",
    "bi_developer",
    "data_engineer",
+   "data_scientist",
    "generative_ai_engineer"
   ]
  },
@@ -4294,6 +4614,8 @@
   "profile_type": "focused",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -4309,7 +4631,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -4322,7 +4645,9 @@
   "profile_type": "switcher",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer",
    "project_manager"
   ]
@@ -4337,8 +4662,10 @@
   "profile_type": "blended",
   "target": "ux_designer",
   "relevant": [
+   "product_manager",
    "technical_product_manager",
-   "ux_designer"
+   "ux_designer",
+   "ux_researcher"
   ]
  },
  {
@@ -4352,6 +4679,7 @@
   "target": "project_manager",
   "relevant": [
    "business_analyst",
+   "product_manager",
    "project_manager",
    "technical_program_manager"
   ]
@@ -4367,7 +4695,9 @@
   "target": "backend_developer",
   "relevant": [
    "backend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "platform_engineer",
+   "software_architect"
   ]
  },
  {
@@ -4382,7 +4712,9 @@
   "relevant": [
    "android_developer",
    "cloud_architect",
-   "ios_developer"
+   "full_stack_developer",
+   "ios_developer",
+   "software_architect"
   ]
  },
  {
@@ -4413,7 +4745,9 @@
   "profile_type": "focused",
   "target": "embedded_software_engineer",
   "relevant": [
-   "embedded_software_engineer"
+   "embedded_software_engineer",
+   "iot_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -4427,6 +4761,7 @@
   "target": "business_analyst",
   "relevant": [
    "business_analyst",
+   "data_analyst",
    "product_manager",
    "project_manager",
    "technical_product_manager"
@@ -4442,6 +4777,7 @@
   "profile_type": "focused",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "data_scientist",
    "machine_learning_engineer",
    "mlops_engineer"
@@ -4458,7 +4794,8 @@
   "target": "game_developer",
   "relevant": [
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -4473,7 +4810,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "cloud_architect",
+   "data_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -4486,13 +4825,15 @@
   "profile_type": "blended",
   "target": "platform_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "database_administrator",
    "devops_engineer",
    "mlops_engineer",
    "platform_engineer",
    "security_engineer",
-   "site_reliability_engineer"
+   "site_reliability_engineer",
+   "software_architect"
   ]
  },
  {
@@ -4506,6 +4847,8 @@
   "target": "developer_advocate",
   "relevant": [
    "developer_advocate",
+   "product_manager",
+   "technical_product_manager",
    "technical_writer"
   ]
  },
@@ -4519,8 +4862,10 @@
   "profile_type": "blended",
   "target": "penetration_tester",
   "relevant": [
+   "cloud_security_engineer",
    "grc_analyst",
-   "penetration_tester"
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -4570,7 +4915,9 @@
   "target": "blockchain_developer",
   "relevant": [
    "blockchain_developer",
-   "game_developer"
+   "game_developer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -4583,6 +4930,8 @@
   "profile_type": "focused",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
    "systems_administrator"
   ]
  },
@@ -4596,6 +4945,7 @@
   "profile_type": "focused",
   "target": "site_reliability_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "mlops_engineer",
@@ -4615,7 +4965,9 @@
   "target": "electrical_engineer",
   "relevant": [
    "electrical_engineer",
-   "technical_program_manager"
+   "embedded_software_engineer",
+   "technical_program_manager",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -4647,7 +4999,8 @@
   "relevant": [
    "cloud_architect",
    "software_architect",
-   "solutions_architect"
+   "solutions_architect",
+   "technical_program_manager"
   ]
  },
  {
@@ -4680,7 +5033,9 @@
   "relevant": [
    "android_developer",
    "ar_vr_developer",
-   "ios_developer"
+   "full_stack_developer",
+   "ios_developer",
+   "software_architect"
   ]
  },
  {
@@ -4694,7 +5049,9 @@
   "target": "ux_designer",
   "relevant": [
    "embedded_software_engineer",
-   "ux_designer"
+   "product_manager",
+   "ux_designer",
+   "ux_researcher"
   ]
  },
  {
@@ -4710,7 +5067,9 @@
    "backend_developer",
    "cloud_architect",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -4723,7 +5082,9 @@
   "profile_type": "focused",
   "target": "computer_vision_engineer",
   "relevant": [
-   "computer_vision_engineer"
+   "ai_research_scientist",
+   "computer_vision_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -4736,8 +5097,8 @@
   "profile_type": "focused",
   "target": "data_analyst",
   "relevant": [
+   "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -4753,6 +5114,8 @@
   "target": "developer_advocate",
   "relevant": [
    "developer_advocate",
+   "product_manager",
+   "technical_product_manager",
    "technical_writer"
   ]
  },
@@ -4783,9 +5146,9 @@
   "profile_type": "blended",
   "target": "bioinformatics_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bi_developer",
    "bioinformatics_scientist",
-   "data_analyst",
    "data_scientist"
   ]
  },
@@ -4818,7 +5181,9 @@
   "target": "ios_developer",
   "relevant": [
    "android_developer",
-   "ios_developer"
+   "full_stack_developer",
+   "ios_developer",
+   "software_architect"
   ]
  },
  {
@@ -4831,6 +5196,8 @@
   "profile_type": "focused",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -4846,7 +5213,6 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "bioinformatics_scientist",
    "data_analyst",
    "data_scientist"
   ]
@@ -4861,8 +5227,10 @@
   "profile_type": "blended",
   "target": "ux_designer",
   "relevant": [
+   "product_manager",
    "technical_program_manager",
-   "ux_designer"
+   "ux_designer",
+   "ux_researcher"
   ]
  },
  {
@@ -4876,6 +5244,7 @@
   "target": "security_analyst",
   "relevant": [
    "cloud_security_engineer",
+   "penetration_tester",
    "security_analyst",
    "security_engineer"
   ]
@@ -4890,7 +5259,9 @@
   "profile_type": "focused",
   "target": "computer_vision_engineer",
   "relevant": [
-   "computer_vision_engineer"
+   "ai_research_scientist",
+   "computer_vision_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -4904,6 +5275,7 @@
   "target": "quantitative_analyst",
   "relevant": [
    "data_scientist",
+   "machine_learning_engineer",
    "quantitative_analyst"
   ]
  },
@@ -4918,6 +5290,7 @@
   "target": "vlsi_design_engineer",
   "relevant": [
    "electrical_engineer",
+   "embedded_software_engineer",
    "vlsi_design_engineer"
   ]
  },
@@ -4933,8 +5306,10 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
+   "cloud_architect",
    "data_engineer",
-   "iot_engineer"
+   "iot_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -4978,7 +5353,9 @@
   "profile_type": "focused",
   "target": "digital_marketing_analyst",
   "relevant": [
-   "digital_marketing_analyst"
+   "data_analyst",
+   "digital_marketing_analyst",
+   "product_manager"
   ]
  },
  {
@@ -4994,7 +5371,9 @@
    "backend_developer",
    "financial_analyst",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -5007,7 +5386,9 @@
   "profile_type": "focused",
   "target": "ux_designer",
   "relevant": [
-   "ux_designer"
+   "product_manager",
+   "ux_designer",
+   "ux_researcher"
   ]
  },
  {
@@ -5022,7 +5403,8 @@
   "relevant": [
    "frontend_developer",
    "full_stack_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -5071,6 +5453,7 @@
   "profile_type": "focused",
   "target": "machine_learning_engineer",
   "relevant": [
+   "ai_research_scientist",
    "data_scientist",
    "machine_learning_engineer",
    "mlops_engineer"
@@ -5088,6 +5471,7 @@
   "relevant": [
    "data_scientist",
    "digital_marketing_analyst",
+   "machine_learning_engineer",
    "quantitative_analyst"
   ]
  },
@@ -5102,6 +5486,7 @@
   "target": "embedded_software_engineer",
   "relevant": [
    "embedded_software_engineer",
+   "iot_engineer",
    "robotics_engineer"
   ]
  },
@@ -5130,6 +5515,8 @@
   "profile_type": "focused",
   "target": "ux_researcher",
   "relevant": [
+   "product_manager",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -5160,6 +5547,8 @@
   "profile_type": "focused",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer"
   ]
  },
@@ -5191,7 +5580,9 @@
   "target": "embedded_software_engineer",
   "relevant": [
    "electrical_engineer",
-   "embedded_software_engineer"
+   "embedded_software_engineer",
+   "iot_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -5204,7 +5595,9 @@
   "profile_type": "focused",
   "target": "financial_analyst",
   "relevant": [
-   "financial_analyst"
+   "business_analyst",
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -5217,7 +5610,9 @@
   "profile_type": "focused",
   "target": "blockchain_developer",
   "relevant": [
-   "blockchain_developer"
+   "blockchain_developer",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -5230,6 +5625,7 @@
   "profile_type": "blended",
   "target": "security_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "cloud_security_engineer",
    "platform_engineer",
@@ -5248,7 +5644,9 @@
   "profile_type": "switcher",
   "target": "ux_researcher",
   "relevant": [
+   "product_manager",
    "security_engineer",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -5262,7 +5660,9 @@
   "profile_type": "focused",
   "target": "embedded_software_engineer",
   "relevant": [
-   "embedded_software_engineer"
+   "embedded_software_engineer",
+   "iot_engineer",
+   "robotics_engineer"
   ]
  },
  {
@@ -5310,6 +5710,8 @@
   "profile_type": "blended",
   "target": "iot_engineer",
   "relevant": [
+   "cloud_engineer",
+   "embedded_software_engineer",
    "iot_engineer",
    "mechanical_design_engineer"
   ]
@@ -5324,7 +5726,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -5337,6 +5741,8 @@
   "profile_type": "focused",
   "target": "robotics_engineer",
   "relevant": [
+   "computer_vision_engineer",
+   "embedded_software_engineer",
    "robotics_engineer"
   ]
  },
@@ -5351,7 +5757,9 @@
   "target": "ios_developer",
   "relevant": [
    "android_developer",
-   "ios_developer"
+   "full_stack_developer",
+   "ios_developer",
+   "software_architect"
   ]
  },
  {
@@ -5381,7 +5789,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -5394,7 +5804,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -5409,6 +5821,8 @@
   "target": "vlsi_design_engineer",
   "relevant": [
    "android_developer",
+   "electrical_engineer",
+   "embedded_software_engineer",
    "vlsi_design_engineer"
   ]
  },
@@ -5422,6 +5836,8 @@
   "profile_type": "focused",
   "target": "vlsi_design_engineer",
   "relevant": [
+   "electrical_engineer",
+   "embedded_software_engineer",
    "vlsi_design_engineer"
   ]
  },
@@ -5437,7 +5853,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "cloud_architect",
+   "data_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -5486,6 +5904,7 @@
   "target": "technical_writer",
   "relevant": [
    "developer_advocate",
+   "product_manager",
    "technical_writer"
   ]
  },
@@ -5520,7 +5939,8 @@
   "relevant": [
    "android_developer",
    "ar_vr_developer",
-   "game_developer"
+   "game_developer",
+   "software_architect"
   ]
  },
  {
@@ -5533,7 +5953,9 @@
   "profile_type": "focused",
   "target": "financial_analyst",
   "relevant": [
-   "financial_analyst"
+   "business_analyst",
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -5546,6 +5968,7 @@
   "profile_type": "focused",
   "target": "site_reliability_engineer",
   "relevant": [
+   "cloud_architect",
    "cloud_engineer",
    "devops_engineer",
    "mlops_engineer",
@@ -5564,7 +5987,9 @@
   "profile_type": "focused",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -5578,6 +6003,7 @@
   "profile_type": "focused",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -5596,6 +6022,8 @@
   "target": "ai_research_scientist",
   "relevant": [
    "ai_research_scientist",
+   "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -5610,6 +6038,8 @@
   "target": "mechanical_design_engineer",
   "relevant": [
    "mechanical_design_engineer",
+   "project_manager",
+   "robotics_engineer",
    "ui_designer"
   ]
  },
@@ -5658,7 +6088,9 @@
   "profile_type": "focused",
   "target": "penetration_tester",
   "relevant": [
-   "penetration_tester"
+   "cloud_security_engineer",
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -5671,6 +6103,8 @@
   "profile_type": "focused",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
    "systems_administrator"
   ]
  },
@@ -5685,6 +6119,7 @@
   "target": "project_manager",
   "relevant": [
    "business_analyst",
+   "product_manager",
    "project_manager",
    "technical_program_manager",
    "ux_designer"
@@ -5702,7 +6137,9 @@
   "relevant": [
    "backend_developer",
    "frontend_developer",
-   "full_stack_developer"
+   "full_stack_developer",
+   "software_architect",
+   "technical_product_manager"
   ]
  },
  {
@@ -5715,6 +6152,8 @@
   "profile_type": "focused",
   "target": "ux_researcher",
   "relevant": [
+   "product_manager",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -5728,7 +6167,9 @@
   "profile_type": "focused",
   "target": "electrical_engineer",
   "relevant": [
-   "electrical_engineer"
+   "electrical_engineer",
+   "embedded_software_engineer",
+   "vlsi_design_engineer"
   ]
  },
  {
@@ -5759,6 +6200,7 @@
   "target": "quantitative_analyst",
   "relevant": [
    "data_scientist",
+   "machine_learning_engineer",
    "quantitative_analyst"
   ]
  },
@@ -5774,6 +6216,7 @@
   "relevant": [
    "business_analyst",
    "digital_marketing_analyst",
+   "product_manager",
    "project_manager",
    "technical_program_manager"
   ]
@@ -5788,8 +6231,10 @@
   "profile_type": "blended",
   "target": "generative_ai_engineer",
   "relevant": [
+   "ai_research_scientist",
    "analytics_engineer",
    "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -5824,7 +6269,8 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "data_engineer",
+   "data_scientist"
   ]
  },
  {
@@ -5838,7 +6284,9 @@
   "target": "blockchain_developer",
   "relevant": [
    "blockchain_developer",
-   "financial_analyst"
+   "financial_analyst",
+   "security_engineer",
+   "software_architect"
   ]
  },
  {
@@ -5851,7 +6299,9 @@
   "profile_type": "focused",
   "target": "network_engineer",
   "relevant": [
-   "network_engineer"
+   "cloud_engineer",
+   "network_engineer",
+   "security_engineer"
   ]
  },
  {
@@ -5864,6 +6314,8 @@
   "profile_type": "focused",
   "target": "database_administrator",
   "relevant": [
+   "cloud_engineer",
+   "data_engineer",
    "database_administrator"
   ]
  },
@@ -5878,6 +6330,8 @@
   "target": "ai_research_scientist",
   "relevant": [
    "ai_research_scientist",
+   "generative_ai_engineer",
+   "machine_learning_engineer",
    "nlp_engineer"
   ]
  },
@@ -5891,8 +6345,10 @@
   "profile_type": "switcher",
   "target": "penetration_tester",
   "relevant": [
+   "cloud_security_engineer",
    "generative_ai_engineer",
-   "penetration_tester"
+   "penetration_tester",
+   "security_engineer"
   ]
  },
  {
@@ -5925,7 +6381,8 @@
   "relevant": [
    "cloud_architect",
    "software_architect",
-   "solutions_architect"
+   "solutions_architect",
+   "technical_program_manager"
   ]
  },
  {
@@ -5955,6 +6412,8 @@
   "profile_type": "focused",
   "target": "systems_administrator",
   "relevant": [
+   "cloud_engineer",
+   "devops_engineer",
    "systems_administrator"
   ]
  },
@@ -5968,6 +6427,7 @@
   "profile_type": "blended",
   "target": "data_scientist",
   "relevant": [
+   "ai_research_scientist",
    "bioinformatics_scientist",
    "data_analyst",
    "data_scientist",
@@ -5985,6 +6445,8 @@
   "profile_type": "focused",
   "target": "ux_researcher",
   "relevant": [
+   "product_manager",
+   "ux_designer",
    "ux_researcher"
   ]
  },
@@ -6015,8 +6477,10 @@
   "profile_type": "blended",
   "target": "financial_analyst",
   "relevant": [
+   "business_analyst",
    "digital_marketing_analyst",
-   "financial_analyst"
+   "financial_analyst",
+   "quantitative_analyst"
   ]
  },
  {
@@ -6048,8 +6512,10 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
+   "cloud_architect",
    "data_engineer",
-   "generative_ai_engineer"
+   "generative_ai_engineer",
+   "mlops_engineer"
   ]
  },
  {
@@ -6064,7 +6530,9 @@
   "relevant": [
    "analytics_engineer",
    "bi_developer",
-   "data_engineer"
+   "cloud_architect",
+   "data_engineer",
+   "mlops_engineer"
   ]
  }
 ]

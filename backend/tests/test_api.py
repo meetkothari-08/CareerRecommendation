@@ -17,6 +17,7 @@ def client():
 def test_health(client):
     body = client.get("/api/health").json()
     assert body["status"] == "ok" and body["llm_enabled"] is False
+    assert body["model"]
 
 
 def test_recommend_with_template_advice(client):
@@ -29,6 +30,7 @@ def test_recommend_with_template_advice(client):
     assert len(body["recommendations"]) == 3
     assert body["recommendations"][0]["career_id"] in {"frontend_developer", "full_stack_developer"}
     assert body["advice"]["source"] == "template"
+    assert body["recommendations"][0]["explanation"], "top recommendation should be explained"
     assert "Skill gap plan" in body["advice"]["text"]
 
 

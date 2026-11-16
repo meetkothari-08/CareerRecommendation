@@ -6,7 +6,7 @@ import { Stat } from '../components/ui';
 
 const pipeline = [
   { icon: Wand2, title: 'Skill extraction', text: 'Free text like "sklearn, k8s, some ML" is normalised onto a 330+ skill taxonomy.' },
-  { icon: Brain, title: 'Hybrid ML ranking', text: 'A skill classifier, market-demand similarity and interest matching are combined by a learned ranker.' },
+  { icon: Brain, title: 'Deep learning + LambdaMART', text: 'A two-tower neural network and market-demand signals feed a LightGBM learning-to-rank model.' },
   { icon: Target, title: 'Skill-gap analysis', text: 'Missing skills are prioritised by how often employers ask for them in job postings.' },
   { icon: MessageSquare, title: 'Fine-tuned LLM advice', text: 'An LLM turns the structured results into a grounded, personalised 90-day plan.' },
 ];

@@ -27,8 +27,17 @@ from careerrec.data import load_careers
 from careerrec.training import build_extractor
 
 API = "https://api.adzuna.com/v1/api/jobs/{country}/search/{page}"
-COUNTRY_NAMES = {"us": "United States", "gb": "United Kingdom", "in": "India", "ca": "Canada", "de": "Germany",
-                 "au": "Australia", "nl": "Netherlands", "sg": "Singapore", "fr": "France"}
+COUNTRY_NAMES = {
+    "us": "United States",
+    "gb": "United Kingdom",
+    "in": "India",
+    "ca": "Canada",
+    "de": "Germany",
+    "au": "Australia",
+    "nl": "Netherlands",
+    "sg": "Singapore",
+    "fr": "France",
+}
 SENIORITY_WORDS = [("Lead", ("lead", "principal", "staff")), ("Senior", ("senior", "sr")), ("Junior", ("junior", "jr"))]
 
 
@@ -38,8 +47,13 @@ def seniority(title: str) -> str:
 
 
 def fetch(client: httpx.Client, country: str, what: str, n: int) -> list[dict]:
-    params = {"app_id": os.environ["ADZUNA_APP_ID"], "app_key": os.environ["ADZUNA_APP_KEY"],
-              "what_phrase": what, "results_per_page": min(n, 50), "content-type": "application/json"}
+    params = {
+        "app_id": os.environ["ADZUNA_APP_ID"],
+        "app_key": os.environ["ADZUNA_APP_KEY"],
+        "what_phrase": what,
+        "results_per_page": min(n, 50),
+        "content-type": "application/json",
+    }
     resp = client.get(API.format(country=country, page=1), params=params)
     resp.raise_for_status()
     return resp.json().get("results", [])
@@ -70,18 +84,26 @@ def main() -> None:
                     if len(skills) < args.min_skills:
                         continue
                     salary_min, salary_max = job.get("salary_min"), job.get("salary_max")
-                    rows.append({
-                        "job_id": f"ADZ{job['id']}", "title": job.get("title", career.title),
-                        "career_id": career.id, "family": career.family,
-                        "company": job.get("company", {}).get("display_name", "Unknown"),
-                        "location": job.get("location", {}).get("display_name", ""),
-                        "country": COUNTRY_NAMES.get(country, country.upper()),
-                        "remote": "remote" in text.lower(), "seniority": seniority(job.get("title", "")),
-                        "salary_min": salary_min, "salary_max": salary_max or salary_min,
-                        "currency": "local", "posted_date": job.get("created", "")[:10],
-                        "skills": ";".join(skills), "description": job.get("description", "")[:500],
-                        "source": "adzuna",
-                    })
+                    rows.append(
+                        {
+                            "job_id": f"ADZ{job['id']}",
+                            "title": job.get("title", career.title),
+                            "career_id": career.id,
+                            "family": career.family,
+                            "company": job.get("company", {}).get("display_name", "Unknown"),
+                            "location": job.get("location", {}).get("display_name", ""),
+                            "country": COUNTRY_NAMES.get(country, country.upper()),
+                            "remote": "remote" in text.lower(),
+                            "seniority": seniority(job.get("title", "")),
+                            "salary_min": salary_min,
+                            "salary_max": salary_max or salary_min,
+                            "currency": "local",
+                            "posted_date": job.get("created", "")[:10],
+                            "skills": ";".join(skills),
+                            "description": job.get("description", "")[:500],
+                            "source": "adzuna",
+                        }
+                    )
                 time.sleep(0.3)  # stay well within the free-tier rate limit
             print(f"{career.title:35s} total postings so far: {len(rows)}")
 

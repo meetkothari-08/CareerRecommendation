@@ -48,18 +48,27 @@ def main() -> None:
         for i, p in enumerate(profiles):
             profile = UserProfile(p["skills"], p["interests"], p["education"], p["experience_years"], p["goals"])
             result = engine.recommend(profile, top_k=rng.choice([3, 4, 5]), with_courses=False)
-            ctx = {"extracted_skills": result["extracted_skills"], **{k: p[k] for k in
-                   ("interests", "education", "experience_years", "goals")}}
+            ctx = {
+                "extracted_skills": result["extracted_skills"],
+                **{k: p[k] for k in ("interests", "education", "experience_years", "goals")},
+            }
             prompt = build_advice_prompt(ctx, result["recommendations"])
             if teacher:
                 answer = teacher.career_advice(ctx, result["recommendations"])["text"]
             else:
                 answer = template_advice(ctx, result["recommendations"])
-            fh.write(json.dumps({"messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": prompt},
-                {"role": "assistant", "content": answer},
-            ]}) + "\n")
+            fh.write(
+                json.dumps(
+                    {
+                        "messages": [
+                            {"role": "system", "content": SYSTEM_PROMPT},
+                            {"role": "user", "content": prompt},
+                            {"role": "assistant", "content": answer},
+                        ]
+                    }
+                )
+                + "\n"
+            )
             if (i + 1) % 250 == 0:
                 print(f"{i + 1}/{len(profiles)} examples")
     print(f"wrote {len(profiles)} examples -> {paths.SFT_DATASET_PATH}")

@@ -52,6 +52,11 @@ class MarketSummary(BaseModel):
     remote_share: float | None
 
 
+class Reason(BaseModel):
+    reason: str
+    contribution: float
+
+
 class CareerRecommendation(BaseModel):
     career_id: str
     title: str
@@ -60,6 +65,7 @@ class CareerRecommendation(BaseModel):
     match_score: float
     confidence: float
     signals: dict[str, float]
+    explanation: list[Reason]
     skill_coverage: float
     matched_skills: list[str]
     missing_skills: list[SkillGapItem]

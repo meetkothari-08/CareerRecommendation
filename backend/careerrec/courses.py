@@ -57,30 +57,30 @@ class CourseRecommender:
         df = df[df["title"].map(str.isascii)].reset_index(drop=True)  # English-language catalogue
         self.df = df
         self._title_terms = [_terms(t) for t in df["title"]]
+        self._records = [
+            {"title": r.title, "provider": r.course_by, "url": r.url, "rating": float(r.ratings), "level": str(r.level)}
+            for r in df.itertuples()
+        ]
+        # Inverted index: title term -> course row ids, so a lookup touches only candidate courses.
+        self._index: dict[str, set[int]] = {}
+        for i, terms in enumerate(self._title_terms):
+            for t in terms:
+                self._index.setdefault(t, set()).add(i)
 
     def search(self, query: str, top_n: int = 2, exclude: set[str] | None = None) -> list[dict]:
         q_terms = _terms(query)
         if not q_terms:
             return []
+        candidates = set.intersection(*(self._index.get(t, set()) for t in q_terms))
         scored = []
-        for i, row in self.df.iterrows():
-            if exclude and row["title"] in exclude:
-                continue
-            if not q_terms <= self._title_terms[i]:
+        for i in candidates:
+            course = self._records[i]
+            if exclude and course["title"] in exclude:
                 continue
             score = 1.0 - 0.05 * len(self._title_terms[i] - q_terms)
-            scored.append((score * (0.8 + 0.2 * row["ratings"] / 5.0), row))
-        scored.sort(key=lambda t: t[0], reverse=True)
-        return [
-            {
-                "title": r["title"],
-                "provider": r["course_by"],
-                "url": r["url"],
-                "rating": float(r["ratings"]),
-                "level": str(r.get("level", "")),
-            }
-            for _, r in scored[:top_n]
-        ]
+            scored.append((score * (0.8 + 0.2 * course["rating"] / 5.0), i))
+        scored.sort(key=lambda t: (-t[0], t[1]))
+        return [dict(self._records[i]) for _, i in scored[:top_n]]
 
     def for_skill_gaps(self, missing_skills: list[str], career_title: str, top_n: int = 4) -> list[dict]:
         """Recommend courses that close the most important gaps first, then general career courses."""

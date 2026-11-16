@@ -16,9 +16,10 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -r requirements-dev.txt
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r requirements-train.txt -r requirements-dev.txt
       - run: ruff check .
-      - run: python -m scripts.train
+      - run: python -m scripts.train --fast --no-mlflow
       - run: pytest -q
 
   frontend:

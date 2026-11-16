@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Briefcase, ExternalLink, GraduationCap, Loader2, Sparkles, Star, TrendingUp } from 'lucide-react';
+import { Briefcase, ExternalLink, GraduationCap, Lightbulb, Loader2, Sparkles, Star, TrendingUp } from 'lucide-react';
 import { api, CareerRec, pct, ProfileInput, RecommendResponse, usd } from '../lib/api';
 import { Bar, ErrorBox, PageHeader } from '../components/ui';
 
@@ -187,6 +187,16 @@ function CareerCard({ rec, rank }: { rec: CareerRec; rank: number }) {
 
       {open && (
         <div className="grid gap-6 border-t border-slate-100 bg-slate-50/60 p-5 md:grid-cols-2">
+          {rec.explanation.length > 0 && (
+            <div className="md:col-span-2">
+              <h4 className="flex items-center gap-1.5 text-sm font-semibold"><Lightbulb className="h-4 w-4 text-amber-500" /> Why this career</h4>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {rec.explanation.map((e) => (
+                  <span key={e.reason} className="chip bg-white py-1 text-slate-700 ring-1 ring-slate-200">{e.reason}</span>
+                ))}
+              </div>
+            </div>
+          )}
           <div>
             <h4 className="text-sm font-semibold">Skills you have</h4>
             <div className="mt-2 flex flex-wrap gap-1.5">
@@ -209,6 +219,7 @@ function CareerCard({ rec, rank }: { rec: CareerRec; rank: number }) {
             <p className="mt-4 text-xs text-slate-500">
               Model signals — classifier {pct(rec.signals.classifier)}, market similarity {pct(rec.signals.skill_similarity)}, interest
               similarity {pct(rec.signals.interest_similarity)}
+              {rec.signals.two_tower !== undefined && <>, neural similarity {rec.signals.two_tower.toFixed(2)}</>}
             </p>
           </div>
           <div>

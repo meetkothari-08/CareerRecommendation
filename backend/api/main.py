@@ -67,6 +67,7 @@ def health() -> dict:
     return {
         "status": "ok",
         "version": __version__,
+        "model": state["engine"].recommender.model_name,
         "llm_enabled": llm.enabled,
         "llm_model": llm.model if llm.enabled else None,
     }

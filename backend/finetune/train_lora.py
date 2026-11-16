@@ -46,13 +46,22 @@ def main() -> None:
 
     model = AutoModelForCausalLM.from_pretrained(
         args.base_model,
-        quantization_config=BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
-                                               bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_use_double_quant=True),
+        quantization_config=BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_use_double_quant=True,
+        ),
         torch_dtype=torch.bfloat16,
         device_map="auto",
     )
-    lora = LoraConfig(r=args.lora_r, lora_alpha=2 * args.lora_r, lora_dropout=0.05, task_type="CAUSAL_LM",
-                      target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"])
+    lora = LoraConfig(
+        r=args.lora_r,
+        lora_alpha=2 * args.lora_r,
+        lora_dropout=0.05,
+        task_type="CAUSAL_LM",
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+    )
     config = SFTConfig(
         output_dir=args.output,
         num_train_epochs=args.epochs,
@@ -69,8 +78,14 @@ def main() -> None:
         assistant_only_loss=True,  # learn only the advisor's answers, not the prompts
         report_to="none",
     )
-    trainer = SFTTrainer(model=model, args=config, train_dataset=dataset["train"], eval_dataset=dataset["test"],
-                         processing_class=tokenizer, peft_config=lora)
+    trainer = SFTTrainer(
+        model=model,
+        args=config,
+        train_dataset=dataset["train"],
+        eval_dataset=dataset["test"],
+        processing_class=tokenizer,
+        peft_config=lora,
+    )
     trainer.train()
     trainer.save_model(args.output)
     tokenizer.save_pretrained(args.output)

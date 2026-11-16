@@ -12,9 +12,12 @@ Stage 1 - candidate signals (all computed for every career):
   interests + goals and each career's description.
 * **Taxonomy overlap and education fit** - knowledge-base priors.
 
-Stage 2 - learned ranker: a logistic-regression model trained on labelled
-profiles combines the stage-1 signals into a relevance probability. Its
-expected graded relevance is the final ranking score (0-1).
+* **Two-tower neural model** (optional, ``careerrec/neural.py``) - learned
+  user/career embeddings; its score is fed to the ranker as an extra feature.
+
+Stage 2 - learned ranker (``careerrec/rankers.py``): LightGBM LambdaMART (or a
+logistic-regression baseline) trained on labelled profiles combines the stage-1
+signals into a calibrated relevance score (0-1) with per-feature explanations.
 """
 
 from __future__ import annotations
@@ -25,13 +28,15 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
+import scipy.sparse as sp
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.pipeline import Pipeline, make_pipeline
-from sklearn.preprocessing import MultiLabelBinarizer, StandardScaler, normalize
+from sklearn.preprocessing import MultiLabelBinarizer, normalize
 
 from .data import Career
+from .neural import NumpyTwoTower
+from .rankers import LogisticRanker
 from .skills import SkillExtractor
 
 EDUCATION_LEVELS = {
@@ -63,6 +68,22 @@ FEATURES = [
     "taxonomy_jaccard",
     "core_skill_coverage",
 ]
+NEURAL_FEATURES = ["two_tower_score", "two_tower_reciprocal_rank"]
+
+# Human-readable reasons used to explain a recommendation from feature contributions.
+FEATURE_REASONS = {
+    "clf_proba": "Your skill set resembles real job postings for this role",
+    "clf_log_proba": "Your skill set resembles real job postings for this role",
+    "clf_reciprocal_rank": "Your skill set resembles real job postings for this role",
+    "skill_similarity": "Strong overlap with the skills employers request",
+    "interest_similarity": "Matches your interests and goals",
+    "interest_similarity_scaled": "Matches your interests and goals",
+    "education_fit": "Fits your education level",
+    "taxonomy_jaccard": "You already have core skills for this role",
+    "core_skill_coverage": "You already have core skills for this role",
+    "two_tower_score": "Neural model: similar profiles fit this career",
+    "two_tower_reciprocal_rank": "Neural model: similar profiles fit this career",
+}
 
 
 def education_level(text: str) -> int | None:
@@ -88,6 +109,17 @@ class Recommendation:
     skill_similarity: float
     interest_similarity: float
     matched_skills: list[str] = field(default_factory=list)
+    two_tower_score: float | None = None
+    explanation: list[dict] = field(default_factory=list)
+
+
+def profile_from_dict(p: dict) -> UserProfile:
+    return UserProfile(p["skills"], p["interests"], p["education"], p["experience_years"], p["goals"])
+
+
+def graded_labels(p: dict, ids: list[str]) -> list[int]:
+    relevant = set(p["relevant"])
+    return [2 if cid == p["target"] else int(cid in relevant) for cid in ids]
 
 
 class CareerRecommender:
@@ -97,7 +129,10 @@ class CareerRecommender:
         self.career_index = {cid: i for i, cid in enumerate(self.ids)}
         self.extractor = extractor
         self.weights = dict(DEFAULT_WEIGHTS)  # linear blend used until a ranker is trained
-        self.ranker: Pipeline | None = None
+        self.ranker = None
+        self.ranker_uses_two_tower = False
+        self.two_tower: NumpyTwoTower | None = None
+        self.model_name = "linear_blend"
 
     # ------------------------------------------------------------ stage 1 fit
     def fit(self, postings: pd.DataFrame, C: float = 1.0) -> CareerRecommender:
@@ -133,9 +168,29 @@ class CareerRecommender:
     def _career_text(c: Career) -> str:
         return " ".join([c.title, c.title, c.family, c.description, " ".join(c.interests * 2)])
 
+    # ------------------------------------------------------------ neural inputs
+    @property
+    def n_skill_features(self) -> int:
+        return len(self.mlb.classes_)
+
+    def skill_matrix(self, skill_lists: list[list[str]]):
+        known = set(self.mlb.classes_)
+        return self.tfidf.transform(self.mlb.transform([[s for s in sk if s in known] for sk in skill_lists]))
+
+    def career_features(self) -> np.ndarray:
+        """Career-tower input: IDF-weighted demand profile + description TF-IDF."""
+        return np.hstack([self.career_skill_vectors, self.career_text_vectors.toarray()]).astype(np.float32)
+
+    def posting_inputs(self, postings: pd.DataFrame) -> tuple[sp.csr_matrix, np.ndarray]:
+        """Postings as skill-only pseudo-profiles for neural training."""
+        X_skill = self.skill_matrix(list(postings["skills"]))
+        X_text = sp.csr_matrix((X_skill.shape[0], len(self.text_vectorizer.vocabulary_)))
+        y = postings["career_id"].map(self.career_index).to_numpy()
+        return sp.hstack([X_skill, X_text]).tocsr(), y
+
     # ------------------------------------------------------------ stage 1 inference
     def skill_vector(self, skills: list[str]):
-        return self.tfidf.transform(self.mlb.transform([[s for s in skills if s in self.mlb.classes_]]))
+        return self.skill_matrix([skills])
 
     def signals(self, profile: UserProfile) -> dict:
         """Per-career stage-1 signals for one profile."""
@@ -148,11 +203,8 @@ class CareerRecommender:
         skill_sim = cosine_similarity(x, self.career_skill_vectors)[0] if x.nnz else np.zeros(n)
 
         text = f"{profile.interests} {profile.goals}".strip()
-        text_sim = (
-            cosine_similarity(self.text_vectorizer.transform([text]), self.career_text_vectors)[0]
-            if text
-            else np.zeros(n)
-        )
+        t = self.text_vectorizer.transform([text])
+        text_sim = cosine_similarity(t, self.career_text_vectors)[0] if text else np.zeros(n)
 
         level = education_level(profile.education)
         edu_fit = (
@@ -164,8 +216,10 @@ class CareerRecommender:
         user = set(skills)
         jaccard = np.array([len(user & a) / len(user | a) if user else 0.0 for a in self._all])
         coverage = np.array([len(user & c) / len(c) for c in self._core])
-        return {
+        nn_input = sp.hstack([x, t]).tocsr()
+        sig = {
             "skills": skills,
+            "nn_input": nn_input,
             "classifier": proba,
             "skill_similarity": skill_sim,
             "interest_similarity": text_sim,
@@ -173,45 +227,50 @@ class CareerRecommender:
             "taxonomy_jaccard": jaccard,
             "core_skill_coverage": coverage,
         }
+        if self.two_tower is not None:
+            sig["two_tower"] = self.two_tower.scores(nn_input)[0]
+        return sig
 
     @staticmethod
     def _scaled(v: np.ndarray) -> np.ndarray:
         return v / v.max() if v.max() > 0 else v
 
-    def features(self, sig: dict) -> np.ndarray:
+    def features(self, sig: dict, two_tower_scores: np.ndarray | None = None) -> np.ndarray:
+        """Per-career feature matrix for the stage-2 ranker (optionally with neural features)."""
         proba = sig["classifier"]
         rank = np.argsort(np.argsort(-proba))
-        return np.column_stack(
-            [
-                proba,
-                np.log(proba + 1e-6),
-                1.0 / (rank + 1),
-                sig["skill_similarity"],
-                sig["interest_similarity"],
-                self._scaled(sig["interest_similarity"]),
-                sig["education_fit"],
-                sig["taxonomy_jaccard"],
-                sig["core_skill_coverage"],
-            ]
-        )
+        cols = [
+            proba,
+            np.log(proba + 1e-6),
+            1.0 / (rank + 1),
+            sig["skill_similarity"],
+            sig["interest_similarity"],
+            self._scaled(sig["interest_similarity"]),
+            sig["education_fit"],
+            sig["taxonomy_jaccard"],
+            sig["core_skill_coverage"],
+        ]
+        if two_tower_scores is not None:
+            nn_rank = np.argsort(np.argsort(-two_tower_scores))
+            cols += [two_tower_scores, 1.0 / (nn_rank + 1)]
+        return np.column_stack(cols)
+
+    def feature_names(self) -> list[str]:
+        return FEATURES + (NEURAL_FEATURES if self.ranker_uses_two_tower else [])
+
+    def _features_for(self, sig: dict) -> np.ndarray:
+        return self.features(sig, sig.get("two_tower") if self.ranker_uses_two_tower else None)
 
     # ------------------------------------------------------------ stage 2
     def fit_ranker(self, profiles: list[dict], C: float = 1.0) -> CareerRecommender:
-        """Train the learned ranker on profiles labelled with ``target`` and ``relevant`` careers."""
-        X, y = [], []
-        for p in profiles:
-            X.append(
-                self.features(
-                    self.signals(
-                        UserProfile(p["skills"], p["interests"], p["education"], p["experience_years"], p["goals"])
-                    )
-                )
-            )
-            relevant = set(p["relevant"])
-            y.append([2 if cid == p["target"] else int(cid in relevant) for cid in self.ids])
-        self.ranker = make_pipeline(StandardScaler(), LogisticRegression(C=C, max_iter=3000))
-        self.ranker.fit(np.vstack(X), np.concatenate(y))
+        """Train the logistic baseline ranker (used for quick cold starts without the full pipeline)."""
+        X = np.vstack([self.features(self.signals(profile_from_dict(p))) for p in profiles])
+        y = np.concatenate([graded_labels(p, self.ids) for p in profiles])
+        self.set_ranker(LogisticRanker(C=C).fit(X, y), uses_two_tower=False, name="logistic_ranker")
         return self
+
+    def set_ranker(self, ranker, uses_two_tower: bool, name: str) -> None:
+        self.ranker, self.ranker_uses_two_tower, self.model_name = ranker, uses_two_tower, name
 
     def linear_score(self, sig: dict, weights: dict[str, float] | None = None) -> np.ndarray:
         w = weights or self.weights
@@ -223,12 +282,25 @@ class CareerRecommender:
         )
 
     def score(self, sig: dict) -> np.ndarray:
-        """Final 0-1 score: expected graded relevance from the ranker (or the linear blend)."""
+        """Final 0-1 score from the ranker (or the linear blend before a ranker is trained)."""
         if self.ranker is None:
             return self.linear_score(sig)
-        proba = self.ranker.predict_proba(self.features(sig))
-        gains = dict(zip(self.ranker.classes_, proba.T))
-        return 0.5 * gains.get(1, 0) + 1.0 * gains.get(2, 0)
+        return self.ranker.predict(self._features_for(sig))
+
+    def explain(self, sig: dict, indices) -> list[list[dict]]:
+        """Top positive reasons per career, aggregated from per-feature contributions."""
+        if self.ranker is None:
+            return [[] for _ in indices]
+        contrib = self.ranker.contributions(self._features_for(sig))
+        names = self.feature_names()
+        out = []
+        for i in indices:
+            grouped: dict[str, float] = {}
+            for name, value in zip(names, contrib[i]):
+                grouped[FEATURE_REASONS[name]] = grouped.get(FEATURE_REASONS[name], 0.0) + float(value)
+            top = sorted(((r, v) for r, v in grouped.items() if v > 0), key=lambda t: -t[1])[:3]
+            out.append([{"reason": r, "contribution": round(v, 3)} for r, v in top])
+        return out
 
     def rank(self, profile: UserProfile) -> list[str]:
         return [self.ids[i] for i in np.argsort(-self.score(self.signals(profile)))]
@@ -236,9 +308,11 @@ class CareerRecommender:
     def recommend(self, profile: UserProfile, top_k: int = 5) -> tuple[list[str], list[Recommendation]]:
         sig = self.signals(profile)
         scores = self.score(sig)
+        order = np.argsort(-scores)[:top_k]
+        explanations = self.explain(sig, order)
         user_skills = set(sig["skills"])
         recs = []
-        for i in np.argsort(-scores)[:top_k]:
+        for i, why in zip(order, explanations):
             career = self.careers[i]
             ordered = self.demand.loc[career.id].sort_values(ascending=False).index
             recs.append(
@@ -249,6 +323,8 @@ class CareerRecommender:
                     skill_similarity=float(sig["skill_similarity"][i]),
                     interest_similarity=float(sig["interest_similarity"][i]),
                     matched_skills=[s for s in ordered if s in user_skills],
+                    two_tower_score=float(sig["two_tower"][i]) if "two_tower" in sig else None,
+                    explanation=why,
                 )
             )
         return sig["skills"], recs

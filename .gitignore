@@ -15,6 +15,10 @@ dist/
 .env.*
 !.env.example
 
+# Experiment tracking
+mlruns/
+mlflow.db
+
 # Generated artifacts (reproduce with `python -m scripts.train` / `python -m finetune.build_sft_dataset`)
 models/*.joblib
 models/careerrec-advisor-lora/

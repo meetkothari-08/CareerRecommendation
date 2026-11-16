@@ -6,8 +6,9 @@ the repository ships a *synthetic snapshot* with the same schema, generated
 from the career knowledge base with realistic noise:
 
 * ``data/job_postings.csv``             - 1,200 postings across 56 careers
-* ``data/eval/validation_profiles.json`` - 400 profiles used to tune blend weights
-* ``data/eval/test_profiles.json``       - 100 held-out profiles used for reporting
+* ``data/eval/train_profiles.json``      - 2,000 profiles used to train the learned models
+* ``data/eval/validation_profiles.json`` - 400 profiles for hyperparameter tuning and model selection
+* ``data/eval/test_profiles.json``       - 100 held-out profiles used only for reporting
 
 Profiles are deliberately messy: partial skill lists, aliases (``k8s``,
 ``sklearn``), off-target skills, blended backgrounds and vague goals.
@@ -216,6 +217,16 @@ def _surface(skill: str, aliases: dict[str, list[str]], rng: random.Random) -> s
     return skill.lower() if rng.random() < 0.3 and skill not in {"C", "R", "Go"} else skill
 
 
+def _is_related(target: Career, other: Career) -> bool:
+    """A career is an acceptable alternative if it is a natural next role, or if it needs
+    transferable skills (Jaccard >= 0.25) *and* appeals to overlapping interests.
+    Skill overlap alone is not enough: Data Analyst and Bioinformatics Scientist share
+    25% of their skills but serve very different interests."""
+    if other.id in target.next_roles:
+        return True
+    return _skill_overlap(target, other) >= 0.25 and bool(set(target.interests) & set(other.interests))
+
+
 def _skill_overlap(a: Career, b: Career) -> float:
     sa, sb = set(a.all_skills), set(b.all_skills)
     return len(sa & sb) / len(sa | sb)
@@ -276,7 +287,7 @@ def generate_profiles(careers: list[Career], aliases: dict[str, list[str]], n: i
         edu = rng.choice(edu_options[target.education if rng.random() < 0.7 else rng.choice(list(edu_options))])
 
         relevant = {target.id} | ({blend.id} if blend else set())
-        relevant |= {c.id for c in careers if c.id != target.id and _skill_overlap(target, c) >= 0.25}
+        relevant |= {c.id for c in careers if c.id != target.id and _is_related(target, c)}
         profiles.append(
             {
                 "id": f"P{seed}-{pid:04d}",
@@ -304,11 +315,13 @@ def main() -> None:
     print(f"wrote {len(postings)} postings across {postings.career_id.nunique()} careers -> {paths.POSTINGS_PATH}")
 
     paths.TEST_PROFILES_PATH.parent.mkdir(parents=True, exist_ok=True)
+    train = generate_profiles(careers, aliases, 2000, seed=11)
     val = generate_profiles(careers, aliases, 400, seed=7)
     test = generate_profiles(careers, aliases, 100, seed=2025)
+    paths.TRAIN_PROFILES_PATH.write_text(json.dumps(train, separators=(",", ":")))
     paths.VAL_PROFILES_PATH.write_text(json.dumps(val, indent=1))
     paths.TEST_PROFILES_PATH.write_text(json.dumps(test, indent=1))
-    print(f"wrote {len(val)} validation and {len(test)} test profiles")
+    print(f"wrote {len(train)} train, {len(val)} validation and {len(test)} test profiles")
 
 
 if __name__ == "__main__":

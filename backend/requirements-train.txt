@@ -1,0 +1,9 @@
+# Training-only dependencies (the API serves the exported model without PyTorch).
+# CPU-only PyTorch is much smaller; install it first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+-r requirements.txt
+torch>=2.2
+optuna>=3.6
+mlflow-skinny>=2.14
+sqlalchemy>=2.0
+alembic>=1.13

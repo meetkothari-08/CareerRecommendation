@@ -72,9 +72,9 @@ NEURAL_FEATURES = ["two_tower_score", "two_tower_reciprocal_rank"]
 
 # Human-readable reasons used to explain a recommendation from feature contributions.
 FEATURE_REASONS = {
-    "clf_proba": "Your skill set resembles real job postings for this role",
-    "clf_log_proba": "Your skill set resembles real job postings for this role",
-    "clf_reciprocal_rank": "Your skill set resembles real job postings for this role",
+    "clf_proba": "Your skill set resembles job postings for this role",
+    "clf_log_proba": "Your skill set resembles job postings for this role",
+    "clf_reciprocal_rank": "Your skill set resembles job postings for this role",
     "skill_similarity": "Strong overlap with the skills employers request",
     "interest_similarity": "Matches your interests and goals",
     "interest_similarity_scaled": "Matches your interests and goals",

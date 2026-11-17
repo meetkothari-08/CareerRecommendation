@@ -22,7 +22,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-indigo-50 to-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center">
           <h1 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
-            AI career recommendations grounded in real job-market data
+            AI career recommendations grounded in job-market data
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">
             CareerRec combines machine learning over job postings with an LLM advisor to recommend from 50+ career

@@ -11,8 +11,7 @@
 
 CareerRec recommends career paths by combining **machine learning over job-posting data**, a
 **two-tower deep-learning model**, **learning-to-rank** and an **LLM career advisor** (with a QLoRA
-fine-tuning pipeline). It reads a free-text
-profile (skills, interests, education, goals) and returns:
+fine-tuning pipeline). It reads a free-text profile (skills, interests, education, goals) and returns:
 
 - the best-fitting careers out of **56 career paths**, with calibrated match scores and the reasons behind them,
 - a **skill-gap analysis** that ranks missing skills by how often employers ask for them,
@@ -209,9 +208,9 @@ make web
 
 Open http://localhost:5173. The interactive API docs are at http://localhost:8000/docs.
 
-To get LLM-written reports, copy `.env.example` to `.env`, set `LLM_API_KEY` (a free Groq key works),
-and export it before starting the API. Without a key, everything else still works and the report
-comes from the offline template.
+To enable LLM-written reports and the AI advisor chat, export `LLM_API_KEY` (a free Groq key works) and
+`LLM_MODEL` (any chat model your provider offers) before starting the API; see `.env.example`. Without a
+key, everything else still works and the report comes from the offline template.
 
 ### API
 
@@ -226,26 +225,6 @@ comes from the offline template.
 ```bash
 curl -s localhost:8000/api/recommend -H 'Content-Type: application/json' -d '{"skills": "python, sklearn, SQL, pytorch", "interests": "AI products", "education": "B.Tech", "experience_years": 1, "include_advice": false}'
 ```
-
-## Deployment
-
-**Frontend: Vercel.** Import the repo in Vercel, set **Root Directory** to `frontend` (`frontend/vercel.json`
-configures the Vite build and client-side routing), and add the environment variable
-`VITE_API_URL=https://<your-backend-host>`.
-
-**Backend: Render (one click)** using the included `render.yaml` blueprint:
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/meetkothari-08/CareerRecommendation)
-
-Or use any Docker host (Railway, Fly.io, Google Cloud Run). The multi-stage
-`backend/Dockerfile` trains the model during the build and serves it with Uvicorn on port 8000:
-
-```bash
-docker build -f backend/Dockerfile -t careerrec-api .
-```
-
-Set `CORS_ORIGINS=https://<your-app>.vercel.app` on the backend, plus `LLM_API_KEY` if you want
-LLM-written reports.
 
 ## Project structure
 

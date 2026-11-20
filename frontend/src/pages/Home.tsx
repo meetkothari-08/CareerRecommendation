@@ -32,9 +32,9 @@ export default function Home() {
             <Link to="/recommend" className="btn-primary px-6 py-3 text-base">
               Get my recommendations <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link to="/model" className="btn-ghost px-6 py-3 text-base">
+            <a href="#how-it-works" className="btn-ghost px-6 py-3 text-base">
               How it works
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-center text-2xl font-bold">How it works</h2>
+        <h2 id="how-it-works" className="scroll-mt-24 text-center text-2xl font-bold">How it works</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-4">
           {pipeline.map(({ icon: Icon, title, text }, i) => (
             <div key={title} className="card p-6">

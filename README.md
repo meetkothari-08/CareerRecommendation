@@ -178,10 +178,7 @@ overlap alone. That made Bioinformatics Scientist "relevant" to every Data Analy
 neural network learned the mistake: it recommended Bioinformatics to a dashboard/KPI analyst. Requiring
 shared interests fixed the labels, and every model was re-evaluated on the corrected version.
 
-<p align="center">
-  <img src="docs/images/market.png" width="49%" alt="Market insights">
-  <img src="docs/images/model.png" width="49%" alt="Model and results">
-</p>
+<p align="center"><img src="docs/images/market.png" width="85%" alt="Market insights"></p>
 
 ## Quick start
 
